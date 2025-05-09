@@ -1,0 +1,3 @@
+.idea
+airbnb_data/*.csv
+airbnb_data/*.geojson
