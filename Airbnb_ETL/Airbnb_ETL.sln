@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36109.1 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "Airbnb_ETL", "Airbnb_ETL.dtproj", "{DD76610B-ECC6-855C-CE2D-BB89D80C7849}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD76610B-ECC6-855C-CE2D-BB89D80C7849}.Development|Default.ActiveCfg = Development
+		{DD76610B-ECC6-855C-CE2D-BB89D80C7849}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5D5E995D-9F7D-475D-AAD9-DD17927C7095}
+	EndGlobalSection
+EndGlobal

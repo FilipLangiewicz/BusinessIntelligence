@@ -5,6 +5,11 @@ from bs4 import BeautifulSoup
 import os
 import re
 from urllib.parse import urljoin, urlparse
+import pandas as pd
+import warnings
+from pandas.errors import DtypeWarning
+
+warnings.filterwarnings("ignore", category=DtypeWarning)
 
 BASE_URL = "http://insideairbnb.com/get-the-data/"
 DOWNLOAD_DIR = "airbnb_data"
@@ -52,11 +57,102 @@ def extract_base_and_date(filename):
         if len(parts) == 2:
             return parts[1], parts[0]
         return filename, "00000000"
+    
+def process_listings_csv(df):
+    desired_columns = [
+        "id",
+        "last_scraped",
+        "name",
+        "host_id",
+        "host_name",
+        "host_since",
+        "host_response_time",
+        "host_response_rate",
+        "host_acceptance_rate",
+        "host_is_superhost",
+        "host_listings_count",
+        "host_total_listings_count",
+        "host_identity_verified",
+        "latitude",
+        "longitude",
+        "property_type",
+        "room_type",
+        "accommodates",
+        "bathrooms",
+        "bedrooms",
+        "beds",
+        "amenities",
+        "price",
+        "minimum_nights",
+        "maximum_nights",
+        "has_availability",
+        "availability_30",
+        "availability_60",
+        "availability_90",
+        "availability_365",
+        "number_of_reviews",
+        "number_of_reviews_ltm",
+        "number_of_reviews_l30d",
+        "review_scores_rating",
+        "review_scores_accuracy",
+        "review_scores_cleanliness",
+        "review_scores_checkin",
+        "review_scores_communication",
+        "review_scores_location",
+        "review_scores_value",
+        "instant_bookable",
+        "calculated_host_listings_count",
+        "calculated_host_listings_count_entire_homes",
+        "calculated_host_listings_count_private_rooms",
+        "calculated_host_listings_count_shared_rooms",
+        "reviews_per_month",
+    ]
+
+    # Dodaj brakujące kolumny z wartością NaN
+    for col in desired_columns:
+        if col not in df.columns:
+            df[col] = pd.NA
+
+    # Zatrzymaj tylko kolumny z listy i w odpowiedniej kolejności
+    return df[desired_columns]
+
+def process_calendar_csv(df):
+    desired_columns = [
+        "listing_id",
+        "date",
+        "available",
+        "price",
+        "minimum_nights",
+        "maximum_nights",
+        "scrape_date",
+    ]
+
+    for col in desired_columns:
+        if col not in df.columns:
+            df[col] = pd.NA
+
+    return df[desired_columns]
+
+def process_reviews_csv(df):
+    desired_columns = [
+        "listing_id",
+        "id",
+        "date",
+        "reviewer_id",
+        "reviewer_name",
+        "scrape_date",
+    ]
+
+    for col in desired_columns:
+        if col not in df.columns:
+            df[col] = pd.NA
+
+    return df[desired_columns]
 
 
 def fetch_airbnb_data():
     before_files = os.listdir(DOWNLOAD_DIR)
-    before_count = len(before_files)
+    before_count = len(before_files) - 1
 
     existing_files = {}
     for fname in before_files:
@@ -110,12 +206,19 @@ def fetch_airbnb_data():
 
         # Pobieranie i zapis
         if url.endswith(".csv.gz"):
-            csv_path = file_path
             with requests.get(url, stream=True) as r:
                 r.raise_for_status()
                 with gzip.GzipFile(fileobj=r.raw) as gz_file:
-                    with open(csv_path, "wb") as out_file:
-                        shutil.copyfileobj(gz_file, out_file)
+                    df = pd.read_csv(gz_file)
+
+            if "listings" in new_filename:
+                df = process_listings_csv(df)
+            elif "calendar" in new_filename:
+                df = process_calendar_csv(df)
+            elif "reviews" in new_filename:
+                df = process_reviews_csv(df)
+
+            df.to_csv(file_path, index=False)
         else:
             with requests.get(url, stream=True) as r:
                 r.raise_for_status()
