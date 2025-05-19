@@ -81,7 +81,6 @@ def process_listings_csv(df):
         "bathrooms",
         "bedrooms",
         "beds",
-        "amenities",
         "price",
         "minimum_nights",
         "maximum_nights",
@@ -124,7 +123,6 @@ def process_calendar_csv(df):
         "price",
         "minimum_nights",
         "maximum_nights",
-        "scrape_date",
     ]
 
     for col in desired_columns:
@@ -140,7 +138,6 @@ def process_reviews_csv(df):
         "date",
         "reviewer_id",
         "reviewer_name",
-        "scrape_date",
     ]
 
     for col in desired_columns:
@@ -188,6 +185,9 @@ def fetch_airbnb_data():
         new_filename = normalize_filename(url)
         file_path = os.path.join(DOWNLOAD_DIR, new_filename)
         base_key, new_date = extract_base_and_date(new_filename)
+        
+        if "ireland_ireland_ireland" in new_filename:
+            continue
 
         existing = existing_files.get(base_key)
         if existing:
