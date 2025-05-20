@@ -1,0 +1,10 @@
+Znaleziono 3 plików w folderze UPDATE.
+Usunięto plik z DB: 20241225_chile_rm_santiago_calendar.csv
+Usunięto plik z DB: 20241225_chile_rm_santiago_listings.csv
+Usunięto plik z DB: 20241225_chile_rm_santiago_reviews.csv
+
+Podsumowanie:
+Plików w UPDATE: 3
+Plików w DB przed usuwaniem: 357
+Usunięto plików w DB: 3
+Plików w DB po usuwaniu: 354

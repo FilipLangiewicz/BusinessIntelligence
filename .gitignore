@@ -1,3 +1,6 @@
 .idea
-airbnb_data/*.csv
-airbnb_data/*.geojson
+airbnb_data/DB/*.csv
+airbnb_data/NEW/*.csv
+airbnb_data/UPDATE/*.csv
+API_KEY.py
+__pycache__/

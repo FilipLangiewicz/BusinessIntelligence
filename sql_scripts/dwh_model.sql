@@ -1,6 +1,6 @@
 USE [master]
 GO
-/****** Object:  Database [AIRBNB_star_dwh]    Script Date: 19.05.2025 15:38:23 ******/
+/****** Object:  Database [AIRBNB_star_dwh]    Script Date: 20.05.2025 18:39:42 ******/
 CREATE DATABASE [AIRBNB_star_dwh]
  CONTAINMENT = NONE
  ON  PRIMARY 
@@ -82,7 +82,16 @@ ALTER DATABASE [AIRBNB_star_dwh] SET QUERY_STORE = OFF
 GO
 USE [AIRBNB_star_dwh]
 GO
-/****** Object:  Table [dbo].[Dim_Date]    Script Date: 19.05.2025 15:38:23 ******/
+/****** Object:  User [LAPTOP-826FGFSL\flang]    Script Date: 20.05.2025 18:39:43 ******/
+CREATE USER [LAPTOP-826FGFSL\flang] FOR LOGIN [LAPTOP-826FGFSL\flang] WITH DEFAULT_SCHEMA=[dbo]
+GO
+ALTER ROLE [db_owner] ADD MEMBER [LAPTOP-826FGFSL\flang]
+GO
+ALTER ROLE [db_datareader] ADD MEMBER [LAPTOP-826FGFSL\flang]
+GO
+ALTER ROLE [db_datawriter] ADD MEMBER [LAPTOP-826FGFSL\flang]
+GO
+/****** Object:  Table [dbo].[Dim_Date]    Script Date: 20.05.2025 18:39:43 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -120,7 +129,7 @@ CREATE TABLE [dbo].[Dim_Date](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Dim_Property]    Script Date: 19.05.2025 15:38:23 ******/
+/****** Object:  Table [dbo].[Dim_Property]    Script Date: 20.05.2025 18:39:43 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -181,7 +190,7 @@ CREATE TABLE [dbo].[Dim_Property](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Dim_Weather]    Script Date: 19.05.2025 15:38:23 ******/
+/****** Object:  Table [dbo].[Dim_Weather]    Script Date: 20.05.2025 18:39:43 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -191,6 +200,8 @@ CREATE TABLE [dbo].[Dim_Weather](
 	[date] [date] NULL,
 	[lcoation_name] [nvarchar](100) NULL,
 	[avg_temp] [float] NULL,
+	[max_temp] [float] NULL,
+	[min_temp] [float] NULL,
 	[daily_will_it_rain] [nvarchar](3) NULL,
 	[daily_will_it_snow] [nvarchar](3) NULL,
 	[daily_chance_of_rain] [float] NULL,
@@ -204,16 +215,16 @@ CREATE TABLE [dbo].[Dim_Weather](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Fact_Offers]    Script Date: 19.05.2025 15:38:23 ******/
+/****** Object:  Table [dbo].[Fact_Offers]    Script Date: 20.05.2025 18:39:43 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Fact_Offers](
-	[offer_id] [bigint] IDENTITY(1,1) NOT NULL,
+	[offer_id] [int] IDENTITY(1,1) NOT NULL,
 	[property_id] [bigint] NULL,
 	[offer_date] [date] NULL,
-	[available] [bit] NULL,
+	[available] [nvarchar](3) NULL,
 	[price] [money] NULL,
 	[minimum_nights] [int] NULL,
 	[maximum_nights] [int] NULL,
@@ -222,19 +233,19 @@ CREATE TABLE [dbo].[Fact_Offers](
 	[country] [nvarchar](100) NULL,
 	[region] [nvarchar](100) NULL,
 	[city] [nvarchar](100) NULL,
- CONSTRAINT [PK__fact_cal__584C134431AE6961] PRIMARY KEY CLUSTERED 
+ CONSTRAINT [PK_TwojaTabela_offer_id] PRIMARY KEY CLUSTERED 
 (
 	[offer_id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Fact_Review]    Script Date: 19.05.2025 15:38:23 ******/
+/****** Object:  Table [dbo].[Fact_Review]    Script Date: 20.05.2025 18:39:43 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Fact_Review](
-	[review_id] [nvarchar](100) NOT NULL,
+	[review_id] [bigint] IDENTITY(1,1) NOT NULL,
 	[property_id] [bigint] NULL,
 	[date] [date] NULL,
 	[reviewer_name] [nvarchar](100) NULL,
@@ -243,36 +254,36 @@ CREATE TABLE [dbo].[Fact_Review](
 	[country] [nvarchar](100) NULL,
 	[region] [nvarchar](100) NULL,
 	[city] [nvarchar](100) NULL,
- CONSTRAINT [PK__fact_rev__60883D9031C792FC] PRIMARY KEY CLUSTERED 
+ CONSTRAINT [PK_Fact_Review_review_id] PRIMARY KEY CLUSTERED 
 (
 	[review_id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
-GO
-ALTER TABLE [dbo].[Fact_Offers]  WITH CHECK ADD  CONSTRAINT [FK__fact_cale__listi__2A4B4B5E] FOREIGN KEY([property_id])
-REFERENCES [dbo].[Dim_Property] ([property_id])
-GO
-ALTER TABLE [dbo].[Fact_Offers] CHECK CONSTRAINT [FK__fact_cale__listi__2A4B4B5E]
 GO
 ALTER TABLE [dbo].[Fact_Offers]  WITH CHECK ADD  CONSTRAINT [FK_Fact_Offers_Dim_Date] FOREIGN KEY([offer_date])
 REFERENCES [dbo].[Dim_Date] ([date])
 GO
 ALTER TABLE [dbo].[Fact_Offers] CHECK CONSTRAINT [FK_Fact_Offers_Dim_Date]
 GO
+ALTER TABLE [dbo].[Fact_Offers]  WITH CHECK ADD  CONSTRAINT [FK_Fact_Offers_Dim_Property] FOREIGN KEY([property_id])
+REFERENCES [dbo].[Dim_Property] ([property_id])
+GO
+ALTER TABLE [dbo].[Fact_Offers] CHECK CONSTRAINT [FK_Fact_Offers_Dim_Property]
+GO
 ALTER TABLE [dbo].[Fact_Offers]  WITH CHECK ADD  CONSTRAINT [FK_Fact_Offers_Dim_Weather] FOREIGN KEY([weather_id])
 REFERENCES [dbo].[Dim_Weather] ([weather_id])
 GO
 ALTER TABLE [dbo].[Fact_Offers] CHECK CONSTRAINT [FK_Fact_Offers_Dim_Weather]
 GO
-ALTER TABLE [dbo].[Fact_Review]  WITH CHECK ADD  CONSTRAINT [FK__fact_revi__listi__2E1BDC42] FOREIGN KEY([property_id])
-REFERENCES [dbo].[Dim_Property] ([property_id])
-GO
-ALTER TABLE [dbo].[Fact_Review] CHECK CONSTRAINT [FK__fact_revi__listi__2E1BDC42]
-GO
-ALTER TABLE [dbo].[Fact_Review]  WITH CHECK ADD  CONSTRAINT [FK_Fact_Review_Dim_Date] FOREIGN KEY([date])
+ALTER TABLE [dbo].[Fact_Review]  WITH CHECK ADD  CONSTRAINT [FK_Fact_Review_Dim_Date1] FOREIGN KEY([date])
 REFERENCES [dbo].[Dim_Date] ([date])
 GO
-ALTER TABLE [dbo].[Fact_Review] CHECK CONSTRAINT [FK_Fact_Review_Dim_Date]
+ALTER TABLE [dbo].[Fact_Review] CHECK CONSTRAINT [FK_Fact_Review_Dim_Date1]
+GO
+ALTER TABLE [dbo].[Fact_Review]  WITH CHECK ADD  CONSTRAINT [FK_Fact_Review_Dim_Property] FOREIGN KEY([property_id])
+REFERENCES [dbo].[Dim_Property] ([property_id])
+GO
+ALTER TABLE [dbo].[Fact_Review] CHECK CONSTRAINT [FK_Fact_Review_Dim_Property]
 GO
 USE [master]
 GO

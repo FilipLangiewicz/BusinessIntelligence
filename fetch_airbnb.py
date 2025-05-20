@@ -8,11 +8,22 @@ from urllib.parse import urljoin, urlparse
 import pandas as pd
 import warnings
 from pandas.errors import DtypeWarning
+import sys
+from datetime import datetime
 
 warnings.filterwarnings("ignore", category=DtypeWarning)
 
+# Ustawienie logowania do pliku
+today_str = datetime.today().strftime('%Y%m%d%H%M%S')
+log_path = fr"D:\STUDIA\Semestr 6\Hurtownie danych i systemy Business Intelligence\Laboratoria\Projekt\BusinessIntelligence\logs\1 fetch_airbnb\log_fetch_airbnb_{today_str}.txt"
+log_file = open(log_path, mode="w", encoding="utf-8")
+
+# Przekierowanie stdout i stderr do pliku
+sys.stdout = log_file
+sys.stderr = log_file
+
 BASE_URL = "http://insideairbnb.com/get-the-data/"
-DOWNLOAD_DIR = "airbnb_data"
+DOWNLOAD_DIR = r"D:\STUDIA\Semestr 6\Hurtownie danych i systemy Business Intelligence\Laboratoria\Projekt\BusinessIntelligence\airbnb_data"
 os.makedirs(DOWNLOAD_DIR, exist_ok=True)
 
 
@@ -148,7 +159,14 @@ def process_reviews_csv(df):
 
 
 def fetch_airbnb_data():
-    before_files = os.listdir(DOWNLOAD_DIR)
+    DB_DIR = os.path.join(DOWNLOAD_DIR, "DB")
+    NEW_DIR = os.path.join(DOWNLOAD_DIR, "NEW")
+    UPDATE_DIR = os.path.join(DOWNLOAD_DIR, "UPDATE")
+    
+    for folder in [DB_DIR, NEW_DIR, UPDATE_DIR]:
+        os.makedirs(folder, exist_ok=True)   
+    
+    before_files = os.listdir(DB_DIR)
     before_count = len(before_files) - 1
 
     existing_files = {}
@@ -162,6 +180,8 @@ def fetch_airbnb_data():
     added = []
     updated = []
     unchanged = []
+    skipped_empty = []
+
 
     response = requests.get(BASE_URL)
     response.raise_for_status()
@@ -175,19 +195,24 @@ def fetch_airbnb_data():
         if link["href"].endswith((
             "listings.csv.gz",
             "calendar.csv.gz",
-            "reviews.csv.gz",
-            "neighbourhoods.geojson"))
+            "reviews.csv.gz"))
+        
+        # if 'chile' in link["href"] # odkomentuj, aby pobrać tylko Chile
     ]
 
     print(f"Znaleziono {len(target_links)} plików do pobrania.\n")
 
     for url in target_links:
         new_filename = normalize_filename(url)
-        file_path = os.path.join(DOWNLOAD_DIR, new_filename)
         base_key, new_date = extract_base_and_date(new_filename)
         
-        if "ireland_ireland_ireland" in new_filename:
+        if "ireland_ireland_ireland" in new_filename or 'china_beijing' in new_filename:
+            print(f"[!] Pominięto plik: {new_filename}")
+            skipped_empty.append(new_filename)
             continue
+
+        
+        destination = None
 
         existing = existing_files.get(base_key)
         if existing:
@@ -197,12 +222,16 @@ def fetch_airbnb_data():
                 print(f"[=] Bez zmian: {new_filename}")
                 continue
             else:
-                os.remove(os.path.join(DOWNLOAD_DIR, old_fname))
+                # os.remove(os.path.join(DOWNLOAD_DIR, old_fname))
+                destination = UPDATE_DIR
                 print(f"[↑] Aktualizacja: {old_fname} → {new_filename}")
                 updated.append(new_filename)
         else:
             added.append(new_filename)
+            destination = NEW_DIR
             print(f"[+] Nowy plik: {new_filename}")
+
+        file_path = os.path.join(destination, new_filename)
 
         # Pobieranie i zapis
         if url.endswith(".csv.gz"):
@@ -210,7 +239,7 @@ def fetch_airbnb_data():
                 r.raise_for_status()
                 with gzip.GzipFile(fileobj=r.raw) as gz_file:
                     df = pd.read_csv(gz_file)
-
+                    
             if "listings" in new_filename:
                 df = process_listings_csv(df)
             elif "calendar" in new_filename:
@@ -227,23 +256,34 @@ def fetch_airbnb_data():
                         f.write(chunk)
 
     # Podsumowanie
-    after_count = len([f for f in os.listdir(DOWNLOAD_DIR) if f.endswith(".csv") or f.endswith(".geojson")])
+    after_count_DB = len([f for f in os.listdir(DB_DIR) if f.endswith(".csv") or f.endswith(".geojson")])
+    after_count_NEW = len([f for f in os.listdir(NEW_DIR) if f.endswith(".csv") or f.endswith(".geojson")])
+    after_count = after_count_DB + after_count_NEW
     print("\nPodsumowanie operacji:")
     print(f"Plików przed: {before_count}")
     print(f"Plików po:    {after_count}")
     print(f"Dodano:     {len(added)}")
     print(f"Zaktualizowano: {len(updated)}")
+    print(f"Pominięto: {len(skipped_empty)}")
     print(f"Bez zmian:  {len(unchanged)}")
 
     if updated:
         print("\nPliki zaktualizowane:")
         for f in updated:
             print(" -", f)
+    
     if unchanged:
         print("\nPliki bez zmian:")
         for f in unchanged:
+            print(" -", f)
+    
+    if skipped_empty:
+        print(f"\nPominięto {len(skipped_empty)} plików:")
+        for f in skipped_empty:
             print(" -", f)
 
 
 if __name__ == "__main__":
     fetch_airbnb_data()
+    log_file.close()
+
