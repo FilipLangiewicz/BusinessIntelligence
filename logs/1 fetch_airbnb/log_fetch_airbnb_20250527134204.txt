@@ -1,0 +1,740 @@
+Znaleziono 363 plików do pobrania.
+
+[=] Bez zmian: 20250502_united-states_ny_albany_listings.csv
+[=] Bez zmian: 20250502_united-states_ny_albany_calendar.csv
+[=] Bez zmian: 20250502_united-states_ny_albany_reviews.csv
+[=] Bez zmian: 20250302_the-netherlands_north-holland_amsterdam_listings.csv
+[=] Bez zmian: 20250302_the-netherlands_north-holland_amsterdam_calendar.csv
+[=] Bez zmian: 20250302_the-netherlands_north-holland_amsterdam_reviews.csv
+[=] Bez zmian: 20250321_belgium_vlg_antwerp_listings.csv
+[=] Bez zmian: 20250321_belgium_vlg_antwerp_calendar.csv
+[=] Bez zmian: 20250321_belgium_vlg_antwerp_reviews.csv
+[=] Bez zmian: 20250313_united-states_nc_asheville_listings.csv
+[=] Bez zmian: 20250313_united-states_nc_asheville_calendar.csv
+[=] Bez zmian: 20250313_united-states_nc_asheville_reviews.csv
+[=] Bez zmian: 20250318_greece_attica_athens_listings.csv
+[=] Bez zmian: 20250318_greece_attica_athens_calendar.csv
+[=] Bez zmian: 20250318_greece_attica_athens_reviews.csv
+[=] Bez zmian: 20250306_united-states_tx_austin_listings.csv
+[=] Bez zmian: 20250306_united-states_tx_austin_calendar.csv
+[=] Bez zmian: 20250306_united-states_tx_austin_reviews.csv
+[=] Bez zmian: 20250319_thailand_central-thailand_bangkok_listings.csv
+[=] Bez zmian: 20250319_thailand_central-thailand_bangkok_calendar.csv
+[=] Bez zmian: 20250319_thailand_central-thailand_bangkok_reviews.csv
+[=] Bez zmian: 20250305_spain_catalonia_barcelona_listings.csv
+[=] Bez zmian: 20250305_spain_catalonia_barcelona_calendar.csv
+[=] Bez zmian: 20250305_spain_catalonia_barcelona_reviews.csv
+[=] Bez zmian: 20250319_australia_sa_barossa-valley_listings.csv
+[=] Bez zmian: 20250319_australia_sa_barossa-valley_calendar.csv
+[=] Bez zmian: 20250319_australia_sa_barossa-valley_reviews.csv
+[=] Bez zmian: 20250321_australia_vic_barwon-south-west-vic_listings.csv
+[=] Bez zmian: 20250321_australia_vic_barwon-south-west-vic_calendar.csv
+[=] Bez zmian: 20250321_australia_vic_barwon-south-west-vic_reviews.csv
+[!] Pominięto plik: 20241227_china_beijing_beijing_listings.csv
+[!] Pominięto plik: 20241227_china_beijing_beijing_calendar.csv
+[!] Pominięto plik: 20241227_china_beijing_beijing_reviews.csv
+[=] Bez zmian: 20250323_belize_bz_belize_listings.csv
+[=] Bez zmian: 20250323_belize_bz_belize_calendar.csv
+[=] Bez zmian: 20250323_belize_bz_belize_reviews.csv
+[=] Bez zmian: 20250327_italy_lombardia_bergamo_listings.csv
+[=] Bez zmian: 20250327_italy_lombardia_bergamo_calendar.csv
+[=] Bez zmian: 20250327_italy_lombardia_bergamo_reviews.csv
+[=] Bez zmian: 20250315_germany_be_berlin_listings.csv
+[=] Bez zmian: 20250315_germany_be_berlin_calendar.csv
+[=] Bez zmian: 20250315_germany_be_berlin_reviews.csv
+[=] Bez zmian: 20250315_italy_emilia-romagna_bologna_listings.csv
+[=] Bez zmian: 20250315_italy_emilia-romagna_bologna_calendar.csv
+[=] Bez zmian: 20250315_italy_emilia-romagna_bologna_reviews.csv
+[=] Bez zmian: 20250307_france_nouvelle-aquitaine_bordeaux_listings.csv
+[=] Bez zmian: 20250307_france_nouvelle-aquitaine_bordeaux_calendar.csv
+[=] Bez zmian: 20250307_france_nouvelle-aquitaine_bordeaux_reviews.csv
+[=] Bez zmian: 20250315_united-states_ma_boston_listings.csv
+[=] Bez zmian: 20250315_united-states_ma_boston_calendar.csv
+[=] Bez zmian: 20250315_united-states_ma_boston_reviews.csv
+[=] Bez zmian: 20250407_united-states_mt_bozeman_listings.csv
+[=] Bez zmian: 20250407_united-states_mt_bozeman_calendar.csv
+[=] Bez zmian: 20250407_united-states_mt_bozeman_reviews.csv
+[=] Bez zmian: 20250503_australia_qld_brisbane_listings.csv
+[=] Bez zmian: 20250503_australia_qld_brisbane_calendar.csv
+[=] Bez zmian: 20250503_australia_qld_brisbane_reviews.csv
+[=] Bez zmian: 20250319_united-kingdom_england_bristol_listings.csv
+[=] Bez zmian: 20250319_united-kingdom_england_bristol_calendar.csv
+[=] Bez zmian: 20250319_united-kingdom_england_bristol_reviews.csv
+[=] Bez zmian: 20250319_united-states_fl_broward-county_listings.csv
+[=] Bez zmian: 20250319_united-states_fl_broward-county_calendar.csv
+[=] Bez zmian: 20250319_united-states_fl_broward-county_reviews.csv
+[=] Bez zmian: 20250316_belgium_bru_brussels_listings.csv
+[=] Bez zmian: 20250316_belgium_bru_brussels_calendar.csv
+[=] Bez zmian: 20250316_belgium_bru_brussels_reviews.csv
+[=] Bez zmian: 20250423_hungary_közép-magyarország_budapest_listings.csv
+[=] Bez zmian: 20250423_hungary_közép-magyarország_budapest_calendar.csv
+[=] Bez zmian: 20250423_hungary_közép-magyarország_budapest_reviews.csv
+[=] Bez zmian: 20250129_argentina_ciudad-autónoma-de-buenos-aires_buenos-aires_listings.csv
+[=] Bez zmian: 20250129_argentina_ciudad-autónoma-de-buenos-aires_buenos-aires_calendar.csv
+[=] Bez zmian: 20250129_argentina_ciudad-autónoma-de-buenos-aires_buenos-aires_reviews.csv
+[=] Bez zmian: 20250319_united-states_ma_cambridge_listings.csv
+[=] Bez zmian: 20250319_united-states_ma_cambridge_calendar.csv
+[=] Bez zmian: 20250319_united-states_ma_cambridge_reviews.csv
+[=] Bez zmian: 20250319_south-africa_wc_cape-town_listings.csv
+[=] Bez zmian: 20250319_south-africa_wc_cape-town_calendar.csv
+[=] Bez zmian: 20250319_south-africa_wc_cape-town_reviews.csv
+[=] Bez zmian: 20250311_united-states_il_chicago_listings.csv
+[=] Bez zmian: 20250311_united-states_il_chicago_calendar.csv
+[=] Bez zmian: 20250311_united-states_il_chicago_reviews.csv
+[=] Bez zmian: 20250315_united-states_nv_clark-county-nv_listings.csv
+[=] Bez zmian: 20250315_united-states_nv_clark-county-nv_calendar.csv
+[=] Bez zmian: 20250315_united-states_nv_clark-county-nv_reviews.csv
+[=] Bez zmian: 20250319_united-states_oh_columbus_listings.csv
+[=] Bez zmian: 20250319_united-states_oh_columbus_calendar.csv
+[=] Bez zmian: 20250319_united-states_oh_columbus_reviews.csv
+[=] Bez zmian: 20250323_denmark_hovedstaden_copenhagen_listings.csv
+[=] Bez zmian: 20250323_denmark_hovedstaden_copenhagen_calendar.csv
+[=] Bez zmian: 20250323_denmark_hovedstaden_copenhagen_reviews.csv
+[=] Bez zmian: 20250323_greece_crete_crete_listings.csv
+[=] Bez zmian: 20250323_greece_crete_crete_calendar.csv
+[=] Bez zmian: 20250323_greece_crete_crete_reviews.csv
+[=] Bez zmian: 20250416_united-states_tx_dallas_listings.csv
+[=] Bez zmian: 20250416_united-states_tx_dallas_calendar.csv
+[=] Bez zmian: 20250416_united-states_tx_dallas_reviews.csv
+[=] Bez zmian: 20250326_united-states_co_denver_listings.csv
+[=] Bez zmian: 20250326_united-states_co_denver_calendar.csv
+[=] Bez zmian: 20250326_united-states_co_denver_reviews.csv
+[=] Bez zmian: 20250306_ireland_leinster_dublin_listings.csv
+[=] Bez zmian: 20250306_ireland_leinster_dublin_calendar.csv
+[=] Bez zmian: 20250306_ireland_leinster_dublin_reviews.csv
+[=] Bez zmian: 20250308_united-kingdom_scotland_edinburgh_listings.csv
+[=] Bez zmian: 20250308_united-kingdom_scotland_edinburgh_calendar.csv
+[=] Bez zmian: 20250308_united-kingdom_scotland_edinburgh_reviews.csv
+[=] Bez zmian: 20250327_spain_pv_euskadi_listings.csv
+[=] Bez zmian: 20250327_spain_pv_euskadi_calendar.csv
+[=] Bez zmian: 20250327_spain_pv_euskadi_reviews.csv
+[=] Bez zmian: 20250315_italy_toscana_florence_listings.csv
+[=] Bez zmian: 20250315_italy_toscana_florence_calendar.csv
+[=] Bez zmian: 20250315_italy_toscana_florence_reviews.csv
+[=] Bez zmian: 20250306_united-states_tx_fort-worth_listings.csv
+[=] Bez zmian: 20250306_united-states_tx_fort-worth_calendar.csv
+[=] Bez zmian: 20250306_united-states_tx_fort-worth_reviews.csv
+[=] Bez zmian: 20250323_switzerland_geneva_geneva_listings.csv
+[=] Bez zmian: 20250323_switzerland_geneva_geneva_calendar.csv
+[=] Bez zmian: 20250323_switzerland_geneva_geneva_reviews.csv
+[=] Bez zmian: 20250319_belgium_vlg_ghent_listings.csv
+[=] Bez zmian: 20250319_belgium_vlg_ghent_calendar.csv
+[=] Bez zmian: 20250319_belgium_vlg_ghent_reviews.csv
+[=] Bez zmian: 20250327_spain_catalonia_girona_listings.csv
+[=] Bez zmian: 20250327_spain_catalonia_girona_calendar.csv
+[=] Bez zmian: 20250327_spain_catalonia_girona_reviews.csv
+[=] Bez zmian: 20250318_united-kingdom_england_greater-manchester_listings.csv
+[=] Bez zmian: 20250318_united-kingdom_england_greater-manchester_calendar.csv
+[=] Bez zmian: 20250318_united-kingdom_england_greater-manchester_reviews.csv
+[=] Bez zmian: 20250306_united-states_hi_hawaii_listings.csv
+[=] Bez zmian: 20250306_united-states_hi_hawaii_calendar.csv
+[=] Bez zmian: 20250306_united-states_hi_hawaii_reviews.csv
+[=] Bez zmian: 20250316_china_hk_hong-kong_listings.csv
+[=] Bez zmian: 20250316_china_hk_hong-kong_calendar.csv
+[=] Bez zmian: 20250316_china_hk_hong-kong_reviews.csv
+[=] Bez zmian: 20250326_turkey_marmara_istanbul_listings.csv
+[=] Bez zmian: 20250326_turkey_marmara_istanbul_calendar.csv
+[=] Bez zmian: 20250326_turkey_marmara_istanbul_reviews.csv
+[=] Bez zmian: 20250317_united-states_nj_jersey-city_listings.csv
+[=] Bez zmian: 20250317_united-states_nj_jersey-city_calendar.csv
+[=] Bez zmian: 20250317_united-states_nj_jersey-city_reviews.csv
+[=] Bez zmian: 20250308_portugal_lisbon_lisbon_listings.csv
+[=] Bez zmian: 20250308_portugal_lisbon_lisbon_calendar.csv
+[=] Bez zmian: 20250308_portugal_lisbon_lisbon_reviews.csv
+[=] Bez zmian: 20250304_united-kingdom_england_london_listings.csv
+[=] Bez zmian: 20250304_united-kingdom_england_london_calendar.csv
+[=] Bez zmian: 20250304_united-kingdom_england_london_reviews.csv
+[=] Bez zmian: 20250301_united-states_ca_los-angeles_listings.csv
+[=] Bez zmian: 20250301_united-states_ca_los-angeles_calendar.csv
+[=] Bez zmian: 20250301_united-states_ca_los-angeles_reviews.csv
+[=] Bez zmian: 20250307_france_auvergne-rhone-alpes_lyon_listings.csv
+[=] Bez zmian: 20250307_france_auvergne-rhone-alpes_lyon_calendar.csv
+[=] Bez zmian: 20250307_france_auvergne-rhone-alpes_lyon_reviews.csv
+[=] Bez zmian: 20250305_spain_comunidad-de-madrid_madrid_listings.csv
+[=] Bez zmian: 20250305_spain_comunidad-de-madrid_madrid_calendar.csv
+[=] Bez zmian: 20250305_spain_comunidad-de-madrid_madrid_reviews.csv
+[=] Bez zmian: 20250328_spain_andalucía_malaga_listings.csv
+[=] Bez zmian: 20250328_spain_andalucía_malaga_calendar.csv
+[=] Bez zmian: 20250328_spain_andalucía_malaga_reviews.csv
+[=] Bez zmian: 20250307_spain_islas-baleares_mallorca_listings.csv
+[=] Bez zmian: 20250307_spain_islas-baleares_mallorca_calendar.csv
+[=] Bez zmian: 20250307_spain_islas-baleares_mallorca_reviews.csv
+[=] Bez zmian: 20250303_australia_vic_melbourne_listings.csv
+[=] Bez zmian: 20250303_australia_vic_melbourne_calendar.csv
+[=] Bez zmian: 20250303_australia_vic_melbourne_reviews.csv
+[=] Bez zmian: 20250328_spain_islas-baleares_menorca_listings.csv
+[=] Bez zmian: 20250328_spain_islas-baleares_menorca_calendar.csv
+[=] Bez zmian: 20250328_spain_islas-baleares_menorca_reviews.csv
+[=] Bez zmian: 20250319_mexico_df_mexico-city_listings.csv
+[=] Bez zmian: 20250319_mexico_df_mexico-city_calendar.csv
+[=] Bez zmian: 20250319_mexico_df_mexico-city_reviews.csv
+[=] Bez zmian: 20250407_australia_nsw_mid-north-coast_listings.csv
+[=] Bez zmian: 20250407_australia_nsw_mid-north-coast_calendar.csv
+[=] Bez zmian: 20250407_australia_nsw_mid-north-coast_reviews.csv
+[=] Bez zmian: 20250313_italy_lombardy_milan_listings.csv
+[=] Bez zmian: 20250313_italy_lombardy_milan_calendar.csv
+[=] Bez zmian: 20250313_italy_lombardy_milan_reviews.csv
+[=] Bez zmian: 20250306_canada_qc_montreal_listings.csv
+[=] Bez zmian: 20250306_canada_qc_montreal_calendar.csv
+[=] Bez zmian: 20250306_canada_qc_montreal_reviews.csv
+[=] Bez zmian: 20250307_australia_vic_mornington-peninsula_listings.csv
+[=] Bez zmian: 20250307_australia_vic_mornington-peninsula_calendar.csv
+[=] Bez zmian: 20250307_australia_vic_mornington-peninsula_reviews.csv
+[=] Bez zmian: 20250319_germany_bv_munich_listings.csv
+[=] Bez zmian: 20250319_germany_bv_munich_calendar.csv
+[=] Bez zmian: 20250319_germany_bv_munich_reviews.csv
+[=] Bez zmian: 20250313_italy_campania_naples_listings.csv
+[=] Bez zmian: 20250313_italy_campania_naples_calendar.csv
+[=] Bez zmian: 20250313_italy_campania_naples_reviews.csv
+[=] Bez zmian: 20250315_united-states_tn_nashville_listings.csv
+[=] Bez zmian: 20250315_united-states_tn_nashville_calendar.csv
+[=] Bez zmian: 20250315_united-states_tn_nashville_reviews.csv
+[=] Bez zmian: 20250323_canada_nb_new-brunswick_listings.csv
+[=] Bez zmian: 20250323_canada_nb_new-brunswick_calendar.csv
+[=] Bez zmian: 20250323_canada_nb_new-brunswick_reviews.csv
+[=] Bez zmian: 20250302_united-states_la_new-orleans_listings.csv
+[=] Bez zmian: 20250302_united-states_la_new-orleans_calendar.csv
+[=] Bez zmian: 20250302_united-states_la_new-orleans_reviews.csv
+[=] Bez zmian: 20250501_united-states_ny_new-york-city_listings.csv
+[=] Bez zmian: 20250501_united-states_ny_new-york-city_calendar.csv
+[=] Bez zmian: 20250501_united-states_ny_new-york-city_reviews.csv
+[=] Bez zmian: 20250328_united-states_nj_newark_listings.csv
+[=] Bez zmian: 20250328_united-states_nj_newark_calendar.csv
+[=] Bez zmian: 20250328_united-states_nj_newark_reviews.csv
+[=] Bez zmian: 20250311_australia_nsw_northern-rivers_listings.csv
+[=] Bez zmian: 20250311_australia_nsw_northern-rivers_calendar.csv
+[=] Bez zmian: 20250311_australia_nsw_northern-rivers_reviews.csv
+[=] Bez zmian: 20250316_united-states_ca_oakland_listings.csv
+[=] Bez zmian: 20250316_united-states_ca_oakland_calendar.csv
+[=] Bez zmian: 20250316_united-states_ca_oakland_reviews.csv
+[=] Bez zmian: 20250326_norway_oslo_oslo_listings.csv
+[=] Bez zmian: 20250326_norway_oslo_oslo_calendar.csv
+[=] Bez zmian: 20250326_norway_oslo_oslo_reviews.csv
+[=] Bez zmian: 20250311_canada_on_ottawa_listings.csv
+[=] Bez zmian: 20250311_canada_on_ottawa_calendar.csv
+[=] Bez zmian: 20250311_canada_on_ottawa_reviews.csv
+[=] Bez zmian: 20250328_united-states_ca_pacific-grove_listings.csv
+[=] Bez zmian: 20250328_united-states_ca_pacific-grove_calendar.csv
+[=] Bez zmian: 20250328_united-states_ca_pacific-grove_reviews.csv
+[=] Bez zmian: 20250303_france_ile-de-france_paris_listings.csv
+[=] Bez zmian: 20250303_france_ile-de-france_paris_calendar.csv
+[=] Bez zmian: 20250303_france_ile-de-france_paris_reviews.csv
+[=] Bez zmian: 20250308_france_pyrénées-atlantiques_pays-basque_listings.csv
+[=] Bez zmian: 20250308_france_pyrénées-atlantiques_pays-basque_calendar.csv
+[=] Bez zmian: 20250308_france_pyrénées-atlantiques_pays-basque_reviews.csv
+[=] Bez zmian: 20250303_united-states_or_portland_listings.csv
+[=] Bez zmian: 20250303_united-states_or_portland_calendar.csv
+[=] Bez zmian: 20250303_united-states_or_portland_reviews.csv
+[=] Bez zmian: 20250308_portugal_norte_porto_listings.csv
+[=] Bez zmian: 20250308_portugal_norte_porto_calendar.csv
+[=] Bez zmian: 20250308_portugal_norte_porto_reviews.csv
+[=] Bez zmian: 20250316_czech-republic_prague_prague_listings.csv
+[=] Bez zmian: 20250316_czech-republic_prague_prague_calendar.csv
+[=] Bez zmian: 20250316_czech-republic_prague_prague_reviews.csv
+[=] Bez zmian: 20250327_italy_puglia_puglia_listings.csv
+[=] Bez zmian: 20250327_italy_puglia_puglia_calendar.csv
+[=] Bez zmian: 20250327_italy_puglia_puglia_reviews.csv
+[=] Bez zmian: 20250407_canada_qc_quebec-city_listings.csv
+[=] Bez zmian: 20250407_canada_qc_quebec-city_calendar.csv
+[=] Bez zmian: 20250407_canada_qc_quebec-city_reviews.csv
+[=] Bez zmian: 20250328_united-states_ri_rhode-island_listings.csv
+[=] Bez zmian: 20250328_united-states_ri_rhode-island_calendar.csv
+[=] Bez zmian: 20250328_united-states_ri_rhode-island_reviews.csv
+[=] Bez zmian: 20250326_latvia_riga_riga_listings.csv
+[=] Bez zmian: 20250326_latvia_riga_riga_calendar.csv
+[=] Bez zmian: 20250326_latvia_riga_riga_reviews.csv
+[=] Bez zmian: 20250319_brazil_rj_rio-de-janeiro_listings.csv
+[=] Bez zmian: 20250319_brazil_rj_rio-de-janeiro_calendar.csv
+[=] Bez zmian: 20250319_brazil_rj_rio-de-janeiro_reviews.csv
+[=] Bez zmian: 20250421_united-states_ny_rochester_listings.csv
+[=] Bez zmian: 20250421_united-states_ny_rochester_calendar.csv
+[=] Bez zmian: 20250421_united-states_ny_rochester_reviews.csv
+[=] Bez zmian: 20250305_italy_lazio_rome_listings.csv
+[=] Bez zmian: 20250305_italy_lazio_rome_calendar.csv
+[=] Bez zmian: 20250305_italy_lazio_rome_reviews.csv
+[=] Bez zmian: 20250317_the-netherlands_south-holland_rotterdam_listings.csv
+[=] Bez zmian: 20250317_the-netherlands_south-holland_rotterdam_calendar.csv
+[=] Bez zmian: 20250317_the-netherlands_south-holland_rotterdam_reviews.csv
+[=] Bez zmian: 20250317_united-states_or_salem-or_listings.csv
+[=] Bez zmian: 20250317_united-states_or_salem-or_calendar.csv
+[=] Bez zmian: 20250317_united-states_or_salem-or_reviews.csv
+[=] Bez zmian: 20250316_united-states_ca_san-diego_listings.csv
+[=] Bez zmian: 20250316_united-states_ca_san-diego_calendar.csv
+[=] Bez zmian: 20250316_united-states_ca_san-diego_reviews.csv
+[=] Bez zmian: 20250301_united-states_ca_san-francisco_listings.csv
+[=] Bez zmian: 20250301_united-states_ca_san-francisco_calendar.csv
+[=] Bez zmian: 20250301_united-states_ca_san-francisco_reviews.csv
+[=] Bez zmian: 20250317_united-states_ca_san-mateo-county_listings.csv
+[=] Bez zmian: 20250317_united-states_ca_san-mateo-county_calendar.csv
+[=] Bez zmian: 20250317_united-states_ca_san-mateo-county_reviews.csv
+[=] Bez zmian: 20250317_united-states_ca_santa-clara-county_listings.csv
+[=] Bez zmian: 20250317_united-states_ca_santa-clara-county_calendar.csv
+[=] Bez zmian: 20250317_united-states_ca_santa-clara-county_reviews.csv
+[=] Bez zmian: 20250328_united-states_ca_santa-cruz-county_listings.csv
+[=] Bez zmian: 20250328_united-states_ca_santa-cruz-county_calendar.csv
+[=] Bez zmian: 20250328_united-states_ca_santa-cruz-county_reviews.csv
+[=] Bez zmian: 20241227_chile_rm_santiago_listings.csv
+[=] Bez zmian: 20241227_chile_rm_santiago_calendar.csv
+[=] Bez zmian: 20241227_chile_rm_santiago_reviews.csv
+[=] Bez zmian: 20250316_united-states_wa_seattle_listings.csv
+[=] Bez zmian: 20250316_united-states_wa_seattle_calendar.csv
+[=] Bez zmian: 20250316_united-states_wa_seattle_reviews.csv
+[=] Bez zmian: 20250326_spain_andalucía_sevilla_listings.csv
+[=] Bez zmian: 20250326_spain_andalucía_sevilla_calendar.csv
+[=] Bez zmian: 20250326_spain_andalucía_sevilla_reviews.csv
+[=] Bez zmian: 20250326_italy_sicilia_sicily_listings.csv
+[=] Bez zmian: 20250326_italy_sicilia_sicily_calendar.csv
+[=] Bez zmian: 20250326_italy_sicilia_sicily_reviews.csv
+[=] Bez zmian: 20250321_singapore_sg_singapore_listings.csv
+[=] Bez zmian: 20250321_singapore_sg_singapore_calendar.csv
+[=] Bez zmian: 20250321_singapore_sg_singapore_reviews.csv
+[=] Bez zmian: 20250316_greece_south-aegean_south-aegean_listings.csv
+[=] Bez zmian: 20250316_greece_south-aegean_south-aegean_calendar.csv
+[=] Bez zmian: 20250316_greece_south-aegean_south-aegean_reviews.csv
+[=] Bez zmian: 20250323_sweden_stockholms-län_stockholm_listings.csv
+[=] Bez zmian: 20250323_sweden_stockholms-län_stockholm_calendar.csv
+[=] Bez zmian: 20250323_sweden_stockholms-län_stockholm_reviews.csv
+[=] Bez zmian: 20250430_australia_qld_sunshine-coast_listings.csv
+[=] Bez zmian: 20250430_australia_qld_sunshine-coast_calendar.csv
+[=] Bez zmian: 20250430_australia_qld_sunshine-coast_reviews.csv
+[=] Bez zmian: 20250303_australia_nsw_sydney_listings.csv
+[=] Bez zmian: 20250303_australia_nsw_sydney_calendar.csv
+[=] Bez zmian: 20250303_australia_nsw_sydney_reviews.csv
+[=] Bez zmian: 20250328_taiwan_northern-taiwan_taipei_listings.csv
+[=] Bez zmian: 20250328_taiwan_northern-taiwan_taipei_calendar.csv
+[=] Bez zmian: 20250328_taiwan_northern-taiwan_taipei_reviews.csv
+[=] Bez zmian: 20250302_australia_tas_tasmania_listings.csv
+[=] Bez zmian: 20250302_australia_tas_tasmania_calendar.csv
+[=] Bez zmian: 20250302_australia_tas_tasmania_reviews.csv
+[=] Bez zmian: 20250318_the-netherlands_south-holland_the-hague_listings.csv
+[=] Bez zmian: 20250318_the-netherlands_south-holland_the-hague_calendar.csv
+[=] Bez zmian: 20250318_the-netherlands_south-holland_the-hague_reviews.csv
+[=] Bez zmian: 20250318_greece_central-macedonia_thessaloniki_listings.csv
+[=] Bez zmian: 20250318_greece_central-macedonia_thessaloniki_calendar.csv
+[=] Bez zmian: 20250318_greece_central-macedonia_thessaloniki_reviews.csv
+[=] Bez zmian: 20250323_japan_kantō_tokyo_listings.csv
+[=] Bez zmian: 20250323_japan_kantō_tokyo_calendar.csv
+[=] Bez zmian: 20250323_japan_kantō_tokyo_reviews.csv
+[=] Bez zmian: 20250503_canada_on_toronto_listings.csv
+[=] Bez zmian: 20250503_canada_on_toronto_calendar.csv
+[=] Bez zmian: 20250503_canada_on_toronto_reviews.csv
+[=] Bez zmian: 20250328_italy_trentino-alto-adige-südtirol_trentino_listings.csv
+[=] Bez zmian: 20250328_italy_trentino-alto-adige-südtirol_trentino_calendar.csv
+[=] Bez zmian: 20250328_italy_trentino-alto-adige-südtirol_trentino_reviews.csv
+[=] Bez zmian: 20250316_united-states_mn_twin-cities-msa_listings.csv
+[=] Bez zmian: 20250316_united-states_mn_twin-cities-msa_calendar.csv
+[=] Bez zmian: 20250316_united-states_mn_twin-cities-msa_reviews.csv
+[=] Bez zmian: 20250315_spain_vc_valencia_listings.csv
+[=] Bez zmian: 20250315_spain_vc_valencia_calendar.csv
+[=] Bez zmian: 20250315_spain_vc_valencia_reviews.csv
+[=] Bez zmian: 20250410_canada_bc_vancouver_listings.csv
+[=] Bez zmian: 20250410_canada_bc_vancouver_calendar.csv
+[=] Bez zmian: 20250410_canada_bc_vancouver_reviews.csv
+[=] Bez zmian: 20250502_switzerland_vd_vaud_listings.csv
+[=] Bez zmian: 20250502_switzerland_vd_vaud_calendar.csv
+[=] Bez zmian: 20250502_switzerland_vd_vaud_reviews.csv
+[=] Bez zmian: 20250302_italy_veneto_venice_listings.csv
+[=] Bez zmian: 20250302_italy_veneto_venice_calendar.csv
+[=] Bez zmian: 20250302_italy_veneto_venice_reviews.csv
+[=] Bez zmian: 20250427_canada_bc_victoria_listings.csv
+[=] Bez zmian: 20250427_canada_bc_victoria_calendar.csv
+[=] Bez zmian: 20250427_canada_bc_victoria_reviews.csv
+[=] Bez zmian: 20250305_austria_vienna_vienna_listings.csv
+[=] Bez zmian: 20250305_austria_vienna_vienna_calendar.csv
+[=] Bez zmian: 20250305_austria_vienna_vienna_reviews.csv
+[=] Bez zmian: 20250313_united-states_dc_washington-dc_listings.csv
+[=] Bez zmian: 20250313_united-states_dc_washington-dc_calendar.csv
+[=] Bez zmian: 20250313_united-states_dc_washington-dc_reviews.csv
+[=] Bez zmian: 20250318_australia_wa_western-australia_listings.csv
+[=] Bez zmian: 20250318_australia_wa_western-australia_calendar.csv
+[=] Bez zmian: 20250318_australia_wa_western-australia_reviews.csv
+[=] Bez zmian: 20250307_canada_mb_winnipeg_listings.csv
+[=] Bez zmian: 20250307_canada_mb_winnipeg_calendar.csv
+[=] Bez zmian: 20250307_canada_mb_winnipeg_reviews.csv
+[=] Bez zmian: 20250323_switzerland_zürich_zurich_listings.csv
+[=] Bez zmian: 20250323_switzerland_zürich_zurich_calendar.csv
+[=] Bez zmian: 20250323_switzerland_zürich_zurich_reviews.csv
+[!] Pominięto plik: 20250318_ireland_ireland_ireland_listings.csv
+[!] Pominięto plik: 20250318_ireland_ireland_ireland_calendar.csv
+[!] Pominięto plik: 20250318_ireland_ireland_ireland_reviews.csv
+[=] Bez zmian: 20250318_malta_malta_malta_listings.csv
+[=] Bez zmian: 20250318_malta_malta_malta_calendar.csv
+[=] Bez zmian: 20250318_malta_malta_malta_reviews.csv
+[=] Bez zmian: 20250403_new-zealand_new-zealand_new-zealand_listings.csv
+[=] Bez zmian: 20250403_new-zealand_new-zealand_new-zealand_calendar.csv
+[=] Bez zmian: 20250403_new-zealand_new-zealand_new-zealand_reviews.csv
+
+Podsumowanie operacji:
+Plików przed: 357
+Plików po:    357
+Dodano:     0
+Zaktualizowano: 0
+Pominięto: 6
+Bez zmian:  357
+
+Pliki bez zmian:
+ - 20250502_united-states_ny_albany_listings.csv
+ - 20250502_united-states_ny_albany_calendar.csv
+ - 20250502_united-states_ny_albany_reviews.csv
+ - 20250302_the-netherlands_north-holland_amsterdam_listings.csv
+ - 20250302_the-netherlands_north-holland_amsterdam_calendar.csv
+ - 20250302_the-netherlands_north-holland_amsterdam_reviews.csv
+ - 20250321_belgium_vlg_antwerp_listings.csv
+ - 20250321_belgium_vlg_antwerp_calendar.csv
+ - 20250321_belgium_vlg_antwerp_reviews.csv
+ - 20250313_united-states_nc_asheville_listings.csv
+ - 20250313_united-states_nc_asheville_calendar.csv
+ - 20250313_united-states_nc_asheville_reviews.csv
+ - 20250318_greece_attica_athens_listings.csv
+ - 20250318_greece_attica_athens_calendar.csv
+ - 20250318_greece_attica_athens_reviews.csv
+ - 20250306_united-states_tx_austin_listings.csv
+ - 20250306_united-states_tx_austin_calendar.csv
+ - 20250306_united-states_tx_austin_reviews.csv
+ - 20250319_thailand_central-thailand_bangkok_listings.csv
+ - 20250319_thailand_central-thailand_bangkok_calendar.csv
+ - 20250319_thailand_central-thailand_bangkok_reviews.csv
+ - 20250305_spain_catalonia_barcelona_listings.csv
+ - 20250305_spain_catalonia_barcelona_calendar.csv
+ - 20250305_spain_catalonia_barcelona_reviews.csv
+ - 20250319_australia_sa_barossa-valley_listings.csv
+ - 20250319_australia_sa_barossa-valley_calendar.csv
+ - 20250319_australia_sa_barossa-valley_reviews.csv
+ - 20250321_australia_vic_barwon-south-west-vic_listings.csv
+ - 20250321_australia_vic_barwon-south-west-vic_calendar.csv
+ - 20250321_australia_vic_barwon-south-west-vic_reviews.csv
+ - 20250323_belize_bz_belize_listings.csv
+ - 20250323_belize_bz_belize_calendar.csv
+ - 20250323_belize_bz_belize_reviews.csv
+ - 20250327_italy_lombardia_bergamo_listings.csv
+ - 20250327_italy_lombardia_bergamo_calendar.csv
+ - 20250327_italy_lombardia_bergamo_reviews.csv
+ - 20250315_germany_be_berlin_listings.csv
+ - 20250315_germany_be_berlin_calendar.csv
+ - 20250315_germany_be_berlin_reviews.csv
+ - 20250315_italy_emilia-romagna_bologna_listings.csv
+ - 20250315_italy_emilia-romagna_bologna_calendar.csv
+ - 20250315_italy_emilia-romagna_bologna_reviews.csv
+ - 20250307_france_nouvelle-aquitaine_bordeaux_listings.csv
+ - 20250307_france_nouvelle-aquitaine_bordeaux_calendar.csv
+ - 20250307_france_nouvelle-aquitaine_bordeaux_reviews.csv
+ - 20250315_united-states_ma_boston_listings.csv
+ - 20250315_united-states_ma_boston_calendar.csv
+ - 20250315_united-states_ma_boston_reviews.csv
+ - 20250407_united-states_mt_bozeman_listings.csv
+ - 20250407_united-states_mt_bozeman_calendar.csv
+ - 20250407_united-states_mt_bozeman_reviews.csv
+ - 20250503_australia_qld_brisbane_listings.csv
+ - 20250503_australia_qld_brisbane_calendar.csv
+ - 20250503_australia_qld_brisbane_reviews.csv
+ - 20250319_united-kingdom_england_bristol_listings.csv
+ - 20250319_united-kingdom_england_bristol_calendar.csv
+ - 20250319_united-kingdom_england_bristol_reviews.csv
+ - 20250319_united-states_fl_broward-county_listings.csv
+ - 20250319_united-states_fl_broward-county_calendar.csv
+ - 20250319_united-states_fl_broward-county_reviews.csv
+ - 20250316_belgium_bru_brussels_listings.csv
+ - 20250316_belgium_bru_brussels_calendar.csv
+ - 20250316_belgium_bru_brussels_reviews.csv
+ - 20250423_hungary_közép-magyarország_budapest_listings.csv
+ - 20250423_hungary_közép-magyarország_budapest_calendar.csv
+ - 20250423_hungary_közép-magyarország_budapest_reviews.csv
+ - 20250129_argentina_ciudad-autónoma-de-buenos-aires_buenos-aires_listings.csv
+ - 20250129_argentina_ciudad-autónoma-de-buenos-aires_buenos-aires_calendar.csv
+ - 20250129_argentina_ciudad-autónoma-de-buenos-aires_buenos-aires_reviews.csv
+ - 20250319_united-states_ma_cambridge_listings.csv
+ - 20250319_united-states_ma_cambridge_calendar.csv
+ - 20250319_united-states_ma_cambridge_reviews.csv
+ - 20250319_south-africa_wc_cape-town_listings.csv
+ - 20250319_south-africa_wc_cape-town_calendar.csv
+ - 20250319_south-africa_wc_cape-town_reviews.csv
+ - 20250311_united-states_il_chicago_listings.csv
+ - 20250311_united-states_il_chicago_calendar.csv
+ - 20250311_united-states_il_chicago_reviews.csv
+ - 20250315_united-states_nv_clark-county-nv_listings.csv
+ - 20250315_united-states_nv_clark-county-nv_calendar.csv
+ - 20250315_united-states_nv_clark-county-nv_reviews.csv
+ - 20250319_united-states_oh_columbus_listings.csv
+ - 20250319_united-states_oh_columbus_calendar.csv
+ - 20250319_united-states_oh_columbus_reviews.csv
+ - 20250323_denmark_hovedstaden_copenhagen_listings.csv
+ - 20250323_denmark_hovedstaden_copenhagen_calendar.csv
+ - 20250323_denmark_hovedstaden_copenhagen_reviews.csv
+ - 20250323_greece_crete_crete_listings.csv
+ - 20250323_greece_crete_crete_calendar.csv
+ - 20250323_greece_crete_crete_reviews.csv
+ - 20250416_united-states_tx_dallas_listings.csv
+ - 20250416_united-states_tx_dallas_calendar.csv
+ - 20250416_united-states_tx_dallas_reviews.csv
+ - 20250326_united-states_co_denver_listings.csv
+ - 20250326_united-states_co_denver_calendar.csv
+ - 20250326_united-states_co_denver_reviews.csv
+ - 20250306_ireland_leinster_dublin_listings.csv
+ - 20250306_ireland_leinster_dublin_calendar.csv
+ - 20250306_ireland_leinster_dublin_reviews.csv
+ - 20250308_united-kingdom_scotland_edinburgh_listings.csv
+ - 20250308_united-kingdom_scotland_edinburgh_calendar.csv
+ - 20250308_united-kingdom_scotland_edinburgh_reviews.csv
+ - 20250327_spain_pv_euskadi_listings.csv
+ - 20250327_spain_pv_euskadi_calendar.csv
+ - 20250327_spain_pv_euskadi_reviews.csv
+ - 20250315_italy_toscana_florence_listings.csv
+ - 20250315_italy_toscana_florence_calendar.csv
+ - 20250315_italy_toscana_florence_reviews.csv
+ - 20250306_united-states_tx_fort-worth_listings.csv
+ - 20250306_united-states_tx_fort-worth_calendar.csv
+ - 20250306_united-states_tx_fort-worth_reviews.csv
+ - 20250323_switzerland_geneva_geneva_listings.csv
+ - 20250323_switzerland_geneva_geneva_calendar.csv
+ - 20250323_switzerland_geneva_geneva_reviews.csv
+ - 20250319_belgium_vlg_ghent_listings.csv
+ - 20250319_belgium_vlg_ghent_calendar.csv
+ - 20250319_belgium_vlg_ghent_reviews.csv
+ - 20250327_spain_catalonia_girona_listings.csv
+ - 20250327_spain_catalonia_girona_calendar.csv
+ - 20250327_spain_catalonia_girona_reviews.csv
+ - 20250318_united-kingdom_england_greater-manchester_listings.csv
+ - 20250318_united-kingdom_england_greater-manchester_calendar.csv
+ - 20250318_united-kingdom_england_greater-manchester_reviews.csv
+ - 20250306_united-states_hi_hawaii_listings.csv
+ - 20250306_united-states_hi_hawaii_calendar.csv
+ - 20250306_united-states_hi_hawaii_reviews.csv
+ - 20250316_china_hk_hong-kong_listings.csv
+ - 20250316_china_hk_hong-kong_calendar.csv
+ - 20250316_china_hk_hong-kong_reviews.csv
+ - 20250326_turkey_marmara_istanbul_listings.csv
+ - 20250326_turkey_marmara_istanbul_calendar.csv
+ - 20250326_turkey_marmara_istanbul_reviews.csv
+ - 20250317_united-states_nj_jersey-city_listings.csv
+ - 20250317_united-states_nj_jersey-city_calendar.csv
+ - 20250317_united-states_nj_jersey-city_reviews.csv
+ - 20250308_portugal_lisbon_lisbon_listings.csv
+ - 20250308_portugal_lisbon_lisbon_calendar.csv
+ - 20250308_portugal_lisbon_lisbon_reviews.csv
+ - 20250304_united-kingdom_england_london_listings.csv
+ - 20250304_united-kingdom_england_london_calendar.csv
+ - 20250304_united-kingdom_england_london_reviews.csv
+ - 20250301_united-states_ca_los-angeles_listings.csv
+ - 20250301_united-states_ca_los-angeles_calendar.csv
+ - 20250301_united-states_ca_los-angeles_reviews.csv
+ - 20250307_france_auvergne-rhone-alpes_lyon_listings.csv
+ - 20250307_france_auvergne-rhone-alpes_lyon_calendar.csv
+ - 20250307_france_auvergne-rhone-alpes_lyon_reviews.csv
+ - 20250305_spain_comunidad-de-madrid_madrid_listings.csv
+ - 20250305_spain_comunidad-de-madrid_madrid_calendar.csv
+ - 20250305_spain_comunidad-de-madrid_madrid_reviews.csv
+ - 20250328_spain_andalucía_malaga_listings.csv
+ - 20250328_spain_andalucía_malaga_calendar.csv
+ - 20250328_spain_andalucía_malaga_reviews.csv
+ - 20250307_spain_islas-baleares_mallorca_listings.csv
+ - 20250307_spain_islas-baleares_mallorca_calendar.csv
+ - 20250307_spain_islas-baleares_mallorca_reviews.csv
+ - 20250303_australia_vic_melbourne_listings.csv
+ - 20250303_australia_vic_melbourne_calendar.csv
+ - 20250303_australia_vic_melbourne_reviews.csv
+ - 20250328_spain_islas-baleares_menorca_listings.csv
+ - 20250328_spain_islas-baleares_menorca_calendar.csv
+ - 20250328_spain_islas-baleares_menorca_reviews.csv
+ - 20250319_mexico_df_mexico-city_listings.csv
+ - 20250319_mexico_df_mexico-city_calendar.csv
+ - 20250319_mexico_df_mexico-city_reviews.csv
+ - 20250407_australia_nsw_mid-north-coast_listings.csv
+ - 20250407_australia_nsw_mid-north-coast_calendar.csv
+ - 20250407_australia_nsw_mid-north-coast_reviews.csv
+ - 20250313_italy_lombardy_milan_listings.csv
+ - 20250313_italy_lombardy_milan_calendar.csv
+ - 20250313_italy_lombardy_milan_reviews.csv
+ - 20250306_canada_qc_montreal_listings.csv
+ - 20250306_canada_qc_montreal_calendar.csv
+ - 20250306_canada_qc_montreal_reviews.csv
+ - 20250307_australia_vic_mornington-peninsula_listings.csv
+ - 20250307_australia_vic_mornington-peninsula_calendar.csv
+ - 20250307_australia_vic_mornington-peninsula_reviews.csv
+ - 20250319_germany_bv_munich_listings.csv
+ - 20250319_germany_bv_munich_calendar.csv
+ - 20250319_germany_bv_munich_reviews.csv
+ - 20250313_italy_campania_naples_listings.csv
+ - 20250313_italy_campania_naples_calendar.csv
+ - 20250313_italy_campania_naples_reviews.csv
+ - 20250315_united-states_tn_nashville_listings.csv
+ - 20250315_united-states_tn_nashville_calendar.csv
+ - 20250315_united-states_tn_nashville_reviews.csv
+ - 20250323_canada_nb_new-brunswick_listings.csv
+ - 20250323_canada_nb_new-brunswick_calendar.csv
+ - 20250323_canada_nb_new-brunswick_reviews.csv
+ - 20250302_united-states_la_new-orleans_listings.csv
+ - 20250302_united-states_la_new-orleans_calendar.csv
+ - 20250302_united-states_la_new-orleans_reviews.csv
+ - 20250501_united-states_ny_new-york-city_listings.csv
+ - 20250501_united-states_ny_new-york-city_calendar.csv
+ - 20250501_united-states_ny_new-york-city_reviews.csv
+ - 20250328_united-states_nj_newark_listings.csv
+ - 20250328_united-states_nj_newark_calendar.csv
+ - 20250328_united-states_nj_newark_reviews.csv
+ - 20250311_australia_nsw_northern-rivers_listings.csv
+ - 20250311_australia_nsw_northern-rivers_calendar.csv
+ - 20250311_australia_nsw_northern-rivers_reviews.csv
+ - 20250316_united-states_ca_oakland_listings.csv
+ - 20250316_united-states_ca_oakland_calendar.csv
+ - 20250316_united-states_ca_oakland_reviews.csv
+ - 20250326_norway_oslo_oslo_listings.csv
+ - 20250326_norway_oslo_oslo_calendar.csv
+ - 20250326_norway_oslo_oslo_reviews.csv
+ - 20250311_canada_on_ottawa_listings.csv
+ - 20250311_canada_on_ottawa_calendar.csv
+ - 20250311_canada_on_ottawa_reviews.csv
+ - 20250328_united-states_ca_pacific-grove_listings.csv
+ - 20250328_united-states_ca_pacific-grove_calendar.csv
+ - 20250328_united-states_ca_pacific-grove_reviews.csv
+ - 20250303_france_ile-de-france_paris_listings.csv
+ - 20250303_france_ile-de-france_paris_calendar.csv
+ - 20250303_france_ile-de-france_paris_reviews.csv
+ - 20250308_france_pyrénées-atlantiques_pays-basque_listings.csv
+ - 20250308_france_pyrénées-atlantiques_pays-basque_calendar.csv
+ - 20250308_france_pyrénées-atlantiques_pays-basque_reviews.csv
+ - 20250303_united-states_or_portland_listings.csv
+ - 20250303_united-states_or_portland_calendar.csv
+ - 20250303_united-states_or_portland_reviews.csv
+ - 20250308_portugal_norte_porto_listings.csv
+ - 20250308_portugal_norte_porto_calendar.csv
+ - 20250308_portugal_norte_porto_reviews.csv
+ - 20250316_czech-republic_prague_prague_listings.csv
+ - 20250316_czech-republic_prague_prague_calendar.csv
+ - 20250316_czech-republic_prague_prague_reviews.csv
+ - 20250327_italy_puglia_puglia_listings.csv
+ - 20250327_italy_puglia_puglia_calendar.csv
+ - 20250327_italy_puglia_puglia_reviews.csv
+ - 20250407_canada_qc_quebec-city_listings.csv
+ - 20250407_canada_qc_quebec-city_calendar.csv
+ - 20250407_canada_qc_quebec-city_reviews.csv
+ - 20250328_united-states_ri_rhode-island_listings.csv
+ - 20250328_united-states_ri_rhode-island_calendar.csv
+ - 20250328_united-states_ri_rhode-island_reviews.csv
+ - 20250326_latvia_riga_riga_listings.csv
+ - 20250326_latvia_riga_riga_calendar.csv
+ - 20250326_latvia_riga_riga_reviews.csv
+ - 20250319_brazil_rj_rio-de-janeiro_listings.csv
+ - 20250319_brazil_rj_rio-de-janeiro_calendar.csv
+ - 20250319_brazil_rj_rio-de-janeiro_reviews.csv
+ - 20250421_united-states_ny_rochester_listings.csv
+ - 20250421_united-states_ny_rochester_calendar.csv
+ - 20250421_united-states_ny_rochester_reviews.csv
+ - 20250305_italy_lazio_rome_listings.csv
+ - 20250305_italy_lazio_rome_calendar.csv
+ - 20250305_italy_lazio_rome_reviews.csv
+ - 20250317_the-netherlands_south-holland_rotterdam_listings.csv
+ - 20250317_the-netherlands_south-holland_rotterdam_calendar.csv
+ - 20250317_the-netherlands_south-holland_rotterdam_reviews.csv
+ - 20250317_united-states_or_salem-or_listings.csv
+ - 20250317_united-states_or_salem-or_calendar.csv
+ - 20250317_united-states_or_salem-or_reviews.csv
+ - 20250316_united-states_ca_san-diego_listings.csv
+ - 20250316_united-states_ca_san-diego_calendar.csv
+ - 20250316_united-states_ca_san-diego_reviews.csv
+ - 20250301_united-states_ca_san-francisco_listings.csv
+ - 20250301_united-states_ca_san-francisco_calendar.csv
+ - 20250301_united-states_ca_san-francisco_reviews.csv
+ - 20250317_united-states_ca_san-mateo-county_listings.csv
+ - 20250317_united-states_ca_san-mateo-county_calendar.csv
+ - 20250317_united-states_ca_san-mateo-county_reviews.csv
+ - 20250317_united-states_ca_santa-clara-county_listings.csv
+ - 20250317_united-states_ca_santa-clara-county_calendar.csv
+ - 20250317_united-states_ca_santa-clara-county_reviews.csv
+ - 20250328_united-states_ca_santa-cruz-county_listings.csv
+ - 20250328_united-states_ca_santa-cruz-county_calendar.csv
+ - 20250328_united-states_ca_santa-cruz-county_reviews.csv
+ - 20241227_chile_rm_santiago_listings.csv
+ - 20241227_chile_rm_santiago_calendar.csv
+ - 20241227_chile_rm_santiago_reviews.csv
+ - 20250316_united-states_wa_seattle_listings.csv
+ - 20250316_united-states_wa_seattle_calendar.csv
+ - 20250316_united-states_wa_seattle_reviews.csv
+ - 20250326_spain_andalucía_sevilla_listings.csv
+ - 20250326_spain_andalucía_sevilla_calendar.csv
+ - 20250326_spain_andalucía_sevilla_reviews.csv
+ - 20250326_italy_sicilia_sicily_listings.csv
+ - 20250326_italy_sicilia_sicily_calendar.csv
+ - 20250326_italy_sicilia_sicily_reviews.csv
+ - 20250321_singapore_sg_singapore_listings.csv
+ - 20250321_singapore_sg_singapore_calendar.csv
+ - 20250321_singapore_sg_singapore_reviews.csv
+ - 20250316_greece_south-aegean_south-aegean_listings.csv
+ - 20250316_greece_south-aegean_south-aegean_calendar.csv
+ - 20250316_greece_south-aegean_south-aegean_reviews.csv
+ - 20250323_sweden_stockholms-län_stockholm_listings.csv
+ - 20250323_sweden_stockholms-län_stockholm_calendar.csv
+ - 20250323_sweden_stockholms-län_stockholm_reviews.csv
+ - 20250430_australia_qld_sunshine-coast_listings.csv
+ - 20250430_australia_qld_sunshine-coast_calendar.csv
+ - 20250430_australia_qld_sunshine-coast_reviews.csv
+ - 20250303_australia_nsw_sydney_listings.csv
+ - 20250303_australia_nsw_sydney_calendar.csv
+ - 20250303_australia_nsw_sydney_reviews.csv
+ - 20250328_taiwan_northern-taiwan_taipei_listings.csv
+ - 20250328_taiwan_northern-taiwan_taipei_calendar.csv
+ - 20250328_taiwan_northern-taiwan_taipei_reviews.csv
+ - 20250302_australia_tas_tasmania_listings.csv
+ - 20250302_australia_tas_tasmania_calendar.csv
+ - 20250302_australia_tas_tasmania_reviews.csv
+ - 20250318_the-netherlands_south-holland_the-hague_listings.csv
+ - 20250318_the-netherlands_south-holland_the-hague_calendar.csv
+ - 20250318_the-netherlands_south-holland_the-hague_reviews.csv
+ - 20250318_greece_central-macedonia_thessaloniki_listings.csv
+ - 20250318_greece_central-macedonia_thessaloniki_calendar.csv
+ - 20250318_greece_central-macedonia_thessaloniki_reviews.csv
+ - 20250323_japan_kantō_tokyo_listings.csv
+ - 20250323_japan_kantō_tokyo_calendar.csv
+ - 20250323_japan_kantō_tokyo_reviews.csv
+ - 20250503_canada_on_toronto_listings.csv
+ - 20250503_canada_on_toronto_calendar.csv
+ - 20250503_canada_on_toronto_reviews.csv
+ - 20250328_italy_trentino-alto-adige-südtirol_trentino_listings.csv
+ - 20250328_italy_trentino-alto-adige-südtirol_trentino_calendar.csv
+ - 20250328_italy_trentino-alto-adige-südtirol_trentino_reviews.csv
+ - 20250316_united-states_mn_twin-cities-msa_listings.csv
+ - 20250316_united-states_mn_twin-cities-msa_calendar.csv
+ - 20250316_united-states_mn_twin-cities-msa_reviews.csv
+ - 20250315_spain_vc_valencia_listings.csv
+ - 20250315_spain_vc_valencia_calendar.csv
+ - 20250315_spain_vc_valencia_reviews.csv
+ - 20250410_canada_bc_vancouver_listings.csv
+ - 20250410_canada_bc_vancouver_calendar.csv
+ - 20250410_canada_bc_vancouver_reviews.csv
+ - 20250502_switzerland_vd_vaud_listings.csv
+ - 20250502_switzerland_vd_vaud_calendar.csv
+ - 20250502_switzerland_vd_vaud_reviews.csv
+ - 20250302_italy_veneto_venice_listings.csv
+ - 20250302_italy_veneto_venice_calendar.csv
+ - 20250302_italy_veneto_venice_reviews.csv
+ - 20250427_canada_bc_victoria_listings.csv
+ - 20250427_canada_bc_victoria_calendar.csv
+ - 20250427_canada_bc_victoria_reviews.csv
+ - 20250305_austria_vienna_vienna_listings.csv
+ - 20250305_austria_vienna_vienna_calendar.csv
+ - 20250305_austria_vienna_vienna_reviews.csv
+ - 20250313_united-states_dc_washington-dc_listings.csv
+ - 20250313_united-states_dc_washington-dc_calendar.csv
+ - 20250313_united-states_dc_washington-dc_reviews.csv
+ - 20250318_australia_wa_western-australia_listings.csv
+ - 20250318_australia_wa_western-australia_calendar.csv
+ - 20250318_australia_wa_western-australia_reviews.csv
+ - 20250307_canada_mb_winnipeg_listings.csv
+ - 20250307_canada_mb_winnipeg_calendar.csv
+ - 20250307_canada_mb_winnipeg_reviews.csv
+ - 20250323_switzerland_zürich_zurich_listings.csv
+ - 20250323_switzerland_zürich_zurich_calendar.csv
+ - 20250323_switzerland_zürich_zurich_reviews.csv
+ - 20250318_malta_malta_malta_listings.csv
+ - 20250318_malta_malta_malta_calendar.csv
+ - 20250318_malta_malta_malta_reviews.csv
+ - 20250403_new-zealand_new-zealand_new-zealand_listings.csv
+ - 20250403_new-zealand_new-zealand_new-zealand_calendar.csv
+ - 20250403_new-zealand_new-zealand_new-zealand_reviews.csv
+
+Pominięto 6 plików:
+ - 20241227_china_beijing_beijing_listings.csv
+ - 20241227_china_beijing_beijing_calendar.csv
+ - 20241227_china_beijing_beijing_reviews.csv
+ - 20250318_ireland_ireland_ireland_listings.csv
+ - 20250318_ireland_ireland_ireland_calendar.csv
+ - 20250318_ireland_ireland_ireland_reviews.csv

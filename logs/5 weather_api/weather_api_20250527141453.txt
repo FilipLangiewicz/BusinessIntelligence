@@ -1,0 +1,137 @@
+✅ Pobrano dane pogodowe dla miasta **barwon-south-west-vic** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **bordeaux** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **sunshine-coast** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **porto** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **new-brunswick** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **rotterdam** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **puglia** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **edinburgh** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **bergamo** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **victoria** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **madrid** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **portland** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **rio-de-janeiro** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **rhode-island** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **stockholm** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **south-aegean** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **toronto** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **mallorca** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **greater-manchester** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **athens** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **washington-dc** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **the-hague** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **bangkok** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **hawaii** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **vienna** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **riga** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **belize** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **albany** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **vancouver** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **tasmania** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **dublin** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **pacific-grove** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **prague** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **oakland** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **dallas** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **pays-basque** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **brussels** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **newark** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **los-angeles** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **girona** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **sevilla** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **quebec-city** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **bozeman** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **valencia** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **seattle** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **sicily** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **menorca** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **asheville** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **san-mateo-county** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **berlin** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **new-york-city** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **florence** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **paris** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **trentino** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **zurich** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **denver** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **brisbane** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **amsterdam** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **santiago** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **buenos-aires** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **hong-kong** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **bristol** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **crete** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **euskadi** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **san-diego** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **singapore** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **twin-cities-msa** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **taipei** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **rome** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **mid-north-coast** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **budapest** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **naples** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **jersey-city** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **malaga** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **copenhagen** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **santa-clara-county** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **santa-cruz-county** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **sydney** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **lisbon** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **austin** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **cambridge** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **san-francisco** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **munich** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **mornington-peninsula** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **milan** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **cape-town** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **lyon** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **melbourne** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **winnipeg** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **barossa-valley** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **rochester** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **new-zealand** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **northern-rivers** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **bologna** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **barcelona** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **clark-county-nv** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **ghent** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **tokyo** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **salem-or** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **ottawa** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **geneva** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **oslo** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **antwerp** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **nashville** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **mexico-city** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **vaud** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **boston** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **venice** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **western-australia** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **istanbul** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **chicago** dla 287 dni.
+⚠️ Błąd API przy columbus (20251102): (502)
+Reason: Bad Gateway
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 27 May 2025 12:59:31 GMT', 'Content-Type': 'text/html', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'BunnyCDN-DE1-723', 'CDN-PullZone': '93447', 'CDN-Uid': '8fa3a04a-75d9-4707-8056-b7b33c8ac7fe', 'CDN-RequestCountryCode': 'PL', 'Cache-Control': 'no-cache', 'ErrorCode': '100', 'CDN-RequestId': '17f12ed256a04e775dfe86e25ea38fdc', 'CDN-Cache': 'EXPIRED', 'CDN-Status': '502', 'CDN-RequestTime': '2'})
+HTTP response body: <!DOCTYPE html>
+<html>
+<head>
+    <title>502 Bad Gateway</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://bunnynetassets.b-cdn.net/error.png" />
+    <script src="https://bunny.net/lib/jquery/jquery.min.js"></script>
+    <script src="https://cdn.statuspage.io/se-v2.js"></script>
+    <link rel="stylesheet" href="https://bunnynetassets.b-cdn.net/error.css">
+</head>
+<body>
+    <div class="hero"><div class="content"><div class="alert-details"><h3 class="alert">ERROR 502</h3><h1>Bad Gateway</h1><h3>We could not establish a connection to api.weatherapi.com</h3></div><div class="row cards"><div class="col-md g-md-1"><div class="card"> <img src="https://bunnynetassets.b-cdn.net/icons/you.svg" alt="Card Icon" /><h2>You</h2> <small>IP: 194.29.137.24</small></div></div><div class="col-md-1 g-md-1 icons"> <img src="https://bunnynetassets.b-cdn.net/icons/arrow.svg" class="img-fluid"></div><div class="col-md g-1"><div class="card"> <img src="https://bunnynetassets.b-cdn.net/icons/bunny.svg" alt="Card Icon" /><h2>bunny.net</h2> <small>Edge Network</small></div></div><div class="col-md-1 g-md-1 icons"> <img src="https://bunnynetassets.b-cdn.net/icons/x.svg" class="img-fluid"></div><div class="col-md g-1"><div class="card"> <img src="https://bunnynetassets.b-cdn.net/icons/origin.svg" alt="Card Icon" /><h2>api.weatherapi.com</h2> <small>Your Destination</small></div></div></div> </div></div><div class="final-details"><div class="box"><h1>What happened?</h1><div class="description">There was a problem that occured while connecting to api.weatherapi.com origin server. The server hosting the website might be unavailable.</div></div><div class="box"><h1>What can I do?</h1><div class="description">If you are a visitor, please try again in a few minutes. If you are the administrator, please check your origin server status.</div></div></div>
+</body>
+</html>
+
+✅ Pobrano dane pogodowe dla miasta **columbus** dla 286 dni.
+✅ Pobrano dane pogodowe dla miasta **fort-worth** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **thessaloniki** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **broward-county** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **montreal** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **malta** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **new-orleans** dla 287 dni.
+✅ Pobrano dane pogodowe dla miasta **london** dla 287 dni.

@@ -1,17 +1,17 @@
 from weatherapi.rest import ApiException
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, date
 import os
 import re
-import pyodbc
 import weatherapi
 import sys
+import csv
 from API_KEY import get_API_KEY
 
 today_str = datetime.today().strftime('%Y%m%d%H%M%S')
+
+# 🔒 Ścieżka do logów
 log_path = fr"D:\STUDIA\Semestr 6\Hurtownie danych i systemy Business Intelligence\Laboratoria\Projekt\BusinessIntelligence\logs\5 weather_api\weather_api_{today_str}.txt"
 log_file = open(log_path, mode="w", encoding="utf-8")
-
-# Przekierowanie stdout i stderr do pliku
 sys.stdout = log_file
 sys.stderr = log_file
 
@@ -20,24 +20,29 @@ configuration = weatherapi.Configuration()
 configuration.api_key['key'] = get_API_KEY()
 api_instance = weatherapi.APIsApi(weatherapi.ApiClient(configuration))
 
-# 📁 Folder z plikami CSV (w celu pobrania listy miast)
+# 📁 Folder z plikami CSV (miasta) i zapisem wyników
 DB_DIR = r"D:\STUDIA\Semestr 6\Hurtownie danych i systemy Business Intelligence\Laboratoria\Projekt\BusinessIntelligence\airbnb_data\DB"
+WEATHER_DIR = r"D:\STUDIA\Semestr 6\Hurtownie danych i systemy Business Intelligence\Laboratoria\Projekt\BusinessIntelligence\airbnb_data\WEATHER"
+os.makedirs(WEATHER_DIR, exist_ok=True)
 
-# 🔌 Connection string do SQL Server
-conn_str = (
-    "Driver={ODBC Driver 17 for SQL Server};"
-    "Server=localhost;"
-    "Database=AIRBNB_star_dwh;"
-    "Trusted_Connection=yes;"
-)
-conn = pyodbc.connect(conn_str)
-cursor = conn.cursor()
+# 🔁 Ustaw ścieżkę do pliku CSV i usuń poprzedni, jeśli istnieje
+weather_csv_path = os.path.join(WEATHER_DIR, "weather.csv")
+if os.path.exists(weather_csv_path):
+    os.remove(weather_csv_path)
 
-# 📦 Funkcja pobierająca pogodę i robiąca UPSERT
-def upsert_weather(city, date_str):
+# 📝 Zapisz nagłówki nowego pliku CSV
+with open(weather_csv_path, mode='w', newline='', encoding='utf-8') as file:
+    writer = csv.writer(file)
+    writer.writerow([
+        "weather_id", "date", "location_name", "avg_temp", "max_temp", "min_temp",
+        "daily_will_it_rain", "daily_will_it_snow", "daily_chance_of_rain",
+        "daily_chance_of_snow", "sunrise", "sunset", "last_modified_date"
+    ])
+
+# 📦 Funkcja pobierająca pogodę i zapisująca do CSV
+def save_weather_to_csv(city, date_str):
     dt = datetime.strptime(date_str, "%Y%m%d").date()
     dt_api = dt.strftime("%Y-%m-%d")
-    # try:
     response = api_instance.future_weather(q=city, dt=dt_api, lang="pl")
     forecast_day = response['forecast']['forecastday'][0]
     day = forecast_day['day']
@@ -56,35 +61,14 @@ def upsert_weather(city, date_str):
 
     today = date.today()
 
-    params = (
+    row = [
         weather_id, dt, location_name, day['avgtemp_c'], day['maxtemp_c'], day['mintemp_c'],
         will_rain, will_snow, chance_rain, chance_snow, sunrise, sunset, today
-    )
+    ]
 
-    cursor.execute("""
-    MERGE INTO Dim_Weather AS target
-    USING (SELECT ? AS weather_id) AS source
-    ON target.weather_id = source.weather_id
-    WHEN MATCHED THEN
-        UPDATE SET 
-            date = ?, location_name = ?, avg_temp = ?, max_temp = ?, min_temp = ?,
-            daily_will_it_rain = ?, daily_will_it_snow = ?, 
-            daily_chance_of_rain = ?, daily_chance_of_snow = ?,
-            sunrise = ?, sunset = ?, last_modified_date = ?
-    WHEN NOT MATCHED THEN
-        INSERT (
-            weather_id, date, location_name, avg_temp, max_temp, min_temp,
-            daily_will_it_rain, daily_will_it_snow, daily_chance_of_rain,
-            daily_chance_of_snow, sunrise, sunset, last_modified_date)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
-    """, params + params)
-    conn.commit()
-
-    # except ApiException as e:
-        # print(f"❌ Błąd API dla {city} ({dt_api}): {e}")
-    # except Exception as e:
-    #     pass
-        # print(f"❌ Błąd SQL lub inny dla {city}: {e}")
+    with open(weather_csv_path, mode='a', newline='', encoding='utf-8') as file:
+        writer = csv.writer(file)
+        writer.writerow(row)
 
 # 📋 Wyodrębnij unikalne miasta z plików CSV
 cities = set()
@@ -94,12 +78,12 @@ for file in os.listdir(DB_DIR):
         city = parts[3].lower()
         cities.add(city)
 
-# 🗓 Zakres dat: od dziś +14 dni do dziś +300 dni
+# 🗓 Zakres dat
 today = datetime.today().date()
 start_date = today + timedelta(days=14)
 end_date = today + timedelta(days=300)
 
-# 🔁 Dla każdego miasta i każdej daty w zakresie
+# 🔁 Pobierz dane pogodowe
 for city in cities:
     successful_dates = []
     skip_city = False
@@ -107,10 +91,10 @@ for city in cities:
         if skip_city:
             break
 
-        date = start_date + timedelta(days=i)
-        date_str = date.strftime("%Y%m%d")
+        date_obj = start_date + timedelta(days=i)
+        date_str = date_obj.strftime("%Y%m%d")
         try:
-            upsert_weather(city, date_str)
+            save_weather_to_csv(city, date_str)
             successful_dates.append(date_str)
         except ApiException as e:
             if e.status == 400 or "No matching location found" in str(e):
@@ -119,12 +103,10 @@ for city in cities:
                 break
             else:
                 print(f"⚠️ Błąd API przy {city} ({date_str}): {e}")
-        except Exception:
-            print(f"⚠️ Błąd ogólny przy {city} ({date_str})")
+        except Exception as e:
+            print(f"⚠️ Błąd ogólny przy {city} ({date_str}): {e}")
 
     if successful_dates:
         print(f"✅ Pobrano dane pogodowe dla miasta **{city}** dla {len(successful_dates)} dni.")
     elif not skip_city:
         print(f"❌ Nie udało się pobrać żadnych danych pogodowych dla miasta **{city}**.")
-
-conn.close()
