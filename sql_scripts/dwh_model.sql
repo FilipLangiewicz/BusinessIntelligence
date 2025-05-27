@@ -1,6 +1,6 @@
 USE [master]
 GO
-/****** Object:  Database [AIRBNB_star_dwh]    Script Date: 20.05.2025 18:39:42 ******/
+/****** Object:  Database [AIRBNB_star_dwh]    Script Date: 27.05.2025 16:32:48 ******/
 CREATE DATABASE [AIRBNB_star_dwh]
  CONTAINMENT = NONE
  ON  PRIMARY 
@@ -82,7 +82,7 @@ ALTER DATABASE [AIRBNB_star_dwh] SET QUERY_STORE = OFF
 GO
 USE [AIRBNB_star_dwh]
 GO
-/****** Object:  User [LAPTOP-826FGFSL\flang]    Script Date: 20.05.2025 18:39:43 ******/
+/****** Object:  User [LAPTOP-826FGFSL\flang]    Script Date: 27.05.2025 16:32:48 ******/
 CREATE USER [LAPTOP-826FGFSL\flang] FOR LOGIN [LAPTOP-826FGFSL\flang] WITH DEFAULT_SCHEMA=[dbo]
 GO
 ALTER ROLE [db_owner] ADD MEMBER [LAPTOP-826FGFSL\flang]
@@ -91,7 +91,7 @@ ALTER ROLE [db_datareader] ADD MEMBER [LAPTOP-826FGFSL\flang]
 GO
 ALTER ROLE [db_datawriter] ADD MEMBER [LAPTOP-826FGFSL\flang]
 GO
-/****** Object:  Table [dbo].[Dim_Date]    Script Date: 20.05.2025 18:39:43 ******/
+/****** Object:  Table [dbo].[Dim_Date]    Script Date: 27.05.2025 16:32:48 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -129,7 +129,7 @@ CREATE TABLE [dbo].[Dim_Date](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Dim_Property]    Script Date: 20.05.2025 18:39:43 ******/
+/****** Object:  Table [dbo].[Dim_Property]    Script Date: 27.05.2025 16:32:48 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -190,7 +190,7 @@ CREATE TABLE [dbo].[Dim_Property](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Dim_Weather]    Script Date: 20.05.2025 18:39:43 ******/
+/****** Object:  Table [dbo].[Dim_Weather]    Script Date: 27.05.2025 16:32:48 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -198,7 +198,7 @@ GO
 CREATE TABLE [dbo].[Dim_Weather](
 	[weather_id] [nvarchar](50) NOT NULL,
 	[date] [date] NULL,
-	[lcoation_name] [nvarchar](100) NULL,
+	[location_name] [nvarchar](100) NULL,
 	[avg_temp] [float] NULL,
 	[max_temp] [float] NULL,
 	[min_temp] [float] NULL,
@@ -215,7 +215,7 @@ CREATE TABLE [dbo].[Dim_Weather](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Fact_Offers]    Script Date: 20.05.2025 18:39:43 ******/
+/****** Object:  Table [dbo].[Fact_Offers]    Script Date: 27.05.2025 16:32:48 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -239,7 +239,7 @@ CREATE TABLE [dbo].[Fact_Offers](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Fact_Review]    Script Date: 20.05.2025 18:39:43 ******/
+/****** Object:  Table [dbo].[Fact_Review]    Script Date: 27.05.2025 16:32:48 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
