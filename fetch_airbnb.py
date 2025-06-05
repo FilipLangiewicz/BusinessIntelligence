@@ -15,7 +15,10 @@ warnings.filterwarnings("ignore", category=DtypeWarning)
 
 # Ustawienie logowania do pliku
 today_str = datetime.today().strftime('%Y%m%d%H%M%S')
+
 log_path = fr"D:\STUDIA\Semestr 6\Hurtownie danych i systemy Business Intelligence\Laboratoria\Projekt\BusinessIntelligence\logs\1 fetch_airbnb\log_fetch_airbnb_{today_str}.txt"
+#log_path = fr"\Users\natal\Desktop\STUDIA\SEM_6\hurtownie\projekt\BusinessIntelligence\logs\1 fetch_airbnb\log_fetch_airbnb_{today_str}.txt"
+
 log_file = open(log_path, mode="w", encoding="utf-8")
 
 # Przekierowanie stdout i stderr do pliku
@@ -23,7 +26,10 @@ sys.stdout = log_file
 sys.stderr = log_file
 
 BASE_URL = "http://insideairbnb.com/get-the-data/"
+
 DOWNLOAD_DIR = r"D:\STUDIA\Semestr 6\Hurtownie danych i systemy Business Intelligence\Laboratoria\Projekt\BusinessIntelligence\airbnb_data"
+#DOWNLOAD_DIR = r"C:\Users\natal\Desktop\STUDIA\SEM_6\hurtownie\projekt\BusinessIntelligence\airbnb_data"
+
 os.makedirs(DOWNLOAD_DIR, exist_ok=True)
 
 
@@ -189,16 +195,33 @@ def fetch_airbnb_data():
     soup = BeautifulSoup(response.text, "html.parser")
 
     links = soup.find_all("a", href=True)
+
+    ##### ONLY MAIN CITIES #####
     target_links = [
         urljoin(BASE_URL, link["href"])
         for link in links
         if link["href"].endswith((
             "listings.csv.gz",
             "calendar.csv.gz",
-            "reviews.csv.gz"))
-        
-        # if 'chile' in link["href"] # odkomentuj, aby pobrać tylko Chile
+            "reviews.csv.gz"
+        ))
+        and any(city in link["href"].lower() for city in [
+            #"vienna", "prague", "paris", "berlin", "rome", "lisbon", "madrid", "london"
+            "rome", "madrid"
+        ])
     ]
+
+    ##### ALL CITIES #####
+    # target_links = [
+    #     urljoin(BASE_URL, link["href"])
+    #     for link in links
+    #     if link["href"].endswith((
+    #         "listings.csv.gz",
+    #         "calendar.csv.gz",
+    #         "reviews.csv.gz"))
+        
+    #     # if 'chile' in link["href"] # odkomentuj, aby pobrać tylko Chile
+    # ]
 
     print(f"Znaleziono {len(target_links)} plików do pobrania.\n")
 

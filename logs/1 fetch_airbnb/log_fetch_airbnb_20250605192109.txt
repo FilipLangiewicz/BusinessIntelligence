@@ -1,0 +1,16 @@
+Znaleziono 6 plików do pobrania.
+
+[+] Nowy plik: 20250305_spain_comunidad-de-madrid_madrid_listings.csv
+[+] Nowy plik: 20250305_spain_comunidad-de-madrid_madrid_calendar.csv
+[+] Nowy plik: 20250305_spain_comunidad-de-madrid_madrid_reviews.csv
+[+] Nowy plik: 20250305_italy_lazio_rome_listings.csv
+[+] Nowy plik: 20250305_italy_lazio_rome_calendar.csv
+[+] Nowy plik: 20250305_italy_lazio_rome_reviews.csv
+
+Podsumowanie operacji:
+Plików przed: 0
+Plików po:    24
+Dodano:     6
+Zaktualizowano: 0
+Pominięto: 0
+Bez zmian:  0
