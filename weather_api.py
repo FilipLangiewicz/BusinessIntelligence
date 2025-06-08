@@ -10,7 +10,7 @@ from API_KEY import get_API_KEY
 today_str = datetime.today().strftime('%Y%m%d%H%M%S')
 
 # 🔒 Ścieżka do logów
-log_path = fr"D:\STUDIA\Semestr 6\Hurtownie danych i systemy Business Intelligence\Laboratoria\Projekt\BusinessIntelligence\logs\5 weather_api\weather_api_{today_str}.txt"
+log_path = fr"C:\Users\natal\Desktop\STUDIA\SEM_6\hurtownie\projekt\BusinessIntelligence\logs\5 weather_api\weather_api_{today_str}.txt"
 log_file = open(log_path, mode="w", encoding="utf-8")
 sys.stdout = log_file
 sys.stderr = log_file
@@ -21,8 +21,8 @@ configuration.api_key['key'] = get_API_KEY()
 api_instance = weatherapi.APIsApi(weatherapi.ApiClient(configuration))
 
 # 📁 Folder z plikami CSV (miasta) i zapisem wyników
-DB_DIR = r"D:\STUDIA\Semestr 6\Hurtownie danych i systemy Business Intelligence\Laboratoria\Projekt\BusinessIntelligence\airbnb_data\DB"
-WEATHER_DIR = r"D:\STUDIA\Semestr 6\Hurtownie danych i systemy Business Intelligence\Laboratoria\Projekt\BusinessIntelligence\airbnb_data\WEATHER"
+DB_DIR = r"C:\Users\natal\Desktop\STUDIA\SEM_6\hurtownie\projekt\BusinessIntelligence\airbnb_data\DB"
+WEATHER_DIR = r"C:\Users\natal\Desktop\STUDIA\SEM_6\hurtownie\projekt\BusinessIntelligence\airbnb_data\WEATHER"
 os.makedirs(WEATHER_DIR, exist_ok=True)
 
 # 🔁 Ustaw ścieżkę do pliku CSV i usuń poprzedni, jeśli istnieje

@@ -2,12 +2,12 @@ import os
 import sys
 from datetime import datetime
 
-UPDATE_DIR = r"D:\STUDIA\Semestr 6\Hurtownie danych i systemy Business Intelligence\Laboratoria\Projekt\BusinessIntelligence\airbnb_data\UPDATE"
-DB_DIR = r"D:\STUDIA\Semestr 6\Hurtownie danych i systemy Business Intelligence\Laboratoria\Projekt\BusinessIntelligence\airbnb_data\DB"
+UPDATE_DIR = r"C:\Users\natal\Desktop\STUDIA\SEM_6\hurtownie\projekt\BusinessIntelligence\airbnb_data\UPDATE"
+DB_DIR = r"C:\Users\natal\Desktop\STUDIA\SEM_6\hurtownie\projekt\BusinessIntelligence\airbnb_data\DB"
 
 # Ustawienie logowania do pliku
 today_str = datetime.today().strftime('%Y%m%d%H%M%S')
-log_path = fr"D:\STUDIA\Semestr 6\Hurtownie danych i systemy Business Intelligence\Laboratoria\Projekt\BusinessIntelligence\logs\2 remove_from_DB\remove_from_DB_{today_str}.txt"
+log_path = fr"C:\Users\natal\Desktop\STUDIA\SEM_6\hurtownie\projekt\BusinessIntelligence\logs\2 remove_from_DB\remove_from_DB_{today_str}.txt"
 log_file = open(log_path, mode="w", encoding="utf-8")
 
 # Przekierowanie stdout i stderr do pliku
