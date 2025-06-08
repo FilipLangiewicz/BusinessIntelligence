@@ -16,8 +16,8 @@ warnings.filterwarnings("ignore", category=DtypeWarning)
 # Ustawienie logowania do pliku
 today_str = datetime.today().strftime('%Y%m%d%H%M%S')
 
-log_path = fr"D:\STUDIA\Semestr 6\Hurtownie danych i systemy Business Intelligence\Laboratoria\Projekt\BusinessIntelligence\logs\1 fetch_airbnb\log_fetch_airbnb_{today_str}.txt"
-#log_path = fr"\Users\natal\Desktop\STUDIA\SEM_6\hurtownie\projekt\BusinessIntelligence\logs\1 fetch_airbnb\log_fetch_airbnb_{today_str}.txt"
+# log_path = fr"D:\STUDIA\Semestr 6\Hurtownie danych i systemy Business Intelligence\Laboratoria\Projekt\BusinessIntelligence\logs\1 fetch_airbnb\log_fetch_airbnb_{today_str}.txt"
+log_path = fr"\Users\natal\Desktop\STUDIA\SEM_6\hurtownie\projekt\BusinessIntelligence\logs\1 fetch_airbnb\log_fetch_airbnb_{today_str}.txt"
 
 log_file = open(log_path, mode="w", encoding="utf-8")
 
@@ -27,8 +27,8 @@ sys.stderr = log_file
 
 BASE_URL = "http://insideairbnb.com/get-the-data/"
 
-DOWNLOAD_DIR = r"D:\STUDIA\Semestr 6\Hurtownie danych i systemy Business Intelligence\Laboratoria\Projekt\BusinessIntelligence\airbnb_data"
-#DOWNLOAD_DIR = r"C:\Users\natal\Desktop\STUDIA\SEM_6\hurtownie\projekt\BusinessIntelligence\airbnb_data"
+# DOWNLOAD_DIR = r"D:\STUDIA\Semestr 6\Hurtownie danych i systemy Business Intelligence\Laboratoria\Projekt\BusinessIntelligence\airbnb_data"
+DOWNLOAD_DIR = r"C:\Users\natal\Desktop\STUDIA\SEM_6\hurtownie\projekt\BusinessIntelligence\airbnb_data"
 
 os.makedirs(DOWNLOAD_DIR, exist_ok=True)
 
@@ -206,8 +206,7 @@ def fetch_airbnb_data():
             "reviews.csv.gz"
         ))
         and any(city in link["href"].lower() for city in [
-            #"vienna", "prague", "paris", "berlin", "rome", "lisbon", "madrid", "london"
-            "rome", "madrid"
+            "vienna", "prague", "paris", "berlin", "rome", "lisbon", "madrid", "london"
         ])
     ]
 
