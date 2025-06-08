@@ -206,8 +206,7 @@ def fetch_airbnb_data():
             "reviews.csv.gz"
         ))
         and any(city in link["href"].lower() for city in [
-            #"vienna", "prague", "paris", "berlin", "rome", "lisbon", "madrid", "london"
-            "rome", "madrid"
+            "vienna", "prague", "paris", "berlin", "rome", "lisbon", "madrid", "london"
         ])
     ]
 
