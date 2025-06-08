@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\STUDIA\\Semestr 6\\Hurtownie danych i systemy Business Intelligence\\Laboratoria\\Projekt\\BusinessIntelligence\\Airbnb_ETL\\",
+  "WorkspaceRootPath": "C:\\Users\\natal\\Desktop\\STUDIA\\SEM_6\\hurtownie\\projekt\\BusinessIntelligence\\Airbnb_ETL\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DD76610B-ECC6-855C-CE2D-BB89D80C7849}|Airbnb_ETL.dtproj|D:\\STUDIA\\Semestr 6\\Hurtownie danych i systemy Business Intelligence\\Laboratoria\\Projekt\\BusinessIntelligence\\Airbnb_ETL\\Package.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "AbsoluteMoniker": "D:0:0:{DD76610B-ECC6-855C-CE2D-BB89D80C7849}|Airbnb_ETL.dtproj|C:\\Users\\natal\\Desktop\\STUDIA\\SEM_6\\hurtownie\\projekt\\BusinessIntelligence\\Airbnb_ETL\\Package.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
       "RelativeMoniker": "D:0:0:{DD76610B-ECC6-855C-CE2D-BB89D80C7849}|Airbnb_ETL.dtproj|solutionrelative:Package.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
     }
   ],
@@ -24,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Package.dtsx [Design]",
-              "DocumentMoniker": "D:\\STUDIA\\Semestr 6\\Hurtownie danych i systemy Business Intelligence\\Laboratoria\\Projekt\\BusinessIntelligence\\Airbnb_ETL\\Package.dtsx",
+              "DocumentMoniker": "C:\\Users\\natal\\Desktop\\STUDIA\\SEM_6\\hurtownie\\projekt\\BusinessIntelligence\\Airbnb_ETL\\Package.dtsx",
               "RelativeDocumentMoniker": "Package.dtsx",
-              "ToolTip": "D:\\STUDIA\\Semestr 6\\Hurtownie danych i systemy Business Intelligence\\Laboratoria\\Projekt\\BusinessIntelligence\\Airbnb_ETL\\Package.dtsx [Design]",
+              "ToolTip": "C:\\Users\\natal\\Desktop\\STUDIA\\SEM_6\\hurtownie\\projekt\\BusinessIntelligence\\Airbnb_ETL\\Package.dtsx [Design]",
               "RelativeToolTip": "Package.dtsx [Design]",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMxSURBVDhPjVRLTBNRFD3TH62lQEG0BaoRJfJRoxEV48KoiTEaFsrKBS5MXLhzZdzqRqM7ExZujQt36sLEqDHRuPBDooYipSjV0tLyael0ZtrpTDvPO9OxpXzEk9y89\u002B6bd\u002Bbcz3scCLfuPfjY2dVzSJ//C6IkI7mw\u002BOLr6IeRp4/uPzfdVTDGbOYUPZ1tCLS1mKu18f7zJMYmJgckFdyFS9fw6tnDtwKfFs1tgOM4qz6eOD145cC\u002B3vYOXws2OevWtUhsHmpJc9a73c1zKb69dYsvnRezaUngcwYhwWKO/w2r1QqNseb5xfRJr69z2FXf1GVuGaghlJUS5jOFiklyEQW16hNlDT8iMXwLhuCpdztis4kLgijtMo8bqORQR2hGwJMPSXMFnNrfitYGBx6/ixtrgS\u002BAVOHcjgBUtYiXb94a/uWoUagxUqlZkGtsg9TUDtXpKftKQK7BB9bRjd6DB3H8cB/sdrteA/NkFatzyDRwBQmcTFZUTB8jXx42tQCP04Gmxoayfw3UEDa67ejrcGOPt4i9XhWtTg0elw19gXrsaS6ir1GF11FCnhSvh5oc7vS7DVuJ4RMBUOSQVWpusmgyXd5YA//dNjqZQEZ1Qa5I7WN3kHeDHP5MSHj4ZqZiY7\u002BzKGlAngh0ZdkCQ4ZMVDhSTGQbFYWnOzUekxBcsmOMLJmzGhUWqDa8QVZWKCkMrER/oWKtxOqQOQtYnQvM6YbC2UjNX2XAkgyksgrSvEztZYen2Q9/595eb2D/SWza3q8fryG0UAROiwZXJgHXUhwlUayQZYgsk2eIz2XxayaDnL0NvQNnMXj55vX\u002Bobuvse3iiM5RU\u002BXugAdXW1x03ShnFJFGbwcJMsLUR8oIVMppx2YXho75sUh/ic9JSEZTJsMyhaHpWbwf/Y6x72FMTIYxPRXG1MQEpsaDmA0HkZkOQo6NQ8vOGd9bKH/5nIrUUh6CZF4AgqFQUYr4EgxjIbV\u002Bf/2FrWkb6rbvRjQhYirKI/SbRzJVeb3KhJHIj/HFrMyi0Zjh/Be2dh31K5wvwKQ8IgkBv4g4vlAlXN1IG8F35gbaz982V1VIkU8I3TnyByuphR8gq7UuAAAAAElFTkSuQmCC",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAO8SURBVEhLtZVNaFxVFMd/891kdJzaNjFJW20pKS6yUgxai6taENJU2uLHypVQQVEIoYguFIqCiN3YheJOt2rowqLSIoiFSv2iFKUobdFCp5PMTF4meW/uPee4eDNvJtMmdNM/HObNefee/7nnf859cDdhZqnO8\u002Btvvjd3cHp6SlWJzfCiqIA3RUQQUUQVEePav9e5dOniu3NffPxRUK82Vke\u002BDV47dnxO2xBR9V7UOdFWSzRseV2JvC6HXpdWnAbLTj/89Gv98vSPwb4jr7yTzeVz/fE6SHceRDRxplKQTqfIZFJksyny2TSFXJoN\u002BTSDhQwDhQyqnm1jo8XJycm3n5h6eSaVzmSSAD1ICEy7BOvBDMwML8bpM\u002BdoNkPM7Pj4I0/P9K\u002Bll8DfAYEZqIEqPLt/D5lMnlyuwMO7dwPs619PL4GKJM6VSFha8Yk1Q48BzcgTLDsaTUe5fD8vPT/FzNEXOXzwQLK3H9nOg6phFtf/87PX\u002BGsxnyzanGoye3icT765wnU3kPi35kJeeGo72s3tFnRFVsXMkhe6cTgxDEQNbLXfAC\u002BGt7XL29NFQk8j9cEQMbr0bW9bbO/X3NijgSq9OqcXq4kZnRPYKn/nZOuVKNFARPFqFEhxaM8YYUtRM1QNrIQITD8\u002BRuTiSfZipFJFnBjrHKBXA0nKUC7mGCrn2VIqsKm0gfI9BbwopcEcGwfz3FfMUy7mGcxn8WLIOi3e06bxCUzh58s1vr1Q4btfK5z5rcJPf87jFbxXnCpeDCeGGIjE\u002BqyFVV3kPBjG7/80\u002BH6\u002BxJmFEmdrJX65XEM8eAFREAET8N7a/\u002B\u002BAQFXQdjZqQDafmAFOFNG49iJKZTGkshhyoxGyFArloW2lkR0TkyM7JiYpDI/fSiDx9RwLtjojszhz3xbXK/xw8QZRFOJcyOhIidnZtx498dmpc\u002B\u002Bf/OocWw990NnbJTCNa9qe6Ox/lxMD2uSGKniNU5h46F52DQ/wQDHDQFrxYcSVa/VOSOgfNC\u002BKFzjy5DbeOLCLV5/ZydH9O3lu73a8gPfgfFwiDJxT6kHEfBBxsx5SrYfcrK\u002BsQaBxcJG4S\u002BJe72betVhsAyLnqQUtFhoR9SCithj/3pZAxRCzuDOSDol9KvFlKGKoj7UCaDllvhFRC6KYKGjRaLre\u002BN1Jdt5x/sIfVKq19p0fT7Gatcnbvs50lx8kWGpRrYUstLNfCCKCPoLko795ZPteJTu26u062PTYsROjW4aHqvWQyAktpzgfW/Xq\u002BVP8fXK6f89dwf/5qMc\u002BgAHYjAAAAABJRU5ErkJggg==",
               "WhenOpened": "2025-05-27T11:32:41.221Z",
               "EditorCaption": " [Design]"
             }

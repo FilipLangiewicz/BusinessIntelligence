@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="266"
-  DTS:VersionGUID="{D8765290-A453-4E44-A2BD-FBAA28A65AB4}">
+  DTS:VersionBuild="274"
+  DTS:VersionGUID="{F49BBB8D-077D-4112-9A4F-BCAC695EF687}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -527,6 +527,18 @@
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=localhost;Initial Catalog=AIRBNB_star_dwh;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{B6573A68-DDB2-41E5-87CA-50C505798A57}localhost.AIRBNB_star_dwh;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.AIRBNB_star_dwh 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{42AD33E8-C130-4D2E-BE3B-ACCAA63EC8AE}"
+      DTS:ObjectName="localhost.AIRBNB_star_dwh 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=AIRBNB_star_dwh;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{42AD33E8-C130-4D2E-BE3B-ACCAA63EC8AE}localhost.AIRBNB_star_dwh 1;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -1408,8 +1420,8 @@
               <connections>
                 <connection
                   refId="Package\DFT_Load_Weather\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[localhost.AIRBNB_star_dwh]"
-                  connectionManagerRefId="Package.ConnectionManagers[localhost.AIRBNB_star_dwh]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.AIRBNB_star_dwh 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.AIRBNB_star_dwh 1]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1634,8 +1646,8 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <ExecuteProcessData
-          Executable="C:\Users\flang\anaconda3\envs\hurt\python.exe"
-          Arguments="&quot;D:\STUDIA\Semestr 6\Hurtownie danych i systemy Business Intelligence\Laboratoria\Projekt\BusinessIntelligence\fetch_airbnb.py&quot;"
+          Executable="C:\Users\natal\anaconda3\envs\hurt\python.exe"
+          Arguments="&quot;C:\Users\natal\Desktop\STUDIA\SEM_6\hurtownie\projekt\BusinessIntelligence\fetch_airbnb.py&quot;"
           StandardOutputVariable="User::PythonOutput" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -1691,6 +1703,84 @@
                     <input
                       refId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Data Conversion.Inputs[Data Conversion Input]"
                       name="Data Conversion Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Data Conversion.Inputs[Data Conversion Input].Columns[listing_id]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="listing_id"
+                          lineageId="Package\Foreach Loop Calendar\DFT_Load_Calendar\FF_Calendar.Outputs[Flat File Source Output].Columns[listing_id]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Data Conversion.Inputs[Data Conversion Input].Columns[date]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="date"
+                          lineageId="Package\Foreach Loop Calendar\DFT_Load_Calendar\FF_Calendar.Outputs[Flat File Source Output].Columns[date]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Data Conversion.Inputs[Data Conversion Input].Columns[available]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="available"
+                          lineageId="Package\Foreach Loop Calendar\DFT_Load_Calendar\FF_Calendar.Outputs[Flat File Source Output].Columns[available]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Data Conversion.Inputs[Data Conversion Input].Columns[price]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="price"
+                          lineageId="Package\Foreach Loop Calendar\DFT_Load_Calendar\FF_Calendar.Outputs[Flat File Source Output].Columns[price]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Data Conversion.Inputs[Data Conversion Input].Columns[minimum_nights]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="minimum_nights"
+                          lineageId="Package\Foreach Loop Calendar\DFT_Load_Calendar\FF_Calendar.Outputs[Flat File Source Output].Columns[minimum_nights]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Data Conversion.Inputs[Data Conversion Input].Columns[maximum_nights ]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="maximum_nights "
+                          lineageId="Package\Foreach Loop Calendar\DFT_Load_Calendar\FF_Calendar.Outputs[Flat File Source Output].Columns[maximum_nights ]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Data Conversion.Inputs[Data Conversion Input].Columns[scrape_date]"
+                          cachedDataType="i8"
+                          cachedName="scrape_date"
+                          lineageId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Derived Column.Outputs[Derived Column Output].Columns[scrape_date]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Data Conversion.Inputs[Data Conversion Input].Columns[country]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="country"
+                          lineageId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Derived Column.Outputs[Derived Column Output].Columns[country]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Data Conversion.Inputs[Data Conversion Input].Columns[region]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="region"
+                          lineageId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Derived Column.Outputs[Derived Column Output].Columns[region]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Data Conversion.Inputs[Data Conversion Input].Columns[city]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="city"
+                          lineageId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Derived Column.Outputs[Derived Column Output].Columns[city]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Data Conversion.Inputs[Data Conversion Input].Columns[available_FLAG]"
+                          cachedDataType="wstr"
+                          cachedLength="3"
+                          cachedName="available_FLAG"
+                          lineageId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Derived Column.Outputs[Derived Column Output].Columns[available_FLAG]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Data Conversion.Inputs[Data Conversion Input].Columns[price_FLOAT]"
+                          cachedDataType="r4"
+                          cachedName="price_FLOAT"
+                          lineageId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Derived Column.Outputs[Derived Column Output].Columns[price_FLOAT]" />
+                      </inputColumns>
                       <externalMetadataColumns />
                     </input>
                   </inputs>
@@ -1700,6 +1790,264 @@
                       exclusionGroup="1"
                       name="Data Conversion Output"
                       synchronousInputId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Data Conversion.Inputs[Data Conversion Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of listing_id]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="50"
+                          lineageId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of listing_id]"
+                          name="Copy of listing_id"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Foreach Loop Calendar\DFT_Load_Calendar\FF_Calendar.Outputs[Flat File Source Output].Columns[listing_id]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of date]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="50"
+                          lineageId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of date]"
+                          name="Copy of date"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Foreach Loop Calendar\DFT_Load_Calendar\FF_Calendar.Outputs[Flat File Source Output].Columns[date]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of available]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="50"
+                          lineageId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of available]"
+                          name="Copy of available"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Foreach Loop Calendar\DFT_Load_Calendar\FF_Calendar.Outputs[Flat File Source Output].Columns[available]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of price]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="50"
+                          lineageId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of price]"
+                          name="Copy of price"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Foreach Loop Calendar\DFT_Load_Calendar\FF_Calendar.Outputs[Flat File Source Output].Columns[price]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of minimum_nights]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="50"
+                          lineageId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of minimum_nights]"
+                          name="Copy of minimum_nights"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Foreach Loop Calendar\DFT_Load_Calendar\FF_Calendar.Outputs[Flat File Source Output].Columns[minimum_nights]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of maximum_nights]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="50"
+                          lineageId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of maximum_nights]"
+                          name="Copy of maximum_nights"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Foreach Loop Calendar\DFT_Load_Calendar\FF_Calendar.Outputs[Flat File Source Output].Columns[maximum_nights ]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of scrape_date]"
+                          dataType="i8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of scrape_date]"
+                          name="Copy of scrape_date"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Foreach Loop Calendar\DFT_Load_Calendar\Derived Column.Outputs[Derived Column Output].Columns[scrape_date]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of country]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="50"
+                          lineageId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of country]"
+                          name="Copy of country"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Foreach Loop Calendar\DFT_Load_Calendar\Derived Column.Outputs[Derived Column Output].Columns[country]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of region]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="50"
+                          lineageId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of region]"
+                          name="Copy of region"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Foreach Loop Calendar\DFT_Load_Calendar\Derived Column.Outputs[Derived Column Output].Columns[region]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of city]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="50"
+                          lineageId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of city]"
+                          name="Copy of city"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Foreach Loop Calendar\DFT_Load_Calendar\Derived Column.Outputs[Derived Column Output].Columns[city]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of available_FLAG]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="3"
+                          lineageId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of available_FLAG]"
+                          name="Copy of available_FLAG"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Foreach Loop Calendar\DFT_Load_Calendar\Derived Column.Outputs[Derived Column Output].Columns[available_FLAG]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of price_FLOAT]"
+                          dataType="r4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of price_FLOAT]"
+                          name="Copy of price_FLOAT"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Foreach Loop Calendar\DFT_Load_Calendar\Derived Column.Outputs[Derived Column Output].Columns[price_FLOAT]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
                       <externalMetadataColumns />
                     </output>
                     <output
@@ -2221,8 +2569,8 @@
                   <connections>
                     <connection
                       refId="Package\Foreach Loop Calendar\DFT_Load_Calendar\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[localhost.AIRBNB_star_dwh]"
-                      connectionManagerRefId="Package.ConnectionManagers[localhost.AIRBNB_star_dwh]"
+                      connectionManagerID="Package.ConnectionManagers[localhost.AIRBNB_star_dwh 1]"
+                      connectionManagerRefId="Package.ConnectionManagers[localhost.AIRBNB_star_dwh 1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2234,6 +2582,14 @@
                       hasSideEffects="true"
                       name="OLE DB Destination Input">
                       <inputColumns>
+                        <inputColumn
+                          refId="Package\Foreach Loop Calendar\DFT_Load_Calendar\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[price]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="price"
+                          externalMetadataColumnId="Package\Foreach Loop Calendar\DFT_Load_Calendar\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[price]"
+                          lineageId="Package\Foreach Loop Calendar\DFT_Load_Calendar\FF_Calendar.Outputs[Flat File Source Output].Columns[price]" />
                         <inputColumn
                           refId="Package\Foreach Loop Calendar\DFT_Load_Calendar\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[minimum_nights]"
                           cachedCodepage="65001"
@@ -2270,6 +2626,14 @@
                           externalMetadataColumnId="Package\Foreach Loop Calendar\DFT_Load_Calendar\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[city]"
                           lineageId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Derived Column.Outputs[Derived Column Output].Columns[city]" />
                         <inputColumn
+                          refId="Package\Foreach Loop Calendar\DFT_Load_Calendar\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[maximum_nights ]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="maximum_nights "
+                          externalMetadataColumnId="Package\Foreach Loop Calendar\DFT_Load_Calendar\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[maximum_nights]"
+                          lineageId="Package\Foreach Loop Calendar\DFT_Load_Calendar\FF_Calendar.Outputs[Flat File Source Output].Columns[maximum_nights ]" />
+                        <inputColumn
                           refId="Package\Foreach Loop Calendar\DFT_Load_Calendar\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[listing_id]"
                           cachedCodepage="65001"
                           cachedDataType="str"
@@ -2286,26 +2650,12 @@
                           externalMetadataColumnId="Package\Foreach Loop Calendar\DFT_Load_Calendar\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[offer_date]"
                           lineageId="Package\Foreach Loop Calendar\DFT_Load_Calendar\FF_Calendar.Outputs[Flat File Source Output].Columns[date]" />
                         <inputColumn
-                          refId="Package\Foreach Loop Calendar\DFT_Load_Calendar\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[maximum_nights ]"
-                          cachedCodepage="65001"
-                          cachedDataType="str"
-                          cachedLength="50"
-                          cachedName="maximum_nights "
-                          externalMetadataColumnId="Package\Foreach Loop Calendar\DFT_Load_Calendar\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[maximum_nights]"
-                          lineageId="Package\Foreach Loop Calendar\DFT_Load_Calendar\FF_Calendar.Outputs[Flat File Source Output].Columns[maximum_nights ]" />
-                        <inputColumn
                           refId="Package\Foreach Loop Calendar\DFT_Load_Calendar\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[available_FLAG]"
                           cachedDataType="wstr"
                           cachedLength="3"
                           cachedName="available_FLAG"
                           externalMetadataColumnId="Package\Foreach Loop Calendar\DFT_Load_Calendar\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[available]"
                           lineageId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Derived Column.Outputs[Derived Column Output].Columns[available_FLAG]" />
-                        <inputColumn
-                          refId="Package\Foreach Loop Calendar\DFT_Load_Calendar\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[price_FLOAT]"
-                          cachedDataType="r4"
-                          cachedName="price_FLOAT"
-                          externalMetadataColumnId="Package\Foreach Loop Calendar\DFT_Load_Calendar\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[price]"
-                          lineageId="Package\Foreach Loop Calendar\DFT_Load_Calendar\Derived Column.Outputs[Derived Column Output].Columns[price_FLOAT]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -2430,6 +2780,15 @@
               ReadOnlyVariables="User::CurrentFilePath"
               ReadWriteVariables="User::City,User::Country,User::FileType,User::Region,User::ScrapeDate">
               <ProjectItem
+                Name="Properties\Settings.settings"
+                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
+              <ProjectItem
                 Name="Properties\Resources.resx"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
 <root>
@@ -2548,35 +2907,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
-              <ProjectItem
-                Name="Properties\Settings.Designer.cs"
-                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_17cc548e4b2e4a4d8f42e374df8218f4.Properties.Settings.get_Default():ST_17cc548e4b2e4a4d8f42e374df8218f4.Properties.Sett" +
-    "ings")]
-
-namespace ST_17cc548e4b2e4a4d8f42e374df8218f4.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
               <ProjectItem
                 Name="ST_3d36d4ccd1534ac9853acb200657b73e.csproj"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -2813,6 +3143,35 @@ namespace ST_17cc548e4b2e4a4d8f42e374df8218f4
   </msb:ItemGroup>
 </c:Project>]]></ProjectItem>
               <ProjectItem
+                Name="Properties\Settings.Designer.cs"
+                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_17cc548e4b2e4a4d8f42e374df8218f4.Properties.Settings.get_Default():ST_17cc548e4b2e4a4d8f42e374df8218f4.Properties.Sett" +
+    "ings")]
+
+namespace ST_17cc548e4b2e4a4d8f42e374df8218f4.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
+              <ProjectItem
                 Name="Properties\AssemblyInfo.cs"
                 Encoding="UTF8"><![CDATA[using System.Reflection;
 using System.Runtime.CompilerServices;
@@ -2842,15 +3201,6 @@ using System.Runtime.CompilerServices;
 // by using the '*' as shown below:
 
 [assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
-              <ProjectItem
-                Name="Properties\Settings.settings"
-                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.Designer.cs"
                 Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -5026,8 +5376,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                   <connections>
                     <connection
                       refId="Package\Foreach Loop Listings\DFT_Load_Listings\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[localhost.AIRBNB_star_dwh]"
-                      connectionManagerRefId="Package.ConnectionManagers[localhost.AIRBNB_star_dwh]"
+                      connectionManagerID="Package.ConnectionManagers[localhost.AIRBNB_star_dwh 1]"
+                      connectionManagerRefId="Package.ConnectionManagers[localhost.AIRBNB_star_dwh 1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -5280,21 +5630,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                         <inputColumn
                           refId="Package\Foreach Loop Listings\DFT_Load_Listings\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[country]"
                           cachedDataType="wstr"
-                          cachedLength="50"
                           cachedName="country"
                           externalMetadataColumnId="Package\Foreach Loop Listings\DFT_Load_Listings\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[country]"
                           lineageId="Package\Foreach Loop Listings\DFT_Load_Listings\Derived Column.Outputs[Derived Column Output].Columns[country]" />
                         <inputColumn
                           refId="Package\Foreach Loop Listings\DFT_Load_Listings\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[region]"
                           cachedDataType="wstr"
-                          cachedLength="50"
                           cachedName="region"
                           externalMetadataColumnId="Package\Foreach Loop Listings\DFT_Load_Listings\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[region]"
                           lineageId="Package\Foreach Loop Listings\DFT_Load_Listings\Derived Column.Outputs[Derived Column Output].Columns[region]" />
                         <inputColumn
                           refId="Package\Foreach Loop Listings\DFT_Load_Listings\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[city]"
                           cachedDataType="wstr"
-                          cachedLength="50"
                           cachedName="city"
                           externalMetadataColumnId="Package\Foreach Loop Listings\DFT_Load_Listings\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[city]"
                           lineageId="Package\Foreach Loop Listings\DFT_Load_Listings\Derived Column.Outputs[Derived Column Output].Columns[city]" />
@@ -5686,35 +6033,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
               ReadOnlyVariables="User::CurrentFilePath"
               ReadWriteVariables="User::City,User::Country,User::FileType,User::Region,User::ScrapeDate">
               <ProjectItem
-                Name="Properties\AssemblyInfo.cs"
-                Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_17cc548e4b2e4a4d8f42e374df8218f4")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_17cc548e4b2e4a4d8f42e374df8218f4")]
-[assembly: AssemblyCopyright("Copyright @  2025")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+                Name="Properties\Settings.settings"
+                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.resx"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -5834,6 +6160,35 @@ using System.Runtime.CompilerServices;
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
+              <ProjectItem
+                Name="Properties\Settings.Designer.cs"
+                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_17cc548e4b2e4a4d8f42e374df8218f4.Properties.Settings.get_Default():ST_17cc548e4b2e4a4d8f42e374df8218f4.Properties.Sett" +
+    "ings")]
+
+namespace ST_17cc548e4b2e4a4d8f42e374df8218f4.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
               <ProjectItem
                 Name="ScriptMain.cs"
                 Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
@@ -5964,6 +6319,56 @@ namespace ST_17cc548e4b2e4a4d8f42e374df8218f4
 	}
 }]]></ProjectItem>
               <ProjectItem
+                Name="Project"
+                Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
+  <msb:PropertyGroup>
+    <msb:CodeName>ST_17cc548e4b2e4a4d8f42e374df8218f4</msb:CodeName>
+    <msb:Language>msBuild</msb:Language>
+    <msb:DisplayName>ST_17cc548e4b2e4a4d8f42e374df8218f4</msb:DisplayName>
+    <msb:ProjectId>{3EDD6866-E6CC-4225-9197-8C74E36E19C6}</msb:ProjectId>
+  </msb:PropertyGroup>
+  <msb:ItemGroup>
+    <msb:Project Include="ST_17cc548e4b2e4a4d8f42e374df8218f4.csproj" />
+    <msb:File Include="Properties\Resources.resx" />
+    <msb:File Include="Properties\Settings.settings" />
+    <msb:File Include="Properties\AssemblyInfo.cs" />
+    <msb:File Include="Properties\Resources.Designer.cs" />
+    <msb:File Include="Properties\Settings.Designer.cs" />
+    <msb:File Include="ScriptMain.cs" />
+  </msb:ItemGroup>
+</c:Project>]]></ProjectItem>
+              <ProjectItem
+                Name="Properties\AssemblyInfo.cs"
+                Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_17cc548e4b2e4a4d8f42e374df8218f4")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_17cc548e4b2e4a4d8f42e374df8218f4")]
+[assembly: AssemblyCopyright("Copyright @  2025")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+              <ProjectItem
                 Name="ST_17cc548e4b2e4a4d8f42e374df8218f4.csproj"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -6049,64 +6454,6 @@ namespace ST_17cc548e4b2e4a4d8f42e374df8218f4
     </VisualStudio>
   </ProjectExtensions>
 </Project>]]></ProjectItem>
-              <ProjectItem
-                Name="Project"
-                Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
-<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
-  <msb:PropertyGroup>
-    <msb:CodeName>ST_17cc548e4b2e4a4d8f42e374df8218f4</msb:CodeName>
-    <msb:Language>msBuild</msb:Language>
-    <msb:DisplayName>ST_17cc548e4b2e4a4d8f42e374df8218f4</msb:DisplayName>
-    <msb:ProjectId>{3EDD6866-E6CC-4225-9197-8C74E36E19C6}</msb:ProjectId>
-  </msb:PropertyGroup>
-  <msb:ItemGroup>
-    <msb:Project Include="ST_17cc548e4b2e4a4d8f42e374df8218f4.csproj" />
-    <msb:File Include="Properties\Resources.resx" />
-    <msb:File Include="Properties\Settings.settings" />
-    <msb:File Include="Properties\AssemblyInfo.cs" />
-    <msb:File Include="Properties\Resources.Designer.cs" />
-    <msb:File Include="Properties\Settings.Designer.cs" />
-    <msb:File Include="ScriptMain.cs" />
-  </msb:ItemGroup>
-</c:Project>]]></ProjectItem>
-              <ProjectItem
-                Name="Properties\Settings.Designer.cs"
-                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_17cc548e4b2e4a4d8f42e374df8218f4.Properties.Settings.get_Default():ST_17cc548e4b2e4a4d8f42e374df8218f4.Properties.Sett" +
-    "ings")]
-
-namespace ST_17cc548e4b2e4a4d8f42e374df8218f4.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
-              <ProjectItem
-                Name="Properties\Settings.settings"
-                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.Designer.cs"
                 Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -6333,7 +6680,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
         <DTS:ObjectData>
           <ForEachFileEnumeratorProperties>
             <FEFEProperty
-              Folder="D:\STUDIA\Semestr 6\Hurtownie danych i systemy Business Intelligence\Laboratoria\Projekt\BusinessIntelligence\airbnb_data\UPDATE" />
+              Folder="C:\Users\natal\Desktop\STUDIA\SEM_6\hurtownie\projekt\BusinessIntelligence\airbnb_data\UPDATE" />
             <FEFEProperty
               FileSpec="*listings.csv" />
             <FEFEProperty
@@ -6436,14 +6783,35 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
               ReadOnlyVariables="User::UpdateFileName"
               ReadWriteVariables="User::City,User::Country,User::Region">
               <ProjectItem
-                Name="Properties\Settings.settings"
-                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+                Name="Properties\AssemblyInfo.cs"
+                Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_cbabce984aea423db81499d7dce6ffb1")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_cbabce984aea423db81499d7dce6ffb1")]
+[assembly: AssemblyCopyright("Copyright @  2025")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.resx"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -6829,35 +7197,14 @@ namespace ST_cbabce984aea423db81499d7dce6ffb1.Properties {
     }
 }]]></ProjectItem>
               <ProjectItem
-                Name="Properties\AssemblyInfo.cs"
-                Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_cbabce984aea423db81499d7dce6ffb1")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_cbabce984aea423db81499d7dce6ffb1")]
-[assembly: AssemblyCopyright("Copyright @  2025")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+                Name="Properties\Settings.settings"
+                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.Designer.cs"
                 Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -7061,8 +7408,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{6405886C-D462-4B63-A1F8-D84B596A4F16}"
-          DTS:ObjectName="{6405886C-D462-4B63-A1F8-D84B596A4F16}"
+          DTS:DTSID="{639E0168-5C6B-4C38-B35E-5A8F2C5B038D}"
+          DTS:ObjectName="{639E0168-5C6B-4C38-B35E-5A8F2C5B038D}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::UpdateFileName" />
       </DTS:ForEachVariableMappings>
@@ -7613,21 +7960,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                         <inputColumn
                           refId="Package\Foreach Loop Reviews\DFT_Load_Reviews\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[country]"
                           cachedDataType="wstr"
-                          cachedLength="50"
                           cachedName="country"
                           externalMetadataColumnId="Package\Foreach Loop Reviews\DFT_Load_Reviews\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[country]"
                           lineageId="Package\Foreach Loop Reviews\DFT_Load_Reviews\Derived Column.Outputs[Derived Column Output].Columns[country]" />
                         <inputColumn
                           refId="Package\Foreach Loop Reviews\DFT_Load_Reviews\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[region]"
                           cachedDataType="wstr"
-                          cachedLength="50"
                           cachedName="region"
                           externalMetadataColumnId="Package\Foreach Loop Reviews\DFT_Load_Reviews\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[region]"
                           lineageId="Package\Foreach Loop Reviews\DFT_Load_Reviews\Derived Column.Outputs[Derived Column Output].Columns[region]" />
                         <inputColumn
                           refId="Package\Foreach Loop Reviews\DFT_Load_Reviews\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[city]"
                           cachedDataType="wstr"
-                          cachedLength="50"
                           cachedName="city"
                           externalMetadataColumnId="Package\Foreach Loop Reviews\DFT_Load_Reviews\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[city]"
                           lineageId="Package\Foreach Loop Reviews\DFT_Load_Reviews\Derived Column.Outputs[Derived Column Output].Columns[city]" />
@@ -7773,6 +8117,15 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
               ReadOnlyVariables="User::CurrentFilePath"
               ReadWriteVariables="User::City,User::Country,User::FileType,User::Region,User::ScrapeDate">
               <ProjectItem
+                Name="Properties\Settings.settings"
+                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
+              <ProjectItem
                 Name="Properties\Resources.resx"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
 <root>
@@ -7891,35 +8244,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
-              <ProjectItem
-                Name="Properties\Settings.Designer.cs"
-                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_17cc548e4b2e4a4d8f42e374df8218f4.Properties.Settings.get_Default():ST_17cc548e4b2e4a4d8f42e374df8218f4.Properties.Sett" +
-    "ings")]
-
-namespace ST_17cc548e4b2e4a4d8f42e374df8218f4.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
               <ProjectItem
                 Name="ScriptMain.cs"
                 Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
@@ -8050,6 +8374,74 @@ namespace ST_17cc548e4b2e4a4d8f42e374df8218f4
 	}
 }]]></ProjectItem>
               <ProjectItem
+                Name="Properties\Resources.Designer.cs"
+                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_17cc548e4b2e4a4d8f42e374df8218f4.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
+    "rceManager")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_17cc548e4b2e4a4d8f42e374df8218f4.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
+    "fo")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_17cc548e4b2e4a4d8f42e374df8218f4.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
+    "):Void")]
+
+namespace ST_17cc548e4b2e4a4d8f42e374df8218f4.Properties {
+    
+    
+    /// <summary>
+    ///   A strongly-typed resource class, for looking up localized strings, etc.
+    /// </summary>
+    // This class was auto-generated by the StronglyTypedResourceBuilder
+    // class via a tool like ResGen or Visual Studio.
+    // To add or remove a member, edit your .ResX file then rerun ResGen
+    // with the /str option, or rebuild your VS project.
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    internal class Resources {
+        
+        private static global::System.Resources.ResourceManager resourceMan;
+        
+        private static global::System.Globalization.CultureInfo resourceCulture;
+        
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        internal Resources() {
+        }
+        
+        /// <summary>
+        ///   Returns the cached ResourceManager instance used by this class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if ((resourceMan == null)) {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ST_17cc548e4b2e4a4d8f42e374df8218f4.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
+            }
+        }
+        
+        /// <summary>
+        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   resource lookups using this strongly typed resource class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
+                return resourceCulture;
+            }
+            set {
+                resourceCulture = value;
+            }
+        }
+    }
+}]]></ProjectItem>
+              <ProjectItem
                 Name="Project"
                 Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
 <c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
@@ -8069,6 +8461,35 @@ namespace ST_17cc548e4b2e4a4d8f42e374df8218f4
     <msb:File Include="ScriptMain.cs" />
   </msb:ItemGroup>
 </c:Project>]]></ProjectItem>
+              <ProjectItem
+                Name="Properties\Settings.Designer.cs"
+                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_17cc548e4b2e4a4d8f42e374df8218f4.Properties.Settings.get_Default():ST_17cc548e4b2e4a4d8f42e374df8218f4.Properties.Sett" +
+    "ings")]
+
+namespace ST_17cc548e4b2e4a4d8f42e374df8218f4.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
               <ProjectItem
                 Name="Properties\AssemblyInfo.cs"
                 Encoding="UTF8"><![CDATA[using System.Reflection;
@@ -8185,83 +8606,6 @@ using System.Runtime.CompilerServices;
     </VisualStudio>
   </ProjectExtensions>
 </Project>]]></ProjectItem>
-              <ProjectItem
-                Name="Properties\Settings.settings"
-                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
-              <ProjectItem
-                Name="Properties\Resources.Designer.cs"
-                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_17cc548e4b2e4a4d8f42e374df8218f4.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
-    "rceManager")]
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_17cc548e4b2e4a4d8f42e374df8218f4.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
-    "fo")]
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_17cc548e4b2e4a4d8f42e374df8218f4.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
-    "):Void")]
-
-namespace ST_17cc548e4b2e4a4d8f42e374df8218f4.Properties {
-    
-    
-    /// <summary>
-    ///   A strongly-typed resource class, for looking up localized strings, etc.
-    /// </summary>
-    // This class was auto-generated by the StronglyTypedResourceBuilder
-    // class via a tool like ResGen or Visual Studio.
-    // To add or remove a member, edit your .ResX file then rerun ResGen
-    // with the /str option, or rebuild your VS project.
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    internal class Resources {
-        
-        private static global::System.Resources.ResourceManager resourceMan;
-        
-        private static global::System.Globalization.CultureInfo resourceCulture;
-        
-        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources() {
-        }
-        
-        /// <summary>
-        ///   Returns the cached ResourceManager instance used by this class.
-        /// </summary>
-        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
-            get {
-                if ((resourceMan == null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ST_17cc548e4b2e4a4d8f42e374df8218f4.Properties.Resources", typeof(Resources).Assembly);
-                    resourceMan = temp;
-                }
-                return resourceMan;
-            }
-        }
-        
-        /// <summary>
-        ///   Overrides the current thread's CurrentUICulture property for all
-        ///   resource lookups using this strongly typed resource class.
-        /// </summary>
-        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
-            get {
-                return resourceCulture;
-            }
-            set {
-                resourceCulture = value;
-            }
-        }
-    }
-}]]></ProjectItem>
               <BinaryItem
                 Name="ST_983cfbd044e14ecb93c2b762603701c6.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
@@ -8418,8 +8762,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       <DTS:Variables />
       <DTS:ObjectData>
         <ExecuteProcessData
-          Executable="C:\Users\flang\anaconda3\envs\hurt\python.exe"
-          Arguments="&quot;D:\STUDIA\Semestr 6\Hurtownie danych i systemy Business Intelligence\Laboratoria\Projekt\BusinessIntelligence\weather_api.py&quot;" />
+          Executable="C:\Users\natal\anaconda3\python.exe"
+          Arguments="&quot;C:\Users\natal\Desktop\STUDIA\SEM_6\hurtownie\projekt\BusinessIntelligence\weather_api.py&quot;" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -8435,8 +8779,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       <DTS:Variables />
       <DTS:ObjectData>
         <ExecuteProcessData
-          Executable="C:\Users\flang\anaconda3\envs\hurt\python.exe"
-          Arguments="&quot;D:\STUDIA\Semestr 6\Hurtownie danych i systemy Business Intelligence\Laboratoria\Projekt\BusinessIntelligence\move_new.py&quot;" />
+          Executable="C:\Users\natal\anaconda3\envs\hurt\python.exe"
+          Arguments="&quot;C:\Users\natal\Desktop\STUDIA\SEM_6\hurtownie\projekt\BusinessIntelligence\move_new.py&quot;" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -8452,8 +8796,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       <DTS:Variables />
       <DTS:ObjectData>
         <ExecuteProcessData
-          Executable="C:\Users\flang\anaconda3\envs\hurt\python.exe"
-          Arguments="&quot;D:\STUDIA\Semestr 6\Hurtownie danych i systemy Business Intelligence\Laboratoria\Projekt\BusinessIntelligence\move_updates.py&quot;" />
+          Executable="C:\Users\natal\anaconda3\envs\hurt\python.exe"
+          Arguments="&quot;C:\Users\natal\Desktop\STUDIA\SEM_6\hurtownie\projekt\BusinessIntelligence\move_updates.py&quot;" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -8469,8 +8813,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       <DTS:Variables />
       <DTS:ObjectData>
         <ExecuteProcessData
-          Executable="C:\Users\flang\anaconda3\envs\hurt\python.exe"
-          Arguments="&quot;D:\STUDIA\Semestr 6\Hurtownie danych i systemy Business Intelligence\Laboratoria\Projekt\BusinessIntelligence\remove_from_DB.py&quot;" />
+          Executable="C:\Users\natal\anaconda3\envs\hurt\python.exe"
+          Arguments="&quot;C:\Users\natal\Desktop\STUDIA\SEM_6\hurtownie\projekt\BusinessIntelligence\remove_from_DB.py&quot;" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
@@ -8569,19 +8913,23 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       <GraphLayout
         Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="130.4,41.6"
+          Size="130.666666666667,41.3333333333334"
           Id="Package\Airbnb ETL"
           TopLeft="636.926009603258,29.6706346940796" />
         <NodeLayout
-          Size="162.4,41.6"
+          Size="172.666666666667,41.3333333333334"
+          Id="Package\DFT_Load_Weather"
+          TopLeft="1216.72722504356,542.891411576189" />
+        <NodeLayout
+          Size="162.666666666667,41.3333333333334"
           Id="Package\Fetch Airbnb Data"
           TopLeft="626.246296382057,100.28571358834" />
         <NodeLayout
-          Size="175.2,41.6"
+          Size="175.333333333334,41.3333333333334"
           Id="Package\Foreach Loop Calendar\DFT_Load_Calendar"
           TopLeft="187.799974047145,94.2666644367907" />
         <NodeLayout
-          Size="130.4,41.6"
+          Size="130.666666666667,41.3333333333334"
           Id="Package\Foreach Loop Calendar\Script Task"
           TopLeft="205.299973090988,13.6666649972731" />
         <EdgeLayout
@@ -8611,16 +8959,16 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="544.8,191.2"
-          Size="544.8,234.4"
+          PanelSize="544.666666666667,191.333333333334"
+          Size="544.666666666667,234.666666666667"
           Id="Package\Foreach Loop Calendar"
           TopLeft="649.467074396553,380.12568506321" />
         <NodeLayout
-          Size="168.8,41.6"
+          Size="168.666666666667,41.3333333333334"
           Id="Package\Foreach Loop Listings\DFT_Load_Listings"
           TopLeft="187.799974047145,94.2666644367907" />
         <NodeLayout
-          Size="130.4,41.6"
+          Size="130.666666666667,41.3333333333334"
           Id="Package\Foreach Loop Listings\Script Task"
           TopLeft="205.299973090988,13.6666649972731" />
         <EdgeLayout
@@ -8650,16 +8998,16 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="568.8,195.2"
-          Size="568.8,238.4"
+          PanelSize="568.666666666667,195.333333333334"
+          Size="568.666666666667,238.666666666667"
           Id="Package\Foreach Loop Listings"
           TopLeft="28.8838383355475,117.132875568349" />
         <NodeLayout
-          Size="177.6,41.6"
+          Size="177.333333333334,41.3333333333334"
           Id="Package\Foreach Loop Remove Updates\Remove Old Records"
           TopLeft="188.028524401219,99.5238080171366" />
         <NodeLayout
-          Size="130.4,41.6"
+          Size="130.666666666667,41.3333333333334"
           Id="Package\Foreach Loop Remove Updates\Script Task"
           TopLeft="202.314237906395,23.9999990185102" />
         <EdgeLayout
@@ -8699,16 +9047,16 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="546.4,192"
-          Size="546.4,235.2"
+          PanelSize="546.666666666667,192"
+          Size="546.666666666667,235.333333333334"
           Id="Package\Foreach Loop Remove Updates"
           TopLeft="840.672691904937,108.564213190742" />
         <NodeLayout
-          Size="172.8,41.6"
+          Size="172.666666666667,41.3333333333334"
           Id="Package\Foreach Loop Reviews\DFT_Load_Reviews"
           TopLeft="187.799974047145,94.2666644367907" />
         <NodeLayout
-          Size="130.4,41.6"
+          Size="130.666666666667,41.3333333333334"
           Id="Package\Foreach Loop Reviews\Script Task"
           TopLeft="205.299973090988,13.6666649972731" />
         <EdgeLayout
@@ -8738,24 +9086,24 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="568.8,191.2"
-          Size="568.8,234.4"
+          PanelSize="568.666666666667,191.333333333334"
+          Size="568.666666666667,234.666666666667"
           Id="Package\Foreach Loop Reviews"
           TopLeft="35.3074758556788,382.739175128064" />
         <NodeLayout
-          Size="148,41.6"
+          Size="148,41.3333333333334"
           Id="Package\GET Weather"
           TopLeft="1224.62114521086,476.042925982586" />
         <NodeLayout
-          Size="127.2,41.6"
+          Size="127.333333333334,41.3333333333334"
           Id="Package\Move New"
           TopLeft="1231.31306403715,411.040401256255" />
         <NodeLayout
-          Size="153.6,41.6"
+          Size="153.333333333334,41.3333333333334"
           Id="Package\Move Updates"
           TopLeft="639.536339258179,269.460315967994" />
         <NodeLayout
-          Size="160,41.6"
+          Size="160,41.3333333333334"
           Id="Package\Remove from DB"
           TopLeft="624.944410599494,202.499998704261" />
         <EdgeLayout
@@ -9016,10 +9364,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="172.8,41.6"
-          Id="Package\DFT_Load_Weather"
-          TopLeft="1216.72722504356,542.891411576189" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 9]"
           TopLeft="1300.87418512721,517.642925982586">
@@ -9046,24 +9390,75 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
     </LayoutInfo>
   </Package>
   <TaskHost
+    design-time-name="Package\DFT_Load_Weather">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="151.333333333334,41.3333333333334"
+          Id="Package\DFT_Load_Weather\Flat File Source"
+          TopLeft="366.999994531274,75.9999988675117" />
+        <NodeLayout
+          Size="171.333333333334,41.3333333333334"
+          Id="Package\DFT_Load_Weather\OLE DB Destination"
+          TopLeft="352.99999473989,154.99999769032" />
+        <EdgeLayout
+          Id="Package\DFT_Load_Weather.Paths[Flat File Source Output]"
+          TopLeft="440.599994635582,117.599998867512">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,37.3999988228084"
+              Start="0,0"
+              End="0,29.8999988228084">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.8999988228084" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Load_Weather\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
     design-time-name="Package\Foreach Loop Calendar\DFT_Load_Calendar">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="139.2,41.6"
+          Size="139.333333333334,41.3333333333334"
           Id="Package\Foreach Loop Calendar\DFT_Load_Calendar\FF_Calendar"
           TopLeft="100.256409656543,59.0000000149011" />
         <NodeLayout
-          Size="171.2,41.6"
+          Size="171.333333333334,41.3333333333334"
           Id="Package\Foreach Loop Calendar\DFT_Load_Calendar\OLE DB Destination"
           TopLeft="190.999997153878,344.999994859099" />
         <NodeLayout
-          Size="156,41.6"
+          Size="156,41.3333333333334"
           Id="Package\Foreach Loop Calendar\DFT_Load_Calendar\Data Conversion"
           TopLeft="105.384613814262,251.538457790246" />
         <NodeLayout
-          Size="152.8,41.6"
+          Size="152.666666666667,41.3333333333334"
           Id="Package\Foreach Loop Calendar\DFT_Load_Calendar\Derived Column"
           TopLeft="136.999997958541,166.999997511506" />
         <EdgeLayout
@@ -9097,9 +9492,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9133,9 +9526,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9169,9 +9560,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -9194,21 +9583,21 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
     design-time-name="Package\Foreach Loop Listings\DFT_Load_Listings">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="152.8,41.6"
+          Size="152.666666666667,41.3333333333334"
           Id="Package\Foreach Loop Listings\DFT_Load_Listings\Derived Column"
           TopLeft="383.333327621222,268.333329334855" />
         <NodeLayout
-          Size="132,41.6"
+          Size="132,41.3333333333334"
           Id="Package\Foreach Loop Listings\DFT_Load_Listings\FF_Listings"
           TopLeft="394.999994114041,182.999997273088" />
         <NodeLayout
-          Size="156,41.6"
+          Size="156,41.3333333333334"
           Id="Package\Foreach Loop Listings\DFT_Load_Listings\Data Conversion"
           TopLeft="392.499994151294,341.666661575437" />
         <NodeLayout
-          Size="171.2,41.6"
+          Size="171.333333333334,41.3333333333334"
           Id="Package\Foreach Loop Listings\DFT_Load_Listings\OLE DB Destination"
           TopLeft="368.333327778511,435.799993671377" />
         <EdgeLayout
@@ -9230,9 +9619,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9266,9 +9653,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9302,9 +9687,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -9327,21 +9710,21 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
     design-time-name="Package\Foreach Loop Reviews\DFT_Load_Reviews">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="152.8,41.6"
+          Size="152.666666666667,41.3333333333334"
           Id="Package\Foreach Loop Reviews\DFT_Load_Reviews\Derived Column"
           TopLeft="79.0769227926549,148.907692496823" />
         <NodeLayout
-          Size="136,41.6"
+          Size="136,41.3333333333334"
           Id="Package\Foreach Loop Reviews\DFT_Load_Reviews\FF_Reviews"
           TopLeft="73.3333331346512,60" />
         <NodeLayout
-          Size="156,41.6"
+          Size="156,41.3333333333334"
           Id="Package\Foreach Loop Reviews\DFT_Load_Reviews\Data Conversion"
           TopLeft="78.4615372923704,251.538457790246" />
         <NodeLayout
-          Size="171.2,41.6"
+          Size="171.333333333334,41.3333333333334"
           Id="Package\Foreach Loop Reviews\DFT_Load_Reviews\OLE DB Destination"
           TopLeft="33.0769234781082,344.307688071178" />
         <EdgeLayout
@@ -9375,9 +9758,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9399,9 +9780,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9435,59 +9814,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Foreach Loop Reviews\DFT_Load_Reviews\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\DFT_Load_Weather">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="151.2,41.6"
-          Id="Package\DFT_Load_Weather\Flat File Source"
-          TopLeft="366.999994531274,75.9999988675117" />
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\DFT_Load_Weather\OLE DB Destination"
-          TopLeft="352.99999473989,154.99999769032" />
-        <EdgeLayout
-          Id="Package\DFT_Load_Weather.Paths[Flat File Source Output]"
-          TopLeft="440.599994635582,117.599998867512">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,37.3999988228084"
-              Start="0,0"
-              End="0,29.8999988228084">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,29.8999988228084" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -9495,7 +9821,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT_Load_Weather\OLE DB Destination">
+    design-time-name="Package\Foreach Loop Reviews\DFT_Load_Reviews\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
