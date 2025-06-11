@@ -1,0 +1,246 @@
+⚠️ Błąd API przy madrid (20250610): (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 10 Jun 2025 21:16:41 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'BunnyCDN-DE1-1047', 'CDN-PullZone': '93447', 'CDN-Uid': '8fa3a04a-75d9-4707-8056-b7b33c8ac7fe', 'CDN-RequestCountryCode': 'PL', 'Cache-Control': 'no-cache', 'x-weatherapi-qpm-left': '4992688', 'CDN-ProxyVer': '1.28', 'CDN-RequestPullSuccess': 'True', 'CDN-RequestPullCode': '400', 'CDN-CachedAt': '06/10/2025 21:16:41', 'CDN-EdgeStorageId': '1054', 'CDN-RequestId': 'c369850d97b54087f8c8ff85e9f14f53', 'CDN-Cache': 'MISS', 'CDN-Status': '400', 'CDN-RequestTime': '0'})
+HTTP response body: {"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd format and between 14 days and 300 days from today in the future."}}
+
+❌ Druga próba dla madrid (20250610) nie powiodła się: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 10 Jun 2025 21:17:00 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'BunnyCDN-DE1-1047', 'CDN-PullZone': '93447', 'CDN-Uid': '8fa3a04a-75d9-4707-8056-b7b33c8ac7fe', 'CDN-RequestCountryCode': 'PL', 'Cache-Control': 'no-cache', 'x-weatherapi-qpm-left': '4992688', 'CDN-ProxyVer': '1.28', 'CDN-RequestPullSuccess': 'True', 'CDN-RequestPullCode': '400', 'CDN-CachedAt': '06/10/2025 21:17:00', 'CDN-EdgeStorageId': '1054', 'CDN-RequestId': 'f4ec660a1865b442b428fff7b6230192', 'CDN-Cache': 'MISS', 'CDN-Status': '400', 'CDN-RequestTime': '0'})
+HTTP response body: {"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd format and between 14 days and 300 days from today in the future."}}
+
+⚠️ Błąd API przy madrid (20250611): (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 10 Jun 2025 21:17:00 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'BunnyCDN-DE1-1047', 'CDN-PullZone': '93447', 'CDN-Uid': '8fa3a04a-75d9-4707-8056-b7b33c8ac7fe', 'CDN-RequestCountryCode': 'PL', 'Cache-Control': 'no-cache', 'x-weatherapi-qpm-left': '4992688', 'CDN-ProxyVer': '1.28', 'CDN-RequestPullSuccess': 'True', 'CDN-RequestPullCode': '400', 'CDN-CachedAt': '06/10/2025 21:17:00', 'CDN-EdgeStorageId': '865', 'CDN-RequestId': 'df8e0cfac2dde314cda20e2f205b2260', 'CDN-Cache': 'MISS', 'CDN-Status': '400', 'CDN-RequestTime': '0'})
+HTTP response body: {"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd format and between 14 days and 300 days from today in the future."}}
+
+❌ Druga próba dla madrid (20250611) nie powiodła się: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 10 Jun 2025 21:17:13 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'BunnyCDN-DE1-1047', 'CDN-PullZone': '93447', 'CDN-Uid': '8fa3a04a-75d9-4707-8056-b7b33c8ac7fe', 'CDN-RequestCountryCode': 'PL', 'Cache-Control': 'no-cache', 'x-weatherapi-qpm-left': '4992688', 'CDN-ProxyVer': '1.28', 'CDN-RequestPullSuccess': 'True', 'CDN-RequestPullCode': '400', 'CDN-CachedAt': '06/10/2025 21:17:13', 'CDN-EdgeStorageId': '865', 'CDN-RequestId': '0711903727fea3f43cbbb5f305db3a01', 'CDN-Cache': 'MISS', 'CDN-Status': '400', 'CDN-RequestTime': '0'})
+HTTP response body: {"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd format and between 14 days and 300 days from today in the future."}}
+
+⚠️ Błąd API przy madrid (20250612): (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 10 Jun 2025 21:17:15 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'BunnyCDN-DE1-1047', 'CDN-PullZone': '93447', 'CDN-Uid': '8fa3a04a-75d9-4707-8056-b7b33c8ac7fe', 'CDN-RequestCountryCode': 'PL', 'Cache-Control': 'no-cache', 'x-weatherapi-qpm-left': '4992688', 'CDN-ProxyVer': '1.28', 'CDN-RequestPullSuccess': 'True', 'CDN-RequestPullCode': '400', 'CDN-CachedAt': '06/10/2025 21:17:15', 'CDN-EdgeStorageId': '723', 'CDN-RequestId': '261e67ffd6137171409bd939beebd5f7', 'CDN-Cache': 'MISS', 'CDN-Status': '400', 'CDN-RequestTime': '0'})
+HTTP response body: {"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd format and between 14 days and 300 days from today in the future."}}
+
+❌ Druga próba dla madrid (20250612) nie powiodła się: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 10 Jun 2025 21:17:25 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'BunnyCDN-DE1-1047', 'CDN-PullZone': '93447', 'CDN-Uid': '8fa3a04a-75d9-4707-8056-b7b33c8ac7fe', 'CDN-RequestCountryCode': 'PL', 'Cache-Control': 'no-cache', 'x-weatherapi-qpm-left': '4992688', 'CDN-ProxyVer': '1.28', 'CDN-RequestPullSuccess': 'True', 'CDN-RequestPullCode': '400', 'CDN-CachedAt': '06/10/2025 21:17:25', 'CDN-EdgeStorageId': '723', 'CDN-RequestId': '78f281eb6b6f3219279038361aef8fd1', 'CDN-Cache': 'MISS', 'CDN-Status': '400', 'CDN-RequestTime': '0'})
+HTTP response body: {"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd format and between 14 days and 300 days from today in the future."}}
+
+⚠️ Błąd API przy madrid (20250613): (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 10 Jun 2025 21:17:25 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'BunnyCDN-DE1-1047', 'CDN-PullZone': '93447', 'CDN-Uid': '8fa3a04a-75d9-4707-8056-b7b33c8ac7fe', 'CDN-RequestCountryCode': 'PL', 'Cache-Control': 'no-cache', 'x-weatherapi-qpm-left': '4992688', 'CDN-ProxyVer': '1.28', 'CDN-RequestPullSuccess': 'True', 'CDN-RequestPullCode': '400', 'CDN-CachedAt': '06/10/2025 21:17:25', 'CDN-EdgeStorageId': '1076', 'CDN-RequestId': 'bf5379fa34305d75926b4202ff09bd56', 'CDN-Cache': 'MISS', 'CDN-Status': '400', 'CDN-RequestTime': '0'})
+HTTP response body: {"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd format and between 14 days and 300 days from today in the future."}}
+
+❌ Druga próba dla madrid (20250613) nie powiodła się: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 10 Jun 2025 21:17:49 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'BunnyCDN-DE1-1047', 'CDN-PullZone': '93447', 'CDN-Uid': '8fa3a04a-75d9-4707-8056-b7b33c8ac7fe', 'CDN-RequestCountryCode': 'PL', 'Cache-Control': 'no-cache', 'x-weatherapi-qpm-left': '4992688', 'CDN-ProxyVer': '1.28', 'CDN-RequestPullSuccess': 'True', 'CDN-RequestPullCode': '400', 'CDN-CachedAt': '06/10/2025 21:17:49', 'CDN-EdgeStorageId': '1076', 'CDN-RequestId': 'f5b4b11ae188b1c4d093829f5d99fcd3', 'CDN-Cache': 'MISS', 'CDN-Status': '400', 'CDN-RequestTime': '0'})
+HTTP response body: {"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd format and between 14 days and 300 days from today in the future."}}
+
+⚠️ Błąd API przy madrid (20250614): (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 10 Jun 2025 21:17:50 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'BunnyCDN-DE1-1047', 'CDN-PullZone': '93447', 'CDN-Uid': '8fa3a04a-75d9-4707-8056-b7b33c8ac7fe', 'CDN-RequestCountryCode': 'PL', 'Cache-Control': 'no-cache', 'x-weatherapi-qpm-left': '4992688', 'CDN-ProxyVer': '1.28', 'CDN-RequestPullSuccess': 'True', 'CDN-RequestPullCode': '400', 'CDN-CachedAt': '06/10/2025 21:17:50', 'CDN-EdgeStorageId': '1077', 'CDN-RequestId': '51b50239b8505b3de97842794ffd5973', 'CDN-Cache': 'MISS', 'CDN-Status': '400', 'CDN-RequestTime': '0'})
+HTTP response body: {"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd format and between 14 days and 300 days from today in the future."}}
+
+❌ Druga próba dla madrid (20250614) nie powiodła się: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 10 Jun 2025 21:18:00 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'BunnyCDN-DE1-1047', 'CDN-PullZone': '93447', 'CDN-Uid': '8fa3a04a-75d9-4707-8056-b7b33c8ac7fe', 'CDN-RequestCountryCode': 'PL', 'Cache-Control': 'no-cache', 'x-weatherapi-qpm-left': '4992688', 'CDN-ProxyVer': '1.28', 'CDN-RequestPullSuccess': 'True', 'CDN-RequestPullCode': '400', 'CDN-CachedAt': '06/10/2025 21:18:00', 'CDN-EdgeStorageId': '1077', 'CDN-RequestId': '67bb64c6c6ac6696690f3f5b61a22682', 'CDN-Cache': 'MISS', 'CDN-Status': '400', 'CDN-RequestTime': '0'})
+HTTP response body: {"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd format and between 14 days and 300 days from today in the future."}}
+
+⚠️ Błąd API przy madrid (20250615): (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 10 Jun 2025 21:18:00 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'BunnyCDN-DE1-1047', 'CDN-PullZone': '93447', 'CDN-Uid': '8fa3a04a-75d9-4707-8056-b7b33c8ac7fe', 'CDN-RequestCountryCode': 'PL', 'Cache-Control': 'no-cache', 'x-weatherapi-qpm-left': '4992688', 'CDN-ProxyVer': '1.28', 'CDN-RequestPullSuccess': 'True', 'CDN-RequestPullCode': '400', 'CDN-CachedAt': '06/10/2025 21:18:00', 'CDN-EdgeStorageId': '1048', 'CDN-RequestId': '4b5af88e115ad5e205af5909d81e4c90', 'CDN-Cache': 'MISS', 'CDN-Status': '400', 'CDN-RequestTime': '0'})
+HTTP response body: {"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd format and between 14 days and 300 days from today in the future."}}
+
+❌ Druga próba dla madrid (20250615) nie powiodła się: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 10 Jun 2025 21:18:10 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'BunnyCDN-DE1-1047', 'CDN-PullZone': '93447', 'CDN-Uid': '8fa3a04a-75d9-4707-8056-b7b33c8ac7fe', 'CDN-RequestCountryCode': 'PL', 'Cache-Control': 'no-cache', 'x-weatherapi-qpm-left': '4992688', 'CDN-ProxyVer': '1.28', 'CDN-RequestPullSuccess': 'True', 'CDN-RequestPullCode': '400', 'CDN-CachedAt': '06/10/2025 21:18:10', 'CDN-EdgeStorageId': '1048', 'CDN-RequestId': '129f40804e3dafdb81f7a55968e98ea6', 'CDN-Cache': 'MISS', 'CDN-Status': '400', 'CDN-RequestTime': '0'})
+HTTP response body: {"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd format and between 14 days and 300 days from today in the future."}}
+
+⚠️ Błąd API przy madrid (20250616): (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 10 Jun 2025 21:18:10 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'BunnyCDN-DE1-1047', 'CDN-PullZone': '93447', 'CDN-Uid': '8fa3a04a-75d9-4707-8056-b7b33c8ac7fe', 'CDN-RequestCountryCode': 'PL', 'Cache-Control': 'no-cache', 'x-weatherapi-qpm-left': '4992688', 'CDN-ProxyVer': '1.28', 'CDN-RequestPullSuccess': 'True', 'CDN-RequestPullCode': '400', 'CDN-CachedAt': '06/10/2025 21:18:10', 'CDN-EdgeStorageId': '1049', 'CDN-RequestId': '2a1e2289d1149ee551465c7b5fe89e22', 'CDN-Cache': 'MISS', 'CDN-Status': '400', 'CDN-RequestTime': '0'})
+HTTP response body: {"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd format and between 14 days and 300 days from today in the future."}}
+
+❌ Druga próba dla madrid (20250616) nie powiodła się: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 10 Jun 2025 21:18:20 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'BunnyCDN-DE1-1047', 'CDN-PullZone': '93447', 'CDN-Uid': '8fa3a04a-75d9-4707-8056-b7b33c8ac7fe', 'CDN-RequestCountryCode': 'PL', 'Cache-Control': 'no-cache', 'x-weatherapi-qpm-left': '4992688', 'CDN-ProxyVer': '1.28', 'CDN-RequestPullSuccess': 'True', 'CDN-RequestPullCode': '400', 'CDN-CachedAt': '06/10/2025 21:18:20', 'CDN-EdgeStorageId': '1049', 'CDN-RequestId': '4b3c8cf21e865f520d28c2aa2e197737', 'CDN-Cache': 'MISS', 'CDN-Status': '400', 'CDN-RequestTime': '0'})
+HTTP response body: {"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd format and between 14 days and 300 days from today in the future."}}
+
+⚠️ Błąd API przy madrid (20250617): (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 10 Jun 2025 21:18:20 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'BunnyCDN-DE1-1047', 'CDN-PullZone': '93447', 'CDN-Uid': '8fa3a04a-75d9-4707-8056-b7b33c8ac7fe', 'CDN-RequestCountryCode': 'PL', 'Cache-Control': 'no-cache', 'x-weatherapi-qpm-left': '4992688', 'CDN-ProxyVer': '1.28', 'CDN-RequestPullSuccess': 'True', 'CDN-RequestPullCode': '400', 'CDN-CachedAt': '06/10/2025 21:18:20', 'CDN-EdgeStorageId': '1075', 'CDN-RequestId': 'fbade6d7bb612c2fad04fd89a8dc1a63', 'CDN-Cache': 'MISS', 'CDN-Status': '400', 'CDN-RequestTime': '0'})
+HTTP response body: {"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd format and between 14 days and 300 days from today in the future."}}
+
+❌ Druga próba dla madrid (20250617) nie powiodła się: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 10 Jun 2025 21:18:30 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'BunnyCDN-DE1-1047', 'CDN-PullZone': '93447', 'CDN-Uid': '8fa3a04a-75d9-4707-8056-b7b33c8ac7fe', 'CDN-RequestCountryCode': 'PL', 'Cache-Control': 'no-cache', 'x-weatherapi-qpm-left': '4992688', 'CDN-ProxyVer': '1.28', 'CDN-RequestPullSuccess': 'True', 'CDN-RequestPullCode': '400', 'CDN-CachedAt': '06/10/2025 21:18:30', 'CDN-EdgeStorageId': '1075', 'CDN-RequestId': '12ce47779287fe8366d6d6f583cd21eb', 'CDN-Cache': 'MISS', 'CDN-Status': '400', 'CDN-RequestTime': '0'})
+HTTP response body: {"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd format and between 14 days and 300 days from today in the future."}}
+
+⚠️ Błąd API przy madrid (20250618): (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 10 Jun 2025 21:18:30 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'BunnyCDN-DE1-1047', 'CDN-PullZone': '93447', 'CDN-Uid': '8fa3a04a-75d9-4707-8056-b7b33c8ac7fe', 'CDN-RequestCountryCode': 'PL', 'Cache-Control': 'no-cache', 'x-weatherapi-qpm-left': '4992688', 'CDN-ProxyVer': '1.28', 'CDN-RequestPullSuccess': 'True', 'CDN-RequestPullCode': '400', 'CDN-CachedAt': '06/10/2025 21:18:30', 'CDN-EdgeStorageId': '723', 'CDN-RequestId': '7f921ec37b028f5e96836bd0e27043b2', 'CDN-Cache': 'MISS', 'CDN-Status': '400', 'CDN-RequestTime': '0'})
+HTTP response body: {"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd format and between 14 days and 300 days from today in the future."}}
+
+❌ Druga próba dla madrid (20250618) nie powiodła się: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 10 Jun 2025 21:18:40 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'BunnyCDN-DE1-1047', 'CDN-PullZone': '93447', 'CDN-Uid': '8fa3a04a-75d9-4707-8056-b7b33c8ac7fe', 'CDN-RequestCountryCode': 'PL', 'Cache-Control': 'no-cache', 'x-weatherapi-qpm-left': '4992688', 'CDN-ProxyVer': '1.28', 'CDN-RequestPullSuccess': 'True', 'CDN-RequestPullCode': '400', 'CDN-CachedAt': '06/10/2025 21:18:40', 'CDN-EdgeStorageId': '723', 'CDN-RequestId': '2376ebb7a927889fc2aafc12f23c2f6d', 'CDN-Cache': 'MISS', 'CDN-Status': '400', 'CDN-RequestTime': '0'})
+HTTP response body: {"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd format and between 14 days and 300 days from today in the future."}}
+
+⚠️ Błąd API przy madrid (20250619): (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 10 Jun 2025 21:18:40 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'BunnyCDN-DE1-1047', 'CDN-PullZone': '93447', 'CDN-Uid': '8fa3a04a-75d9-4707-8056-b7b33c8ac7fe', 'CDN-RequestCountryCode': 'PL', 'Cache-Control': 'no-cache', 'x-weatherapi-qpm-left': '4992688', 'CDN-ProxyVer': '1.28', 'CDN-RequestPullSuccess': 'True', 'CDN-RequestPullCode': '400', 'CDN-CachedAt': '06/10/2025 21:18:40', 'CDN-EdgeStorageId': '722', 'CDN-RequestId': 'ffab67ed6c378173b17e588bf0edccb7', 'CDN-Cache': 'MISS', 'CDN-Status': '400', 'CDN-RequestTime': '0'})
+HTTP response body: {"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd format and between 14 days and 300 days from today in the future."}}
+
+❌ Druga próba dla madrid (20250619) nie powiodła się: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 10 Jun 2025 21:18:54 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'BunnyCDN-DE1-1047', 'CDN-PullZone': '93447', 'CDN-Uid': '8fa3a04a-75d9-4707-8056-b7b33c8ac7fe', 'CDN-RequestCountryCode': 'PL', 'Cache-Control': 'no-cache', 'x-weatherapi-qpm-left': '4992688', 'CDN-ProxyVer': '1.28', 'CDN-RequestPullSuccess': 'True', 'CDN-RequestPullCode': '400', 'CDN-CachedAt': '06/10/2025 21:18:54', 'CDN-EdgeStorageId': '722', 'CDN-RequestId': '97650536d5f1b3a4dd53f858e5ccce14', 'CDN-Cache': 'MISS', 'CDN-Status': '400', 'CDN-RequestTime': '0'})
+HTTP response body: {"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd format and between 14 days and 300 days from today in the future."}}
+
+⚠️ Błąd API przy madrid (20250620): (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 10 Jun 2025 21:18:54 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'BunnyCDN-DE1-1047', 'CDN-PullZone': '93447', 'CDN-Uid': '8fa3a04a-75d9-4707-8056-b7b33c8ac7fe', 'CDN-RequestCountryCode': 'PL', 'Cache-Control': 'no-cache', 'x-weatherapi-qpm-left': '4992688', 'CDN-ProxyVer': '1.28', 'CDN-RequestPullSuccess': 'True', 'CDN-RequestPullCode': '400', 'CDN-CachedAt': '06/10/2025 21:18:54', 'CDN-EdgeStorageId': '722', 'CDN-RequestId': 'c3a9c0c61eea58eb7e19a8400ebd3323', 'CDN-Cache': 'MISS', 'CDN-Status': '400', 'CDN-RequestTime': '0'})
+HTTP response body: {"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd format and between 14 days and 300 days from today in the future."}}
+
+❌ Druga próba dla madrid (20250620) nie powiodła się: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 10 Jun 2025 21:19:04 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'BunnyCDN-DE1-1047', 'CDN-PullZone': '93447', 'CDN-Uid': '8fa3a04a-75d9-4707-8056-b7b33c8ac7fe', 'CDN-RequestCountryCode': 'PL', 'Cache-Control': 'no-cache', 'x-weatherapi-qpm-left': '4992688', 'CDN-ProxyVer': '1.28', 'CDN-RequestPullSuccess': 'True', 'CDN-RequestPullCode': '400', 'CDN-CachedAt': '06/10/2025 21:19:04', 'CDN-EdgeStorageId': '722', 'CDN-RequestId': '594fa6883f4113f3c2cfb96ce6d3194c', 'CDN-Cache': 'MISS', 'CDN-Status': '400', 'CDN-RequestTime': '0'})
+HTTP response body: {"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd format and between 14 days and 300 days from today in the future."}}
+
+⚠️ Błąd API przy madrid (20250621): (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 10 Jun 2025 21:19:04 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'BunnyCDN-DE1-1047', 'CDN-PullZone': '93447', 'CDN-Uid': '8fa3a04a-75d9-4707-8056-b7b33c8ac7fe', 'CDN-RequestCountryCode': 'PL', 'Cache-Control': 'no-cache', 'x-weatherapi-qpm-left': '4992688', 'CDN-ProxyVer': '1.28', 'CDN-RequestPullSuccess': 'True', 'CDN-RequestPullCode': '400', 'CDN-CachedAt': '06/10/2025 21:19:04', 'CDN-EdgeStorageId': '874', 'CDN-RequestId': '02c785ac832af779798427efd7af7a2f', 'CDN-Cache': 'MISS', 'CDN-Status': '400', 'CDN-RequestTime': '0'})
+HTTP response body: {"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd format and between 14 days and 300 days from today in the future."}}
+
+❌ Druga próba dla madrid (20250621) nie powiodła się: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 10 Jun 2025 21:19:21 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'BunnyCDN-DE1-1047', 'CDN-PullZone': '93447', 'CDN-Uid': '8fa3a04a-75d9-4707-8056-b7b33c8ac7fe', 'CDN-RequestCountryCode': 'PL', 'Cache-Control': 'no-cache', 'x-weatherapi-qpm-left': '4992688', 'CDN-ProxyVer': '1.28', 'CDN-RequestPullSuccess': 'True', 'CDN-RequestPullCode': '400', 'CDN-CachedAt': '06/10/2025 21:19:21', 'CDN-EdgeStorageId': '874', 'CDN-RequestId': '866aa6e32c31cbba00989cb0709ba87e', 'CDN-Cache': 'MISS', 'CDN-Status': '400', 'CDN-RequestTime': '0'})
+HTTP response body: {"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd format and between 14 days and 300 days from today in the future."}}
+
+⚠️ Błąd API przy madrid (20250622): (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 10 Jun 2025 21:19:21 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'BunnyCDN-DE1-1047', 'CDN-PullZone': '93447', 'CDN-Uid': '8fa3a04a-75d9-4707-8056-b7b33c8ac7fe', 'CDN-RequestCountryCode': 'PL', 'Cache-Control': 'no-cache', 'x-weatherapi-qpm-left': '4992688', 'CDN-ProxyVer': '1.28', 'CDN-RequestPullSuccess': 'True', 'CDN-RequestPullCode': '400', 'CDN-CachedAt': '06/10/2025 21:19:21', 'CDN-EdgeStorageId': '864', 'CDN-RequestId': '2dc09fe03a8a835f9a90d88ac955144e', 'CDN-Cache': 'MISS', 'CDN-Status': '400', 'CDN-RequestTime': '0'})
+HTTP response body: {"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd format and between 14 days and 300 days from today in the future."}}
+
+❌ Druga próba dla madrid (20250622) nie powiodła się: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 10 Jun 2025 21:19:31 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'BunnyCDN-DE1-1047', 'CDN-PullZone': '93447', 'CDN-Uid': '8fa3a04a-75d9-4707-8056-b7b33c8ac7fe', 'CDN-RequestCountryCode': 'PL', 'Cache-Control': 'no-cache', 'x-weatherapi-qpm-left': '4992688', 'CDN-ProxyVer': '1.28', 'CDN-RequestPullSuccess': 'True', 'CDN-RequestPullCode': '400', 'CDN-CachedAt': '06/10/2025 21:19:31', 'CDN-EdgeStorageId': '864', 'CDN-RequestId': '35f9b0014cce6803c7e387246d0bb3e0', 'CDN-Cache': 'MISS', 'CDN-Status': '400', 'CDN-RequestTime': '0'})
+HTTP response body: {"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd format and between 14 days and 300 days from today in the future."}}
+
+⚠️ Błąd API przy madrid (20250623): (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 10 Jun 2025 21:19:31 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'BunnyCDN-DE1-1047', 'CDN-PullZone': '93447', 'CDN-Uid': '8fa3a04a-75d9-4707-8056-b7b33c8ac7fe', 'CDN-RequestCountryCode': 'PL', 'Cache-Control': 'no-cache', 'x-weatherapi-qpm-left': '4992688', 'CDN-ProxyVer': '1.28', 'CDN-RequestPullSuccess': 'True', 'CDN-RequestPullCode': '400', 'CDN-CachedAt': '06/10/2025 21:19:31', 'CDN-EdgeStorageId': '1075', 'CDN-RequestId': 'a27c210fc1ff37c40d063a4102ba9777', 'CDN-Cache': 'EXPIRED', 'CDN-Status': '400', 'CDN-RequestTime': '0'})
+HTTP response body: {"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd format and between 14 days and 300 days from today in the future."}}
+
+❌ Druga próba dla madrid (20250623) nie powiodła się: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 10 Jun 2025 21:19:41 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'BunnyCDN-DE1-1047', 'CDN-PullZone': '93447', 'CDN-Uid': '8fa3a04a-75d9-4707-8056-b7b33c8ac7fe', 'CDN-RequestCountryCode': 'PL', 'Cache-Control': 'no-cache', 'x-weatherapi-qpm-left': '4992688', 'CDN-ProxyVer': '1.28', 'CDN-RequestPullSuccess': 'True', 'CDN-RequestPullCode': '400', 'CDN-CachedAt': '06/10/2025 21:19:41', 'CDN-EdgeStorageId': '1075', 'CDN-RequestId': '987dfe530aa03c8742eca7caec348d40', 'CDN-Cache': 'EXPIRED', 'CDN-Status': '400', 'CDN-RequestTime': '0'})
+HTTP response body: {"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd format and between 14 days and 300 days from today in the future."}}
+
+Traceback (most recent call last):
+  File "d:\STUDIA\Semestr 6\Hurtownie danych i systemy Business Intelligence\Laboratoria\Projekt\BusinessIntelligence\weather_api.py", line 101, in <module>
+    save_weather_to_csv(city, date_str)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "d:\STUDIA\Semestr 6\Hurtownie danych i systemy Business Intelligence\Laboratoria\Projekt\BusinessIntelligence\weather_api.py", line 47, in save_weather_to_csv
+    response = api_instance.future_weather(q=city, dt=dt_api, lang="pl")
+  File "C:\Users\flang\anaconda3\envs\hurt\Lib\site-packages\weatherapi\api\apis_api.py", line 291, in future_weather
+    (data) = self.future_weather_with_http_info(q, **kwargs)  # noqa: E501
+  File "C:\Users\flang\anaconda3\envs\hurt\Lib\site-packages\weatherapi\api\apis_api.py", line 357, in future_weather_with_http_info
+    return self.api_client.call_api(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        '/future.json', 'GET',
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+        _request_timeout=params.get('_request_timeout'),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        collection_formats=collection_formats)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\flang\anaconda3\envs\hurt\Lib\site-packages\weatherapi\api_client.py", line 326, in call_api
+    return self.__call_api(resource_path, method,
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+                           path_params, query_params, header_params,
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+                           _return_http_data_only, collection_formats,
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                           _preload_content, _request_timeout)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\flang\anaconda3\envs\hurt\Lib\site-packages\weatherapi\api_client.py", line 158, in __call_api
+    response_data = self.request(
+        method, url, query_params=query_params, headers=header_params,
+        post_params=post_params, body=body,
+        _preload_content=_preload_content,
+        _request_timeout=_request_timeout)
+  File "C:\Users\flang\anaconda3\envs\hurt\Lib\site-packages\weatherapi\api_client.py", line 348, in request
+    return self.rest_client.GET(url,
+           ~~~~~~~~~~~~~~~~~~~~^^^^^
+                                query_params=query_params,
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                _preload_content=_preload_content,
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                _request_timeout=_request_timeout,
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                headers=headers)
+                                ^^^^^^^^^^^^^^^^
+  File "C:\Users\flang\anaconda3\envs\hurt\Lib\site-packages\weatherapi\rest.py", line 234, in GET
+    return self.request("GET", url,
+           ~~~~~~~~~~~~^^^^^^^^^^^^
+                        headers=headers,
+                        ^^^^^^^^^^^^^^^^
+                        _preload_content=_preload_content,
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        _request_timeout=_request_timeout,
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        query_params=query_params)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\flang\anaconda3\envs\hurt\Lib\site-packages\weatherapi\rest.py", line 207, in request
+    r = self.pool_manager.request(method, url,
+                                  fields=query_params,
+                                  preload_content=_preload_content,
+                                  timeout=timeout,
+                                  headers=headers)
+  File "C:\Users\flang\anaconda3\envs\hurt\Lib\site-packages\urllib3\_request_methods.py", line 136, in request
+    return self.request_encode_url(
+           ~~~~~~~~~~~~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<3 lines>...
+        **urlopen_kw,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\flang\anaconda3\envs\hurt\Lib\site-packages\urllib3\_request_methods.py", line 183, in request_encode_url
+    return self.urlopen(method, url, **extra_kw)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\flang\anaconda3\envs\hurt\Lib\site-packages\urllib3\poolmanager.py", line 444, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\flang\anaconda3\envs\hurt\Lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\flang\anaconda3\envs\hurt\Lib\site-packages\urllib3\connectionpool.py", line 537, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\flang\anaconda3\envs\hurt\Lib\site-packages\urllib3\connection.py", line 466, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\flang\anaconda3\envs\hurt\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\flang\anaconda3\envs\hurt\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\flang\anaconda3\envs\hurt\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\flang\anaconda3\envs\hurt\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\flang\anaconda3\envs\hurt\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\flang\anaconda3\envs\hurt\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyboardInterrupt

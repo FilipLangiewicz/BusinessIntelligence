@@ -1,0 +1,31 @@
+Znaleziono 24 plików do pobrania.
+
+[=] Bez zmian: 20250315_germany_be_berlin_listings.csv
+[=] Bez zmian: 20250315_germany_be_berlin_calendar.csv
+[=] Bez zmian: 20250315_germany_be_berlin_reviews.csv
+[=] Bez zmian: 20250308_portugal_lisbon_lisbon_listings.csv
+[=] Bez zmian: 20250308_portugal_lisbon_lisbon_calendar.csv
+[=] Bez zmian: 20250308_portugal_lisbon_lisbon_reviews.csv
+[=] Bez zmian: 20250304_united-kingdom_england_london_listings.csv
+[=] Bez zmian: 20250304_united-kingdom_england_london_calendar.csv
+[=] Bez zmian: 20250304_united-kingdom_england_london_reviews.csv
+[=] Bez zmian: 20250305_spain_comunidad-de-madrid_madrid_listings.csv
+[=] Bez zmian: 20250305_spain_comunidad-de-madrid_madrid_calendar.csv
+[=] Bez zmian: 20250305_spain_comunidad-de-madrid_madrid_reviews.csv
+[=] Bez zmian: 20250303_france_ile-de-france_paris_listings.csv
+[=] Bez zmian: 20250303_france_ile-de-france_paris_calendar.csv
+[=] Bez zmian: 20250303_france_ile-de-france_paris_reviews.csv
+[=] Bez zmian: 20250316_czech-republic_prague_prague_listings.csv
+[=] Bez zmian: 20250316_czech-republic_prague_prague_calendar.csv
+[=] Bez zmian: 20250316_czech-republic_prague_prague_reviews.csv
+[=] Bez zmian: 20250305_italy_lazio_rome_listings.csv
+[=] Bez zmian: 20250305_italy_lazio_rome_calendar.csv
+[=] Bez zmian: 20250305_italy_lazio_rome_reviews.csv
+[=] Bez zmian: 20250305_austria_vienna_vienna_listings.csv
+[=] Bez zmian: 20250305_austria_vienna_vienna_calendar.csv
+[=] Bez zmian: 20250305_austria_vienna_vienna_reviews.csv
+
+Podsumowanie operacji:
+Plików przed: 24
+Zapisano:  0
+Bez zmian:        0

@@ -1,12 +1,12 @@
 USE [master]
 GO
-/****** Object:  Database [AIRBNB_star_dwh]    Script Date: 27.05.2025 16:32:48 ******/
+/****** Object:  Database [AIRBNB_star_dwh]    Script Date: 11.06.2025 15:36:18 ******/
 CREATE DATABASE [AIRBNB_star_dwh]
  CONTAINMENT = NONE
  ON  PRIMARY 
 ( NAME = N'AIRBNB_star_wh', FILENAME = N'D:\STUDIA\Semestr 6\Hurtownie danych i systemy Business Intelligence\Laboratoria\Projekt\db\AIRBNB_star_wh.mdf' , SIZE = 7610368KB , MAXSIZE = UNLIMITED, FILEGROWTH = 65536KB )
  LOG ON 
-( NAME = N'AIRBNB_star_wh_log', FILENAME = N'D:\STUDIA\Semestr 6\Hurtownie danych i systemy Business Intelligence\Laboratoria\Projekt\db\AIRBNB_star_wh_log.ldf' , SIZE = 26550272KB , MAXSIZE = 2048GB , FILEGROWTH = 65536KB )
+( NAME = N'AIRBNB_star_wh_log', FILENAME = N'D:\STUDIA\Semestr 6\Hurtownie danych i systemy Business Intelligence\Laboratoria\Projekt\db\AIRBNB_star_wh_log.ldf' , SIZE = 33431552KB , MAXSIZE = 2048GB , FILEGROWTH = 65536KB )
  WITH CATALOG_COLLATION = DATABASE_DEFAULT
 GO
 ALTER DATABASE [AIRBNB_star_dwh] SET COMPATIBILITY_LEVEL = 150
@@ -82,7 +82,7 @@ ALTER DATABASE [AIRBNB_star_dwh] SET QUERY_STORE = OFF
 GO
 USE [AIRBNB_star_dwh]
 GO
-/****** Object:  User [LAPTOP-826FGFSL\flang]    Script Date: 27.05.2025 16:32:48 ******/
+/****** Object:  User [LAPTOP-826FGFSL\flang]    Script Date: 11.06.2025 15:36:18 ******/
 CREATE USER [LAPTOP-826FGFSL\flang] FOR LOGIN [LAPTOP-826FGFSL\flang] WITH DEFAULT_SCHEMA=[dbo]
 GO
 ALTER ROLE [db_owner] ADD MEMBER [LAPTOP-826FGFSL\flang]
@@ -91,7 +91,7 @@ ALTER ROLE [db_datareader] ADD MEMBER [LAPTOP-826FGFSL\flang]
 GO
 ALTER ROLE [db_datawriter] ADD MEMBER [LAPTOP-826FGFSL\flang]
 GO
-/****** Object:  Table [dbo].[Dim_Date]    Script Date: 27.05.2025 16:32:48 ******/
+/****** Object:  Table [dbo].[Dim_Date]    Script Date: 11.06.2025 15:36:19 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -129,7 +129,7 @@ CREATE TABLE [dbo].[Dim_Date](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Dim_Property]    Script Date: 27.05.2025 16:32:48 ******/
+/****** Object:  Table [dbo].[Dim_Property]    Script Date: 11.06.2025 15:36:19 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -184,13 +184,17 @@ CREATE TABLE [dbo].[Dim_Property](
 	[country] [nvarchar](100) NULL,
 	[region] [nvarchar](100) NULL,
 	[city] [nvarchar](100) NULL,
- CONSTRAINT [PK__dim_list__89D81774DC5D16D2] PRIMARY KEY CLUSTERED 
+	[isActive] [nvarchar](3) NULL,
+	[vaildFrom] [bigint] NULL,
+	[validTo] [bigint] NULL,
+	[property_sk] [bigint] IDENTITY(1,1) NOT NULL,
+PRIMARY KEY CLUSTERED 
 (
-	[property_id] ASC
+	[property_sk] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Dim_Weather]    Script Date: 27.05.2025 16:32:48 ******/
+/****** Object:  Table [dbo].[Dim_Weather]    Script Date: 11.06.2025 15:36:19 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -215,19 +219,19 @@ CREATE TABLE [dbo].[Dim_Weather](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Fact_Offers]    Script Date: 27.05.2025 16:32:48 ******/
+/****** Object:  Table [dbo].[Fact_Offers]    Script Date: 11.06.2025 15:36:19 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Fact_Offers](
-	[offer_id] [int] IDENTITY(1,1) NOT NULL,
+	[offer_id] [bigint] IDENTITY(1,1) NOT NULL,
 	[property_id] [bigint] NULL,
 	[offer_date] [date] NULL,
 	[available] [nvarchar](3) NULL,
 	[price] [money] NULL,
-	[minimum_nights] [int] NULL,
-	[maximum_nights] [int] NULL,
+	[minimum_nights] [float] NULL,
+	[maximum_nights] [float] NULL,
 	[weather_id] [nvarchar](50) NULL,
 	[scrape_date] [int] NULL,
 	[country] [nvarchar](100) NULL,
@@ -239,7 +243,7 @@ CREATE TABLE [dbo].[Fact_Offers](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Fact_Review]    Script Date: 27.05.2025 16:32:48 ******/
+/****** Object:  Table [dbo].[Fact_Review]    Script Date: 11.06.2025 15:36:19 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -266,7 +270,7 @@ GO
 ALTER TABLE [dbo].[Fact_Offers] CHECK CONSTRAINT [FK_Fact_Offers_Dim_Date]
 GO
 ALTER TABLE [dbo].[Fact_Offers]  WITH CHECK ADD  CONSTRAINT [FK_Fact_Offers_Dim_Property] FOREIGN KEY([property_id])
-REFERENCES [dbo].[Dim_Property] ([property_id])
+REFERENCES [dbo].[Dim_Property] ([property_sk])
 GO
 ALTER TABLE [dbo].[Fact_Offers] CHECK CONSTRAINT [FK_Fact_Offers_Dim_Property]
 GO
@@ -281,7 +285,7 @@ GO
 ALTER TABLE [dbo].[Fact_Review] CHECK CONSTRAINT [FK_Fact_Review_Dim_Date1]
 GO
 ALTER TABLE [dbo].[Fact_Review]  WITH CHECK ADD  CONSTRAINT [FK_Fact_Review_Dim_Property] FOREIGN KEY([property_id])
-REFERENCES [dbo].[Dim_Property] ([property_id])
+REFERENCES [dbo].[Dim_Property] ([property_sk])
 GO
 ALTER TABLE [dbo].[Fact_Review] CHECK CONSTRAINT [FK_Fact_Review_Dim_Property]
 GO

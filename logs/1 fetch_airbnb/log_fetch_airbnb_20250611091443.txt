@@ -1,0 +1,14 @@
+Znaleziono 6 plików do pobrania.
+
+[+] Zapisano: 20250315_germany_be_berlin_listings.csv
+[+] Zapisano: 20250315_germany_be_berlin_calendar.csv
+[+] Zapisano: 20250315_germany_be_berlin_reviews.csv
+[=] Bez zmian: 20250316_czech-republic_prague_prague_listings.csv
+[=] Bez zmian: 20250316_czech-republic_prague_prague_calendar.csv
+[=] Bez zmian: 20250316_czech-republic_prague_prague_reviews.csv
+
+Podsumowanie operacji:
+Plików przed: 3
+Plików po: 6
+Zapisano:  3
+Bez zmian: 3

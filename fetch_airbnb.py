@@ -11,6 +11,8 @@ from pandas.errors import DtypeWarning
 import sys
 from datetime import datetime
 
+# wygenerowano przy użyciu ChatGPT - zwalidował Filip Langiewicz
+
 warnings.filterwarnings("ignore", category=DtypeWarning)
 
 # Ustawienie logowania do pliku
@@ -165,28 +167,26 @@ def process_reviews_csv(df):
 
 
 def fetch_airbnb_data():
-    DB_DIR = os.path.join(DOWNLOAD_DIR, "DB")
     NEW_DIR = os.path.join(DOWNLOAD_DIR, "NEW")
-    UPDATE_DIR = os.path.join(DOWNLOAD_DIR, "UPDATE")
     
-    for folder in [DB_DIR, NEW_DIR, UPDATE_DIR]:
-        os.makedirs(folder, exist_ok=True)   
+    os.makedirs(NEW_DIR, exist_ok=True)   
     
-    before_files = os.listdir(DB_DIR)
+    before_files = os.listdir(NEW_DIR)
     before_count = len(before_files) - 1
 
-    existing_files = {}
-    for fname in before_files:
-        if not fname.endswith(".csv") and not fname.endswith(".geojson"):
-            continue
-        base_key, file_date = extract_base_and_date(fname)
-        if base_key not in existing_files or file_date > existing_files[base_key][0]:
-            existing_files[base_key] = (file_date, fname)
+    # existing_files = {}
+    # for fname in before_files:
+    #     if not fname.endswith(".csv") and not fname.endswith(".geojson"):
+    #         continue
+    #     base_key, file_date = extract_base_and_date(fname)
+    #     if base_key not in existing_files or file_date > existing_files[base_key][0]:
+    #         existing_files[base_key] = (file_date, fname)
 
     added = []
-    updated = []
+    # updated = []
     unchanged = []
     skipped_empty = []
+    
 
 
     response = requests.get(BASE_URL)
@@ -206,7 +206,8 @@ def fetch_airbnb_data():
             "reviews.csv.gz"
         ))
         and any(city in link["href"].lower() for city in [
-            "vienna", "prague", "paris", "berlin", "rome", "lisbon", "madrid", "london"
+            # "vienna", "prague", "paris", "berlin", "rome", "lisbon", "madrid", "london"
+            "prague"
         ])
     ]
 
@@ -228,32 +229,21 @@ def fetch_airbnb_data():
         new_filename = normalize_filename(url)
         base_key, new_date = extract_base_and_date(new_filename)
         
+        file_path = os.path.join(NEW_DIR, new_filename)
+
+        
         if "ireland_ireland_ireland" in new_filename or 'china_beijing' in new_filename:
             print(f"[!] Pominięto plik: {new_filename}")
             skipped_empty.append(new_filename)
             continue
 
-        
-        destination = None
+        if os.path.exists(file_path):
+            print(f"[=] Bez zmian: {new_filename}")
+            unchanged.append(new_filename)
+            continue
 
-        existing = existing_files.get(base_key)
-        if existing:
-            old_date, old_fname = existing
-            if new_date <= old_date:
-                unchanged.append(new_filename)
-                print(f"[=] Bez zmian: {new_filename}")
-                continue
-            else:
-                # os.remove(os.path.join(DOWNLOAD_DIR, old_fname))
-                destination = UPDATE_DIR
-                print(f"[↑] Aktualizacja: {old_fname} → {new_filename}")
-                updated.append(new_filename)
-        else:
-            added.append(new_filename)
-            destination = NEW_DIR
-            print(f"[+] Nowy plik: {new_filename}")
-
-        file_path = os.path.join(destination, new_filename)
+        added.append(new_filename)
+        print(f"[+] Zapisano: {new_filename}")
 
         # Pobieranie i zapis
         if url.endswith(".csv.gz"):
@@ -277,28 +267,12 @@ def fetch_airbnb_data():
                     for chunk in r.iter_content(chunk_size=8192):
                         f.write(chunk)
 
-    # Podsumowanie
-    after_count_DB = len([f for f in os.listdir(DB_DIR) if f.endswith(".csv") or f.endswith(".geojson")])
-    after_count_NEW = len([f for f in os.listdir(NEW_DIR) if f.endswith(".csv") or f.endswith(".geojson")])
-    after_count = after_count_DB + after_count_NEW
     print("\nPodsumowanie operacji:")
     print(f"Plików przed: {before_count}")
-    print(f"Plików po:    {after_count}")
-    print(f"Dodano:     {len(added)}")
-    print(f"Zaktualizowano: {len(updated)}")
-    print(f"Pominięto: {len(skipped_empty)}")
-    print(f"Bez zmian:  {len(unchanged)}")
+    print(f"Plików po: {len(os.listdir(NEW_DIR)) - 1}")
+    print(f"Zapisano:  {len(added)}")
+    print(f"Bez zmian: {len(unchanged)}")
 
-    if updated:
-        print("\nPliki zaktualizowane:")
-        for f in updated:
-            print(" -", f)
-    
-    if unchanged:
-        print("\nPliki bez zmian:")
-        for f in unchanged:
-            print(" -", f)
-    
     if skipped_empty:
         print(f"\nPominięto {len(skipped_empty)} plików:")
         for f in skipped_empty:

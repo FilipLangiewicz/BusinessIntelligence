@@ -1,0 +1,11 @@
+Znaleziono 3 plików do pobrania.
+
+[+] Zapisano: 20250316_czech-republic_prague_prague_listings.csv
+[+] Zapisano: 20250316_czech-republic_prague_prague_calendar.csv
+[+] Zapisano: 20250316_czech-republic_prague_prague_reviews.csv
+
+Podsumowanie operacji:
+Plików przed: 0
+Plików po: 3
+Zapisano:  3
+Bez zmian: 0

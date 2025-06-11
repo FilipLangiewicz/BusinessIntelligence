@@ -1,0 +1,8 @@
+❌ Lokalizacja **london** jest nieprawidłowa — pomijam dalsze próby.
+❌ Lokalizacja **berlin** jest nieprawidłowa — pomijam dalsze próby.
+❌ Lokalizacja **vienna** jest nieprawidłowa — pomijam dalsze próby.
+❌ Lokalizacja **madrid** jest nieprawidłowa — pomijam dalsze próby.
+❌ Lokalizacja **rome** jest nieprawidłowa — pomijam dalsze próby.
+❌ Lokalizacja **prague** jest nieprawidłowa — pomijam dalsze próby.
+❌ Lokalizacja **paris** jest nieprawidłowa — pomijam dalsze próby.
+❌ Lokalizacja **lisbon** jest nieprawidłowa — pomijam dalsze próby.

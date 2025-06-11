@@ -1,7 +1,0 @@
-Znaleziono 0 plików w folderze UPDATE.
-
-Podsumowanie:
-Plików w UPDATE: 0
-Plików w DB przed usuwaniem: 357
-Usunięto plików w DB: 0
-Plików w DB po usuwaniu: 357

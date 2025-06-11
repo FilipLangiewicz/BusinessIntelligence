@@ -6,6 +6,9 @@ import weatherapi
 import sys
 import csv
 from API_KEY import get_API_KEY
+from time import sleep
+
+# wygenerowano przy użyciu ChatGPT - zwalidował Filip Langiewicz
 
 today_str = datetime.today().strftime('%Y%m%d%H%M%S')
 
@@ -21,7 +24,7 @@ configuration.api_key['key'] = get_API_KEY()
 api_instance = weatherapi.APIsApi(weatherapi.ApiClient(configuration))
 
 # 📁 Folder z plikami CSV (miasta) i zapisem wyników
-DB_DIR = r"D:\STUDIA\Semestr 6\Hurtownie danych i systemy Business Intelligence\Laboratoria\Projekt\BusinessIntelligence\airbnb_data\DB"
+DB_DIR = r"D:\STUDIA\Semestr 6\Hurtownie danych i systemy Business Intelligence\Laboratoria\Projekt\BusinessIntelligence\airbnb_data\NEW"
 WEATHER_DIR = r"D:\STUDIA\Semestr 6\Hurtownie danych i systemy Business Intelligence\Laboratoria\Projekt\BusinessIntelligence\airbnb_data\WEATHER"
 os.makedirs(WEATHER_DIR, exist_ok=True)
 
@@ -82,31 +85,87 @@ for file in os.listdir(DB_DIR):
 today = datetime.today().date()
 start_date = today + timedelta(days=14)
 end_date = today + timedelta(days=300)
+days_back = 365
+
+# 🔁 Pobierz dane pogodowe
+
+MIN_DAY = 14
+MAX_DAY = 300
 
 # 🔁 Pobierz dane pogodowe
 for city in cities:
-    successful_dates = []
-    skip_city = False
-    for i in range((end_date - start_date).days + 1):
-        if skip_city:
-            break
+    successful_dates = set()
+    all_dates = []
 
-        date_obj = start_date + timedelta(days=i)
+    for i in range(365):
+        date_obj = today + timedelta(days=i)
         date_str = date_obj.strftime("%Y%m%d")
-        try:
-            save_weather_to_csv(city, date_str)
-            successful_dates.append(date_str)
-        except ApiException as e:
-            if e.status == 400 or "No matching location found" in str(e):
-                print(f"❌ Lokalizacja **{city}** jest nieprawidłowa — pomijam dalsze próby.")
-                skip_city = True
-                break
-            else:
-                print(f"⚠️ Błąd API przy {city} ({date_str}): {e}")
-        except Exception as e:
-            print(f"⚠️ Błąd ogólny przy {city} ({date_str}): {e}")
+        all_dates.append((date_obj, date_str, i))
 
-    if successful_dates:
-        print(f"✅ Pobrano dane pogodowe dla miasta **{city}** dla {len(successful_dates)} dni.")
-    elif not skip_city:
-        print(f"❌ Nie udało się pobrać żadnych danych pogodowych dla miasta **{city}**.")
+    for date_obj, date_str, delta_days in all_dates:
+        weather_id = f"{city.replace('-', '').lower()}{date_str}"
+        last_modified = date.today()
+
+        if MIN_DAY <= delta_days <= MAX_DAY:
+            # Data jest w zakresie API (14..300 dni)
+            try:
+                save_weather_to_csv(city, date_str)
+                successful_dates.add(date_str)
+            except ApiException as e:
+                print(f"⚠️ Błąd API przy {city} ({date_str}): {e}")
+                sleep(10)
+                try:
+                    save_weather_to_csv(city, date_str)
+                    successful_dates.add(date_str)
+                except Exception as e2:
+                    print(f"❌ Druga próba dla {city} ({date_str}) nie powiodła się: {e2}")
+                    with open(weather_csv_path, mode='a', newline='', encoding='utf-8') as file:
+                        writer = csv.writer(file)
+                        writer.writerow([
+                            weather_id,
+                            date_obj,
+                            city,
+                            0, 0, 0, '', '', 0, 0, '00:00:00', '00:00:00',
+                            last_modified
+                        ])
+            except Exception as e:
+                print(f"⚠️ Błąd ogólny przy {city} ({date_str}): {e}")
+                with open(weather_csv_path, mode='a', newline='', encoding='utf-8') as file:
+                    writer = csv.writer(file)
+                    writer.writerow([
+                        weather_id,
+                        date_obj,
+                        city,
+                        0, 0, 0, '', '', 0, 0, '00:00:00', '00:00:00',
+                        last_modified
+                    ])
+        else:
+            # Data poza zakresem API — od razu wpisz pusty wiersz
+            with open(weather_csv_path, mode='a', newline='', encoding='utf-8') as file:
+                writer = csv.writer(file)
+                writer.writerow([
+                    weather_id,
+                    date_obj,
+                    city,
+                    0, 0, 0, '', '', 0, 0, '00:00:00', '00:00:00',
+                    last_modified
+                ])
+                
+    for i in range(1, days_back + 1):
+        date_obj = today - timedelta(days=i)
+        date_str = date_obj.strftime("%Y%m%d")
+        weather_id = f"{city.replace('-', '').lower()}{date_str}"
+        last_modified = today
+
+        with open(weather_csv_path, mode='a', newline='', encoding='utf-8') as file:
+            writer = csv.writer(file)
+            writer.writerow([
+                weather_id,
+                date_obj,
+                city,
+                0, 0, 0, '', '', 0, 0, '00:00:00', '00:00:00',
+                last_modified
+            ])
+    
+    print(f"🔁 Zapisano dane pogodowe dla miasta {city} – {len(successful_dates)}/365 dni.")
+

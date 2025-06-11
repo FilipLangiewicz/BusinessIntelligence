@@ -1,0 +1,170 @@
+⚠️ Błąd API przy london (20251011): (502)
+Reason: Bad Gateway
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 10 Jun 2025 21:25:50 GMT', 'Content-Type': 'text/html', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'BunnyCDN-DE1-1049', 'CDN-PullZone': '93447', 'CDN-Uid': '8fa3a04a-75d9-4707-8056-b7b33c8ac7fe', 'CDN-RequestCountryCode': 'PL', 'Cache-Control': 'no-cache', 'ErrorCode': '105', 'CDN-RequestId': 'a4d519d1ac24993a1e3fccd7e4b24ba7', 'CDN-Cache': 'EXPIRED', 'CDN-Status': '502', 'CDN-RequestTime': '0'})
+HTTP response body: <!DOCTYPE html>
+<html>
+<head>
+    <title>502 Bad Gateway</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://bunnynetassets.b-cdn.net/error.png" />
+    <script src="https://bunny.net/lib/jquery/jquery.min.js"></script>
+    <script src="https://cdn.statuspage.io/se-v2.js"></script>
+    <link rel="stylesheet" href="https://bunnynetassets.b-cdn.net/error.css">
+</head>
+<body>
+    <div class="hero"><div class="content"><div class="alert-details"><h3 class="alert">ERROR 502</h3><h1>Bad Gateway</h1><h3>We could not establish a connection to api.weatherapi.com</h3></div><div class="row cards"><div class="col-md g-md-1"><div class="card"> <img src="https://bunnynetassets.b-cdn.net/icons/you.svg" alt="Card Icon" /><h2>You</h2> <small>IP: 194.29.131.208</small></div></div><div class="col-md-1 g-md-1 icons"> <img src="https://bunnynetassets.b-cdn.net/icons/arrow.svg" class="img-fluid"></div><div class="col-md g-1"><div class="card"> <img src="https://bunnynetassets.b-cdn.net/icons/bunny.svg" alt="Card Icon" /><h2>bunny.net</h2> <small>Edge Network</small></div></div><div class="col-md-1 g-md-1 icons"> <img src="https://bunnynetassets.b-cdn.net/icons/x.svg" class="img-fluid"></div><div class="col-md g-1"><div class="card"> <img src="https://bunnynetassets.b-cdn.net/icons/origin.svg" alt="Card Icon" /><h2>api.weatherapi.com</h2> <small>Your Destination</small></div></div></div> </div></div><div class="final-details"><div class="box"><h1>What happened?</h1><div class="description">There was a problem that occured while connecting to api.weatherapi.com origin server. The server hosting the website might be unavailable.</div></div><div class="box"><h1>What can I do?</h1><div class="description">If you are a visitor, please try again in a few minutes. If you are the administrator, please check your origin server status.</div></div></div>
+</body>
+</html>
+
+⚠️ Błąd API przy london (20251220): (502)
+Reason: Bad Gateway
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 10 Jun 2025 21:26:35 GMT', 'Content-Type': 'text/html', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'BunnyCDN-DE1-1049', 'CDN-PullZone': '93447', 'CDN-Uid': '8fa3a04a-75d9-4707-8056-b7b33c8ac7fe', 'CDN-RequestCountryCode': 'PL', 'Cache-Control': 'no-cache', 'ErrorCode': '100', 'CDN-RequestId': '5742104412268a6f58c58892ee41bb3a', 'CDN-Cache': 'EXPIRED', 'CDN-Status': '502', 'CDN-RequestTime': '0'})
+HTTP response body: <!DOCTYPE html>
+<html>
+<head>
+    <title>502 Bad Gateway</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://bunnynetassets.b-cdn.net/error.png" />
+    <script src="https://bunny.net/lib/jquery/jquery.min.js"></script>
+    <script src="https://cdn.statuspage.io/se-v2.js"></script>
+    <link rel="stylesheet" href="https://bunnynetassets.b-cdn.net/error.css">
+</head>
+<body>
+    <div class="hero"><div class="content"><div class="alert-details"><h3 class="alert">ERROR 502</h3><h1>Bad Gateway</h1><h3>We could not establish a connection to api.weatherapi.com</h3></div><div class="row cards"><div class="col-md g-md-1"><div class="card"> <img src="https://bunnynetassets.b-cdn.net/icons/you.svg" alt="Card Icon" /><h2>You</h2> <small>IP: 194.29.131.208</small></div></div><div class="col-md-1 g-md-1 icons"> <img src="https://bunnynetassets.b-cdn.net/icons/arrow.svg" class="img-fluid"></div><div class="col-md g-1"><div class="card"> <img src="https://bunnynetassets.b-cdn.net/icons/bunny.svg" alt="Card Icon" /><h2>bunny.net</h2> <small>Edge Network</small></div></div><div class="col-md-1 g-md-1 icons"> <img src="https://bunnynetassets.b-cdn.net/icons/x.svg" class="img-fluid"></div><div class="col-md g-1"><div class="card"> <img src="https://bunnynetassets.b-cdn.net/icons/origin.svg" alt="Card Icon" /><h2>api.weatherapi.com</h2> <small>Your Destination</small></div></div></div> </div></div><div class="final-details"><div class="box"><h1>What happened?</h1><div class="description">There was a problem that occured while connecting to api.weatherapi.com origin server. The server hosting the website might be unavailable.</div></div><div class="box"><h1>What can I do?</h1><div class="description">If you are a visitor, please try again in a few minutes. If you are the administrator, please check your origin server status.</div></div></div>
+</body>
+</html>
+
+🔁 Zapisano dane pogodowe dla miasta london – 287/365 dni.
+🔁 Zapisano dane pogodowe dla miasta prague – 287/365 dni.
+🔁 Zapisano dane pogodowe dla miasta vienna – 287/365 dni.
+⚠️ Błąd API przy berlin (20250825): (502)
+Reason: Bad Gateway
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 10 Jun 2025 21:28:42 GMT', 'Content-Type': 'text/html', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'BunnyCDN-DE1-1049', 'CDN-PullZone': '93447', 'CDN-Uid': '8fa3a04a-75d9-4707-8056-b7b33c8ac7fe', 'CDN-RequestCountryCode': 'PL', 'Cache-Control': 'no-cache', 'ErrorCode': '105', 'CDN-RequestId': '94b883f244ce9f07f1f6de1b4e77b3df', 'CDN-Cache': 'EXPIRED', 'CDN-Status': '502', 'CDN-RequestTime': '0'})
+HTTP response body: <!DOCTYPE html>
+<html>
+<head>
+    <title>502 Bad Gateway</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://bunnynetassets.b-cdn.net/error.png" />
+    <script src="https://bunny.net/lib/jquery/jquery.min.js"></script>
+    <script src="https://cdn.statuspage.io/se-v2.js"></script>
+    <link rel="stylesheet" href="https://bunnynetassets.b-cdn.net/error.css">
+</head>
+<body>
+    <div class="hero"><div class="content"><div class="alert-details"><h3 class="alert">ERROR 502</h3><h1>Bad Gateway</h1><h3>We could not establish a connection to api.weatherapi.com</h3></div><div class="row cards"><div class="col-md g-md-1"><div class="card"> <img src="https://bunnynetassets.b-cdn.net/icons/you.svg" alt="Card Icon" /><h2>You</h2> <small>IP: 194.29.131.208</small></div></div><div class="col-md-1 g-md-1 icons"> <img src="https://bunnynetassets.b-cdn.net/icons/arrow.svg" class="img-fluid"></div><div class="col-md g-1"><div class="card"> <img src="https://bunnynetassets.b-cdn.net/icons/bunny.svg" alt="Card Icon" /><h2>bunny.net</h2> <small>Edge Network</small></div></div><div class="col-md-1 g-md-1 icons"> <img src="https://bunnynetassets.b-cdn.net/icons/x.svg" class="img-fluid"></div><div class="col-md g-1"><div class="card"> <img src="https://bunnynetassets.b-cdn.net/icons/origin.svg" alt="Card Icon" /><h2>api.weatherapi.com</h2> <small>Your Destination</small></div></div></div> </div></div><div class="final-details"><div class="box"><h1>What happened?</h1><div class="description">There was a problem that occured while connecting to api.weatherapi.com origin server. The server hosting the website might be unavailable.</div></div><div class="box"><h1>What can I do?</h1><div class="description">If you are a visitor, please try again in a few minutes. If you are the administrator, please check your origin server status.</div></div></div>
+</body>
+</html>
+
+⚠️ Błąd API przy berlin (20251101): (502)
+Reason: Bad Gateway
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 10 Jun 2025 21:29:22 GMT', 'Content-Type': 'text/html', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'BunnyCDN-DE1-1049', 'CDN-PullZone': '93447', 'CDN-Uid': '8fa3a04a-75d9-4707-8056-b7b33c8ac7fe', 'CDN-RequestCountryCode': 'PL', 'Cache-Control': 'no-cache', 'ErrorCode': '100', 'CDN-RequestId': '123202f82696f3898814b4f429d8ce73', 'CDN-Cache': 'EXPIRED', 'CDN-Status': '502', 'CDN-RequestTime': '0'})
+HTTP response body: <!DOCTYPE html>
+<html>
+<head>
+    <title>502 Bad Gateway</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://bunnynetassets.b-cdn.net/error.png" />
+    <script src="https://bunny.net/lib/jquery/jquery.min.js"></script>
+    <script src="https://cdn.statuspage.io/se-v2.js"></script>
+    <link rel="stylesheet" href="https://bunnynetassets.b-cdn.net/error.css">
+</head>
+<body>
+    <div class="hero"><div class="content"><div class="alert-details"><h3 class="alert">ERROR 502</h3><h1>Bad Gateway</h1><h3>We could not establish a connection to api.weatherapi.com</h3></div><div class="row cards"><div class="col-md g-md-1"><div class="card"> <img src="https://bunnynetassets.b-cdn.net/icons/you.svg" alt="Card Icon" /><h2>You</h2> <small>IP: 194.29.131.208</small></div></div><div class="col-md-1 g-md-1 icons"> <img src="https://bunnynetassets.b-cdn.net/icons/arrow.svg" class="img-fluid"></div><div class="col-md g-1"><div class="card"> <img src="https://bunnynetassets.b-cdn.net/icons/bunny.svg" alt="Card Icon" /><h2>bunny.net</h2> <small>Edge Network</small></div></div><div class="col-md-1 g-md-1 icons"> <img src="https://bunnynetassets.b-cdn.net/icons/x.svg" class="img-fluid"></div><div class="col-md g-1"><div class="card"> <img src="https://bunnynetassets.b-cdn.net/icons/origin.svg" alt="Card Icon" /><h2>api.weatherapi.com</h2> <small>Your Destination</small></div></div></div> </div></div><div class="final-details"><div class="box"><h1>What happened?</h1><div class="description">There was a problem that occured while connecting to api.weatherapi.com origin server. The server hosting the website might be unavailable.</div></div><div class="box"><h1>What can I do?</h1><div class="description">If you are a visitor, please try again in a few minutes. If you are the administrator, please check your origin server status.</div></div></div>
+</body>
+</html>
+
+⚠️ Błąd API przy berlin (20260403): (502)
+Reason: Bad Gateway
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 10 Jun 2025 21:30:18 GMT', 'Content-Type': 'text/html', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'BunnyCDN-DE1-1049', 'CDN-PullZone': '93447', 'CDN-Uid': '8fa3a04a-75d9-4707-8056-b7b33c8ac7fe', 'CDN-RequestCountryCode': 'PL', 'Cache-Control': 'no-cache', 'ErrorCode': '100', 'CDN-RequestId': 'c5bb78c0b640c895579b3c5dbb119e12', 'CDN-Cache': 'EXPIRED', 'CDN-Status': '502', 'CDN-RequestTime': '0'})
+HTTP response body: <!DOCTYPE html>
+<html>
+<head>
+    <title>502 Bad Gateway</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://bunnynetassets.b-cdn.net/error.png" />
+    <script src="https://bunny.net/lib/jquery/jquery.min.js"></script>
+    <script src="https://cdn.statuspage.io/se-v2.js"></script>
+    <link rel="stylesheet" href="https://bunnynetassets.b-cdn.net/error.css">
+</head>
+<body>
+    <div class="hero"><div class="content"><div class="alert-details"><h3 class="alert">ERROR 502</h3><h1>Bad Gateway</h1><h3>We could not establish a connection to api.weatherapi.com</h3></div><div class="row cards"><div class="col-md g-md-1"><div class="card"> <img src="https://bunnynetassets.b-cdn.net/icons/you.svg" alt="Card Icon" /><h2>You</h2> <small>IP: 194.29.131.208</small></div></div><div class="col-md-1 g-md-1 icons"> <img src="https://bunnynetassets.b-cdn.net/icons/arrow.svg" class="img-fluid"></div><div class="col-md g-1"><div class="card"> <img src="https://bunnynetassets.b-cdn.net/icons/bunny.svg" alt="Card Icon" /><h2>bunny.net</h2> <small>Edge Network</small></div></div><div class="col-md-1 g-md-1 icons"> <img src="https://bunnynetassets.b-cdn.net/icons/x.svg" class="img-fluid"></div><div class="col-md g-1"><div class="card"> <img src="https://bunnynetassets.b-cdn.net/icons/origin.svg" alt="Card Icon" /><h2>api.weatherapi.com</h2> <small>Your Destination</small></div></div></div> </div></div><div class="final-details"><div class="box"><h1>What happened?</h1><div class="description">There was a problem that occured while connecting to api.weatherapi.com origin server. The server hosting the website might be unavailable.</div></div><div class="box"><h1>What can I do?</h1><div class="description">If you are a visitor, please try again in a few minutes. If you are the administrator, please check your origin server status.</div></div></div>
+</body>
+</html>
+
+🔁 Zapisano dane pogodowe dla miasta berlin – 287/365 dni.
+🔁 Zapisano dane pogodowe dla miasta paris – 287/365 dni.
+🔁 Zapisano dane pogodowe dla miasta lisbon – 287/365 dni.
+⚠️ Błąd API przy madrid (20260211): (502)
+Reason: Bad Gateway
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 10 Jun 2025 21:35:01 GMT', 'Content-Type': 'text/html', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'BunnyCDN-DE1-1049', 'CDN-PullZone': '93447', 'CDN-Uid': '8fa3a04a-75d9-4707-8056-b7b33c8ac7fe', 'CDN-RequestCountryCode': 'PL', 'Cache-Control': 'no-cache', 'ErrorCode': '105', 'CDN-RequestId': '52d0dbe16b0082df0d7ff5b2f16223aa', 'CDN-Cache': 'EXPIRED', 'CDN-Status': '502', 'CDN-RequestTime': '0'})
+HTTP response body: <!DOCTYPE html>
+<html>
+<head>
+    <title>502 Bad Gateway</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://bunnynetassets.b-cdn.net/error.png" />
+    <script src="https://bunny.net/lib/jquery/jquery.min.js"></script>
+    <script src="https://cdn.statuspage.io/se-v2.js"></script>
+    <link rel="stylesheet" href="https://bunnynetassets.b-cdn.net/error.css">
+</head>
+<body>
+    <div class="hero"><div class="content"><div class="alert-details"><h3 class="alert">ERROR 502</h3><h1>Bad Gateway</h1><h3>We could not establish a connection to api.weatherapi.com</h3></div><div class="row cards"><div class="col-md g-md-1"><div class="card"> <img src="https://bunnynetassets.b-cdn.net/icons/you.svg" alt="Card Icon" /><h2>You</h2> <small>IP: 194.29.131.208</small></div></div><div class="col-md-1 g-md-1 icons"> <img src="https://bunnynetassets.b-cdn.net/icons/arrow.svg" class="img-fluid"></div><div class="col-md g-1"><div class="card"> <img src="https://bunnynetassets.b-cdn.net/icons/bunny.svg" alt="Card Icon" /><h2>bunny.net</h2> <small>Edge Network</small></div></div><div class="col-md-1 g-md-1 icons"> <img src="https://bunnynetassets.b-cdn.net/icons/x.svg" class="img-fluid"></div><div class="col-md g-1"><div class="card"> <img src="https://bunnynetassets.b-cdn.net/icons/origin.svg" alt="Card Icon" /><h2>api.weatherapi.com</h2> <small>Your Destination</small></div></div></div> </div></div><div class="final-details"><div class="box"><h1>What happened?</h1><div class="description">There was a problem that occured while connecting to api.weatherapi.com origin server. The server hosting the website might be unavailable.</div></div><div class="box"><h1>What can I do?</h1><div class="description">If you are a visitor, please try again in a few minutes. If you are the administrator, please check your origin server status.</div></div></div>
+</body>
+</html>
+
+🔁 Zapisano dane pogodowe dla miasta madrid – 287/365 dni.
+⚠️ Błąd API przy rome (20250826): (502)
+Reason: Bad Gateway
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 10 Jun 2025 21:36:46 GMT', 'Content-Type': 'text/html', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'BunnyCDN-DE1-1049', 'CDN-PullZone': '93447', 'CDN-Uid': '8fa3a04a-75d9-4707-8056-b7b33c8ac7fe', 'CDN-RequestCountryCode': 'PL', 'Cache-Control': 'no-cache', 'ErrorCode': '105', 'CDN-RequestId': '15017d6690e080ca65f0bb290868ddb9', 'CDN-Cache': 'EXPIRED', 'CDN-Status': '502', 'CDN-RequestTime': '0'})
+HTTP response body: <!DOCTYPE html>
+<html>
+<head>
+    <title>502 Bad Gateway</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://bunnynetassets.b-cdn.net/error.png" />
+    <script src="https://bunny.net/lib/jquery/jquery.min.js"></script>
+    <script src="https://cdn.statuspage.io/se-v2.js"></script>
+    <link rel="stylesheet" href="https://bunnynetassets.b-cdn.net/error.css">
+</head>
+<body>
+    <div class="hero"><div class="content"><div class="alert-details"><h3 class="alert">ERROR 502</h3><h1>Bad Gateway</h1><h3>We could not establish a connection to api.weatherapi.com</h3></div><div class="row cards"><div class="col-md g-md-1"><div class="card"> <img src="https://bunnynetassets.b-cdn.net/icons/you.svg" alt="Card Icon" /><h2>You</h2> <small>IP: 194.29.131.208</small></div></div><div class="col-md-1 g-md-1 icons"> <img src="https://bunnynetassets.b-cdn.net/icons/arrow.svg" class="img-fluid"></div><div class="col-md g-1"><div class="card"> <img src="https://bunnynetassets.b-cdn.net/icons/bunny.svg" alt="Card Icon" /><h2>bunny.net</h2> <small>Edge Network</small></div></div><div class="col-md-1 g-md-1 icons"> <img src="https://bunnynetassets.b-cdn.net/icons/x.svg" class="img-fluid"></div><div class="col-md g-1"><div class="card"> <img src="https://bunnynetassets.b-cdn.net/icons/origin.svg" alt="Card Icon" /><h2>api.weatherapi.com</h2> <small>Your Destination</small></div></div></div> </div></div><div class="final-details"><div class="box"><h1>What happened?</h1><div class="description">There was a problem that occured while connecting to api.weatherapi.com origin server. The server hosting the website might be unavailable.</div></div><div class="box"><h1>What can I do?</h1><div class="description">If you are a visitor, please try again in a few minutes. If you are the administrator, please check your origin server status.</div></div></div>
+</body>
+</html>
+
+⚠️ Błąd API przy rome (20250917): (502)
+Reason: Bad Gateway
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 10 Jun 2025 21:37:48 GMT', 'Content-Type': 'text/html', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'BunnyCDN-DE1-1049', 'CDN-PullZone': '93447', 'CDN-Uid': '8fa3a04a-75d9-4707-8056-b7b33c8ac7fe', 'CDN-RequestCountryCode': 'PL', 'Cache-Control': 'no-cache', 'ErrorCode': '105', 'CDN-RequestId': '34f6cd26258d3d028e6cf985ac6da15b', 'CDN-Cache': 'EXPIRED', 'CDN-Status': '502', 'CDN-RequestTime': '0'})
+HTTP response body: <!DOCTYPE html>
+<html>
+<head>
+    <title>502 Bad Gateway</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://bunnynetassets.b-cdn.net/error.png" />
+    <script src="https://bunny.net/lib/jquery/jquery.min.js"></script>
+    <script src="https://cdn.statuspage.io/se-v2.js"></script>
+    <link rel="stylesheet" href="https://bunnynetassets.b-cdn.net/error.css">
+</head>
+<body>
+    <div class="hero"><div class="content"><div class="alert-details"><h3 class="alert">ERROR 502</h3><h1>Bad Gateway</h1><h3>We could not establish a connection to api.weatherapi.com</h3></div><div class="row cards"><div class="col-md g-md-1"><div class="card"> <img src="https://bunnynetassets.b-cdn.net/icons/you.svg" alt="Card Icon" /><h2>You</h2> <small>IP: 194.29.131.208</small></div></div><div class="col-md-1 g-md-1 icons"> <img src="https://bunnynetassets.b-cdn.net/icons/arrow.svg" class="img-fluid"></div><div class="col-md g-1"><div class="card"> <img src="https://bunnynetassets.b-cdn.net/icons/bunny.svg" alt="Card Icon" /><h2>bunny.net</h2> <small>Edge Network</small></div></div><div class="col-md-1 g-md-1 icons"> <img src="https://bunnynetassets.b-cdn.net/icons/x.svg" class="img-fluid"></div><div class="col-md g-1"><div class="card"> <img src="https://bunnynetassets.b-cdn.net/icons/origin.svg" alt="Card Icon" /><h2>api.weatherapi.com</h2> <small>Your Destination</small></div></div></div> </div></div><div class="final-details"><div class="box"><h1>What happened?</h1><div class="description">There was a problem that occured while connecting to api.weatherapi.com origin server. The server hosting the website might be unavailable.</div></div><div class="box"><h1>What can I do?</h1><div class="description">If you are a visitor, please try again in a few minutes. If you are the administrator, please check your origin server status.</div></div></div>
+</body>
+</html>
+
+⚠️ Błąd API przy rome (20260329): (502)
+Reason: Bad Gateway
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 10 Jun 2025 21:39:21 GMT', 'Content-Type': 'text/html', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'BunnyCDN-DE1-1049', 'CDN-PullZone': '93447', 'CDN-Uid': '8fa3a04a-75d9-4707-8056-b7b33c8ac7fe', 'CDN-RequestCountryCode': 'PL', 'Cache-Control': 'no-cache', 'ErrorCode': '100', 'CDN-RequestId': 'ba8263f8bb95e7387aa7bc6d2f855690', 'CDN-Cache': 'EXPIRED', 'CDN-Status': '502', 'CDN-RequestTime': '0'})
+HTTP response body: <!DOCTYPE html>
+<html>
+<head>
+    <title>502 Bad Gateway</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://bunnynetassets.b-cdn.net/error.png" />
+    <script src="https://bunny.net/lib/jquery/jquery.min.js"></script>
+    <script src="https://cdn.statuspage.io/se-v2.js"></script>
+    <link rel="stylesheet" href="https://bunnynetassets.b-cdn.net/error.css">
+</head>
+<body>
+    <div class="hero"><div class="content"><div class="alert-details"><h3 class="alert">ERROR 502</h3><h1>Bad Gateway</h1><h3>We could not establish a connection to api.weatherapi.com</h3></div><div class="row cards"><div class="col-md g-md-1"><div class="card"> <img src="https://bunnynetassets.b-cdn.net/icons/you.svg" alt="Card Icon" /><h2>You</h2> <small>IP: 194.29.131.208</small></div></div><div class="col-md-1 g-md-1 icons"> <img src="https://bunnynetassets.b-cdn.net/icons/arrow.svg" class="img-fluid"></div><div class="col-md g-1"><div class="card"> <img src="https://bunnynetassets.b-cdn.net/icons/bunny.svg" alt="Card Icon" /><h2>bunny.net</h2> <small>Edge Network</small></div></div><div class="col-md-1 g-md-1 icons"> <img src="https://bunnynetassets.b-cdn.net/icons/x.svg" class="img-fluid"></div><div class="col-md g-1"><div class="card"> <img src="https://bunnynetassets.b-cdn.net/icons/origin.svg" alt="Card Icon" /><h2>api.weatherapi.com</h2> <small>Your Destination</small></div></div></div> </div></div><div class="final-details"><div class="box"><h1>What happened?</h1><div class="description">There was a problem that occured while connecting to api.weatherapi.com origin server. The server hosting the website might be unavailable.</div></div><div class="box"><h1>What can I do?</h1><div class="description">If you are a visitor, please try again in a few minutes. If you are the administrator, please check your origin server status.</div></div></div>
+</body>
+</html>
+
+🔁 Zapisano dane pogodowe dla miasta rome – 287/365 dni.

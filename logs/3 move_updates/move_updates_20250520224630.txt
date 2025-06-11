@@ -1,7 +1,0 @@
-Plików w UPDATE przed przeniesieniem: 0
-Plików w NEW przed przeniesieniem: 0
-
-Podsumowanie:
-Przeniesiono plików: 0
-Plików w NEW po przeniesieniu: 0
-Lista przeniesionych plików:

@@ -1,0 +1,60 @@
+Znaleziono 24 plików do pobrania.
+
+[=] Bez zmian: 20250315_germany_be_berlin_listings.csv
+[=] Bez zmian: 20250315_germany_be_berlin_calendar.csv
+[=] Bez zmian: 20250315_germany_be_berlin_reviews.csv
+[=] Bez zmian: 20250308_portugal_lisbon_lisbon_listings.csv
+[=] Bez zmian: 20250308_portugal_lisbon_lisbon_calendar.csv
+[=] Bez zmian: 20250308_portugal_lisbon_lisbon_reviews.csv
+[=] Bez zmian: 20250304_united-kingdom_england_london_listings.csv
+[=] Bez zmian: 20250304_united-kingdom_england_london_calendar.csv
+[=] Bez zmian: 20250304_united-kingdom_england_london_reviews.csv
+[=] Bez zmian: 20250305_spain_comunidad-de-madrid_madrid_listings.csv
+[=] Bez zmian: 20250305_spain_comunidad-de-madrid_madrid_calendar.csv
+[=] Bez zmian: 20250305_spain_comunidad-de-madrid_madrid_reviews.csv
+[=] Bez zmian: 20250303_france_ile-de-france_paris_listings.csv
+[=] Bez zmian: 20250303_france_ile-de-france_paris_calendar.csv
+[=] Bez zmian: 20250303_france_ile-de-france_paris_reviews.csv
+[=] Bez zmian: 20250316_czech-republic_prague_prague_listings.csv
+[=] Bez zmian: 20250316_czech-republic_prague_prague_calendar.csv
+[=] Bez zmian: 20250316_czech-republic_prague_prague_reviews.csv
+[=] Bez zmian: 20250305_italy_lazio_rome_listings.csv
+[=] Bez zmian: 20250305_italy_lazio_rome_calendar.csv
+[=] Bez zmian: 20250305_italy_lazio_rome_reviews.csv
+[=] Bez zmian: 20250305_austria_vienna_vienna_listings.csv
+[=] Bez zmian: 20250305_austria_vienna_vienna_calendar.csv
+[=] Bez zmian: 20250305_austria_vienna_vienna_reviews.csv
+
+Podsumowanie operacji:
+Plików przed: 357
+Plików po:    357
+Dodano:     0
+Zaktualizowano: 0
+Pominięto: 0
+Bez zmian:  24
+
+Pliki bez zmian:
+ - 20250315_germany_be_berlin_listings.csv
+ - 20250315_germany_be_berlin_calendar.csv
+ - 20250315_germany_be_berlin_reviews.csv
+ - 20250308_portugal_lisbon_lisbon_listings.csv
+ - 20250308_portugal_lisbon_lisbon_calendar.csv
+ - 20250308_portugal_lisbon_lisbon_reviews.csv
+ - 20250304_united-kingdom_england_london_listings.csv
+ - 20250304_united-kingdom_england_london_calendar.csv
+ - 20250304_united-kingdom_england_london_reviews.csv
+ - 20250305_spain_comunidad-de-madrid_madrid_listings.csv
+ - 20250305_spain_comunidad-de-madrid_madrid_calendar.csv
+ - 20250305_spain_comunidad-de-madrid_madrid_reviews.csv
+ - 20250303_france_ile-de-france_paris_listings.csv
+ - 20250303_france_ile-de-france_paris_calendar.csv
+ - 20250303_france_ile-de-france_paris_reviews.csv
+ - 20250316_czech-republic_prague_prague_listings.csv
+ - 20250316_czech-republic_prague_prague_calendar.csv
+ - 20250316_czech-republic_prague_prague_reviews.csv
+ - 20250305_italy_lazio_rome_listings.csv
+ - 20250305_italy_lazio_rome_calendar.csv
+ - 20250305_italy_lazio_rome_reviews.csv
+ - 20250305_austria_vienna_vienna_listings.csv
+ - 20250305_austria_vienna_vienna_calendar.csv
+ - 20250305_austria_vienna_vienna_reviews.csv

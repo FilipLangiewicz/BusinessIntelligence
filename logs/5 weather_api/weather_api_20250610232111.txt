@@ -1,0 +1,108 @@
+🔁 Zapisano dane pogodowe dla miasta vienna – 287/365 dni.
+🔁 Zapisano dane pogodowe dla miasta madrid – 287/365 dni.
+Traceback (most recent call last):
+  File "d:\STUDIA\Semestr 6\Hurtownie danych i systemy Business Intelligence\Laboratoria\Projekt\BusinessIntelligence\weather_api.py", line 109, in <module>
+    save_weather_to_csv(city, date_str)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "d:\STUDIA\Semestr 6\Hurtownie danych i systemy Business Intelligence\Laboratoria\Projekt\BusinessIntelligence\weather_api.py", line 47, in save_weather_to_csv
+    response = api_instance.future_weather(q=city, dt=dt_api, lang="pl")
+  File "C:\Users\flang\anaconda3\envs\hurt\Lib\site-packages\weatherapi\api\apis_api.py", line 291, in future_weather
+    (data) = self.future_weather_with_http_info(q, **kwargs)  # noqa: E501
+  File "C:\Users\flang\anaconda3\envs\hurt\Lib\site-packages\weatherapi\api\apis_api.py", line 357, in future_weather_with_http_info
+    return self.api_client.call_api(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        '/future.json', 'GET',
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+        _request_timeout=params.get('_request_timeout'),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        collection_formats=collection_formats)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\flang\anaconda3\envs\hurt\Lib\site-packages\weatherapi\api_client.py", line 326, in call_api
+    return self.__call_api(resource_path, method,
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+                           path_params, query_params, header_params,
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+                           _return_http_data_only, collection_formats,
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                           _preload_content, _request_timeout)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\flang\anaconda3\envs\hurt\Lib\site-packages\weatherapi\api_client.py", line 158, in __call_api
+    response_data = self.request(
+        method, url, query_params=query_params, headers=header_params,
+        post_params=post_params, body=body,
+        _preload_content=_preload_content,
+        _request_timeout=_request_timeout)
+  File "C:\Users\flang\anaconda3\envs\hurt\Lib\site-packages\weatherapi\api_client.py", line 348, in request
+    return self.rest_client.GET(url,
+           ~~~~~~~~~~~~~~~~~~~~^^^^^
+                                query_params=query_params,
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                _preload_content=_preload_content,
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                _request_timeout=_request_timeout,
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                headers=headers)
+                                ^^^^^^^^^^^^^^^^
+  File "C:\Users\flang\anaconda3\envs\hurt\Lib\site-packages\weatherapi\rest.py", line 234, in GET
+    return self.request("GET", url,
+           ~~~~~~~~~~~~^^^^^^^^^^^^
+                        headers=headers,
+                        ^^^^^^^^^^^^^^^^
+                        _preload_content=_preload_content,
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        _request_timeout=_request_timeout,
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        query_params=query_params)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\flang\anaconda3\envs\hurt\Lib\site-packages\weatherapi\rest.py", line 207, in request
+    r = self.pool_manager.request(method, url,
+                                  fields=query_params,
+                                  preload_content=_preload_content,
+                                  timeout=timeout,
+                                  headers=headers)
+  File "C:\Users\flang\anaconda3\envs\hurt\Lib\site-packages\urllib3\_request_methods.py", line 136, in request
+    return self.request_encode_url(
+           ~~~~~~~~~~~~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<3 lines>...
+        **urlopen_kw,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\flang\anaconda3\envs\hurt\Lib\site-packages\urllib3\_request_methods.py", line 183, in request_encode_url
+    return self.urlopen(method, url, **extra_kw)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\flang\anaconda3\envs\hurt\Lib\site-packages\urllib3\poolmanager.py", line 444, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\flang\anaconda3\envs\hurt\Lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\flang\anaconda3\envs\hurt\Lib\site-packages\urllib3\connectionpool.py", line 537, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\flang\anaconda3\envs\hurt\Lib\site-packages\urllib3\connection.py", line 466, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\flang\anaconda3\envs\hurt\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\flang\anaconda3\envs\hurt\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\flang\anaconda3\envs\hurt\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\flang\anaconda3\envs\hurt\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\flang\anaconda3\envs\hurt\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\flang\anaconda3\envs\hurt\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyboardInterrupt
